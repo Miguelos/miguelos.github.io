@@ -3,6 +3,7 @@ require "tmpdir"
 
 desc "Generate blog files"
 task :generate do
+  system "compass compile"
   Jekyll::Site.new(Jekyll.configuration({
     "source"      => ".",
     "destination" => "_site"
