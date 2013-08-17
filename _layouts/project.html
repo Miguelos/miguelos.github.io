@@ -16,3 +16,9 @@ layout: page
   {% endif %}
 </div>
 
+{% if page.team %}
+  <div id="team-description" class="span16">
+    <h3>{{ page.title }} Team:</h3>
+    {{ page.team }}
+  </div>
+{% endif %}
