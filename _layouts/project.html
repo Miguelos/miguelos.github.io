@@ -2,23 +2,25 @@
 layout: page
 ---
 {% if page.image %}
-  <div class="span1 logo">
+  <div class="span2 logo">
     <img src="{{ page.image.url }}" title="{{ page.image.title }}" alt="{{ page.image.alt }}" />
+
+    {% if page.team %}
+      <h3>{{ page.title }} Team:</h3>
+      {{ page.team }}
+    {% endif %}
   </div>
 {% endif %}
 
-<div class="span10">
+<div class="span9">
   <h1>{{ page.title }}</h1>
   <p>{{ page.description }}</p>
 
-  {% if page.website %}
-    <div class="website"><a href="{{ page.website }}">{{ page.website }}</a></div>
+  {% if page.links %}
+  <h2>Links</h2>
+    {% for link in page.links%}
+      <div class="website" id="{{ link[0] }}">{{ link[0] }}: <a href="{{ link[1] }}">{{ link[1] }}</a></div>
+    {% endfor %}
   {% endif %}
 </div>
 
-{% if page.team %}
-  <div id="team-description" class="span16">
-    <h3>{{ page.title }} Team:</h3>
-    {{ page.team }}
-  </div>
-{% endif %}

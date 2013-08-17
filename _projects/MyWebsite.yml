@@ -1,0 +1,16 @@
+description:
+  My personal website. Blog and projects
+image:
+  url: /assets/images/Web.png
+  title: My website
+  alt: My website screenshot
+layout: project
+published: true
+short:     My personal website.
+title:     Miguel 
+links:
+  website:   http://miguelos.github.io
+  source-code: 	https://github.com/Miguelos/miguelos.github.io
+  how-to: /post/start-off/
+platform:
+  web: true

@@ -11,4 +11,6 @@ published: true
 team: This project has been developed by Manuel, Jorge and Me!
 short:     CGTel helps users and organizations to optimizing final cost on phone bill.
 title:     CGTel
-website:   http://pendientedemigracion.ucm.es/info/tecnomovil/es/proyectos.html
+links:
+  website:   http://pendientedemigracion.ucm.es/info/tecnomovil/es/proyectos.html
+  android apk installer: http://pendientedemigracion.ucm.es/info/tecnomovil/aplicaciones/cgtel.apk

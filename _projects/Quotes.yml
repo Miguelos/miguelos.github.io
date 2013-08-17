@@ -9,4 +9,5 @@ layout: project
 published: true
 short:     Collection of quotes for Android.
 title:     Quotes
-website:   http://goo.gl/jeV7q
+links:
+  website:   http://goo.gl/jeV7q
