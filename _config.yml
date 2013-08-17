@@ -11,12 +11,14 @@ pygments: true
 #
 title: Miguel
 tagline: My personal page
-author: Miguel González Pérez
-name: Miguel González Pérez
-email: 
-github: Miguelos
-twitter: 
-feedburner: 
+author:
+  name: Miguel González Pérez
+  email: 
+  github: Miguelos
+  twitter: 
+  feedburner: 
+  googleplus: 100987837049179499412
+  linkedin: miguelgpms/en
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -101,7 +103,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-43253159-1'
     getclicky :
       site_id : 
     mixpanel :
