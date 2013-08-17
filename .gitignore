@@ -1,16 +1,4 @@
-_site/about
-_site/archive
-_site/assets
-_site/categories
-_site/imprint
-_site/pages
-_site/post
-_site/tags
-_site/404.html
-_site/atom.xml
-_site/index.html
-_site/rss.xml
-_site/sitemap.txt
+_site/*
 _theme_packages/*
 
 Thumbs.db
