@@ -357,31 +357,21 @@ div.posts article div.date time {
 
 /* This is for your Custom Content. */
 /* Portfolio */
-/* line 4, ../_sass/_custom.scss */
-#projects {
-  list-style-type: none;
-}
-/* line 6, ../_sass/_custom.scss */
-#projects li.project {
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
-}
-/* line 10, ../_sass/_custom.scss */
+/* line 5, ../_sass/_custom.scss */
 #projects .project-logo {
-  height: 100px;
   box-shadow: none;
   opacity: 0.4;
   filter: alpha(opacity=40);
   /* For IE8 and earlier */
 }
-/* line 15, ../_sass/_custom.scss */
+/* line 9, ../_sass/_custom.scss */
 #projects .project-logo:hover {
   opacity: 1;
   filter: alpha(opacity=100);
   /* For IE8 and earlier */
 }
 
-/* line 22, ../_sass/_custom.scss */
-footer {
-  bottom: 0;
+/* line 15, ../_sass/_custom.scss */
+.qr-code {
+  padding: 15px;
 }

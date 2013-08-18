@@ -11,3 +11,16 @@ short:     Collection of quotes for Android.
 title:     Quotes
 links:
   website:   http://goo.gl/jeV7q
+platform:
+  android: true
+qr-code:
+  url: http://chart.googleapis.com/chart?cht=qr&chs=100x100&choe=UTF-8&chld=H|0&chl=http://goo.gl/jeV7q
+use-of:
+  Languages: 
+    Java: 
+    Python:
+      link: http://www.python.org/
+    SQLite:
+  Development tools:
+    Android Studio:
+      link: https://developer.android.com/sdk/installing/studio.html

@@ -2,13 +2,7 @@
 
 /* Portfolio */
 #projects{
-  list-style-type: none;
-  li.project{
-  	padding: 10px;
-  	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
-  }
   .project-logo {
-    height: 100px;
     box-shadow: none;
     opacity: 0.4;
     filter: alpha(opacity=40); /* For IE8 and earlier */
@@ -17,4 +11,7 @@
   	  filter: alpha(opacity=100); /* For IE8 and earlier */
     }
   }
+}
+.qr-code{
+  padding: 15px;
 }

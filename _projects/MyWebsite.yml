@@ -7,10 +7,35 @@ image:
 layout: project
 published: true
 short:     My personal website.
-title:     Miguel 
+title:     Personal website
 links:
   website:   http://miguelos.github.io
   source-code: 	https://github.com/Miguelos/miguelos.github.io
   how-to: /post/start-off/
 platform:
   web: true
+use-of:
+  Languages: 
+    Ruby: 
+      link: http://www.ruby-lang.org
+    HTML: 
+      link: https://en.wikipedia.org/wiki/HTML
+    SASS: 
+      link: http://www.sass-lang.com
+  Content:
+    Markdown:
+    YAML:
+  Frameworks:
+    Jekyll:
+      link: http://jekyllrb.com/
+    Bootstrap:
+      link: http://getbootstrap.com/
+    Compass:
+      link: http://compass-style.org/
+  Development tools:
+    Sublime Text:
+      link: http://www.sublimetext.com/
+    Rake:
+      link: http://rake.rubyforge.org/
+    Firebug:
+      link: http://getfirebug.com/

@@ -14,3 +14,21 @@ title:     CGTel
 links:
   website:   http://pendientedemigracion.ucm.es/info/tecnomovil/es/proyectos.html
   android apk installer: http://pendientedemigracion.ucm.es/info/tecnomovil/aplicaciones/cgtel.apk
+platform:
+  android: true
+use-of:
+  Languages: 
+    Java: 
+    XML:
+    MySQL:
+    PHP: 
+  Libraries:
+    Androidplot:
+      link: http://androidplot.com/
+  Development tools:
+    Android SDK:
+      link: https://developer.android.com/sdk/
+    Eclipse:
+      link: http://www.eclipse.org/
+    Aptana:
+      link: http://www.aptana.com/
