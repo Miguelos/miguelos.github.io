@@ -4,7 +4,7 @@ title: Portfolio
 ---
 <ul id="projects" class="thumbnails">
   {% for project in page.projects %}
-    <li class="project span4">
+    <li class="project span3">
       <a href="/portfolio/{{ project[0] }}" class="thumbnail" >
         {% if project[1].image %}
             <img data-src="holder.js/250x250" src="{{ project[1].image.url }}" title="{{ project[1].image.title }}" alt="{{ project[1].image.alt }}" />

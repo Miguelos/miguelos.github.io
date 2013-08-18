@@ -371,7 +371,17 @@ div.posts article div.date time {
   /* For IE8 and earlier */
 }
 
-/* line 15, ../_sass/_custom.scss */
+/* line 16, ../_sass/_custom.scss */
 .qr-code {
   padding: 15px;
+}
+
+/* line 20, ../_sass/_custom.scss */
+.carousel .item > img {
+  margin: 0 auto;
+}
+
+/* line 24, ../_sass/_custom.scss */
+#projectCarousel .item > img {
+  height: 500px;
 }

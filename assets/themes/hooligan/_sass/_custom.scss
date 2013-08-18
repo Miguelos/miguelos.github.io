@@ -12,6 +12,15 @@
     }
   }
 }
+
 .qr-code{
   padding: 15px;
+}
+
+.carousel .item>img {
+  margin: 0 auto;
+}
+
+#projectCarousel .item>img{
+  height: 500px;
 }

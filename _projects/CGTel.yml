@@ -6,6 +6,16 @@ image:
   url: /assets/images/CGTel/logo.png
   title: CGTel
   alt: CGTel icon
+images:
+  1:
+    url: /assets/images/CGTel/110.png
+    alt: App screenshot
+  2:
+    url: /assets/images/CGTel/123.png
+    alt: App screenshot
+  3:
+    url: /assets/images/CGTel/131.png
+    alt: App screenshot
 layout: project
 published: true
 team: This project has been developed by Manuel, Jorge and Me!
