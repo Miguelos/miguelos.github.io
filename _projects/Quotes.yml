@@ -5,6 +5,13 @@ image:
   url: /assets/images/Quotes/logo.png
   title: Quotes
   alt: Quotes icon
+images:
+  1:
+    url: /assets/images/Quotes/screenshot-1.png
+    alt: App screenshot
+  2:
+    url: /assets/images/Quotes/screenshot-2.png
+    alt: App screenshot
 layout: project
 published: true
 short:     Collection of quotes for Android.
