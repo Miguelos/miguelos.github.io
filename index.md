@@ -5,6 +5,7 @@ tagline: Technology enthusiast
 ---
 {% include JB/setup %}
 
+<div class="span">
 <div class="alert alert-block alert-info">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   <strong>Hi!</strong>
@@ -22,4 +23,4 @@ tagline: Technology enthusiast
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}"     {% unless page.tags == empty %}data-toggle="tooltip" title="Tags: {% for item in post.tags %}{{ item | capitalize }} {% endfor %}" {% endunless %}>{{ post.title }}</a></li> 
   {% endfor %}
 </ul>
-
+</div>

@@ -381,8 +381,3 @@ div.posts article div.date time {
 #projectCarousel .item > img {
   height: 500px;
 }
-
-/* line 28, ../_sass/_custom.scss */
-.row {
-  margin-left: 0;
-}
