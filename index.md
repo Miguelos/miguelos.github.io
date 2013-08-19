@@ -8,7 +8,7 @@ tagline: Technology enthusiast
 <div class="alert alert-block alert-info">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   <strong>Hi!</strong>
-  <p>I just created this site and would really appreciate your feedback. If you find any error in this website, feel free to open a new Issue at <a href="https://github.com/Miguelos/miguelos.github.io/issues"> github.com/Miguelos.github.io/issues</a>. I'm working on updating the content and improving it.</p>
+  <p>I created this site and would really appreciate your feedback. If you find any error in this website, feel free to open a new Issue at <a href="https://github.com/Miguelos/miguelos.github.io/issues"> github.com/Miguelos.github.io/issues</a>. I'm working on updating the content and improving it.</p>
 </div>
 
 ## Portfolio
@@ -19,7 +19,7 @@ tagline: Technology enthusiast
 
 <ul class="posts">
   {% for post in site.posts limit: 5 %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}" data-toggle="tooltip" title="Tags: {% for item in post.tags %}{{ item | capitalize }} {% endfor %}" >{{ post.title }}</a></li> 
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}"     {% unless page.tags == empty %}data-toggle="tooltip" title="Tags: {% for item in post.tags %}{{ item | capitalize }} {% endfor %}" {% endunless %}>{{ post.title }}</a></li> 
   {% endfor %}
 </ul>
 

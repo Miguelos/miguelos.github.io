@@ -1,5 +1,6 @@
 ---
 layout: page
+group: project
 ---
 
 <div class="span2">
@@ -57,7 +58,9 @@ layout: page
   {% endfor %}
   <br/>
   {% endif %}
+</div>
 
+<div class="span12">
   {% if page.use-of %}
     <h2>Use of</h2>
     {% for cat in page.use-of %}
@@ -74,3 +77,4 @@ layout: page
     {% endfor %}
   {% endif %}
 </div>
+{% include JB/comments %}

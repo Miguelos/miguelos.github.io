@@ -4,8 +4,8 @@
 #projects{
   .project-logo {
     box-shadow: none;
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+    opacity: 0.45;
+    filter: alpha(opacity=45); /* For IE8 and earlier */
     &:hover{
       opacity: 1;
   	  filter: alpha(opacity=100); /* For IE8 and earlier */
