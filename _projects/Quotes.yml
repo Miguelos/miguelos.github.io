@@ -1,20 +1,21 @@
 description:
-  Collection of phrases for inspiration. You can sort the phrases and list them back again to enjoy them. 
-  Currently abailable in Spanish.
 image:
   url: /assets/images/Quotes/logo.png
   title: Quotes
   alt: Quotes icon
 images:
-  1:
+  -
     url: /assets/images/Quotes/screenshot-1.png
     alt: App screenshot
-  2:
+  -
     url: /assets/images/Quotes/screenshot-2.png
     alt: App screenshot
 layout: project
 published: true
 short:     Collection of quotes for Android.
+long:
+  - Collection of phrases for inspiration. You can sort the phrases and list them back again to enjoy them. 
+  - Currently abailable in Spanish.
 title:     Quotes
 links:
   website:   http://goo.gl/jeV7q

@@ -1,5 +1,4 @@
 description:
-  My personal website. Blog and projects
 image:
   url: /assets/images/Web/mobile_screenshot.png
   title: My website
@@ -7,6 +6,8 @@ image:
 layout: project
 published: true
 short:     My personal website.
+long:   
+  - My personal website. Blog and projects
 title:     Personal website
 links:
   website:   http://miguelos.github.io

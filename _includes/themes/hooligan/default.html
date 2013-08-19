@@ -128,62 +128,15 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{ ASSET_PATH }}/js/jquery.min.js"><\/script>')</script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
-    {% if site.author.coderwall %}
+
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-proudify.min.js"></script>
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/proudify.min.css" type="text/css"/>
     <script type="text/javascript">
-      var coderwall = (function(){
-        function render(options, badges){
-          var fragment = '',
-              t = $(options.target),
-              height = 65,
-              width = 65,
-              index;
-
-          for (index in badges) {
-            fragment += '<a class="cw_badge"title="' + badges[index].description + '" href="http://coderwall.com/' + options.user + '">';
-            fragment +=   '<img alt="' + badges[index].description + '" height="' + width + '" width="' + height + '" src="' + badges[index].badge + '"/>';
-            fragment += '</a>';
-          }
-
-          t.html(fragment);
-        }
-        return {
-          showBadges: function(options){
-            $.ajax({
-                url: 'http://coderwall.com/' + options.user + '.json?callback=?'
-              , dataType: 'jsonp'
-              , error: function (err) { $(options.target + ' li.loading').addClass('error').text("Error loading feed"); }
-              , success: function(res) {
-                  render(options, res.data.badges);
-              }
-            });
-          }
-        };
-      })();
-
-      $(document).ready(function(){
-        coderwall.showBadges({
-          user: '{{site.author.coderwall}}',
-          target: '#cw_badges'
-        });
-      });
+      $('#proudify-codeschool').proudify({'username':'{{site.author.codeschool}}', service:'codeschool'});
+      $('#proudify-coderwall').proudify({'username':'{{site.author.coderwall}}', service:'coderwall'});
+      $('#proudify-github').proudify({'username':'{{site.author.github}}'}); 
     </script>
-    <style type="text/css">
-      ul.cw_badge {
-        list-style: none;
-      }
-      .cw_badge img {
-        padding: 5px;
-        border: 0 none !important;
-        -moz-box-shadow: none !important;
-        -webkit-box-shadow: none !important;
-        -o-box-shadow: none !important;
-        box-shadow: none !important;
-        opacity: 0.5;
-      }
-      .cw_badge img:hover {
-        opacity: 1;
-      }
-    </style>
-    {% endif %}
+    
+
   </body>
 </html>
