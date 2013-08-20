@@ -407,3 +407,21 @@ div.posts article div.date time {
 #projectCarousel .item > img {
   height: 500px;
 }
+
+/* line 54, ../_sass/_custom.scss */
+.alert {
+  background-color: rgba(194, 113, 0, 0.5);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border-color: rgba(168, 100, 4, 0.6);
+}
+
+/* line 62, ../_sass/_custom.scss */
+.alert-info {
+  background-color: rgba(58, 135, 173, 0.5);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border-color: rgba(26, 60, 78, 0.6);
+}
