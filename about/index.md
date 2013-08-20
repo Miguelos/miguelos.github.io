@@ -6,13 +6,7 @@ group: navigation
 ---
 
 <div class="span4">
-	<p>I am Miguel González Pérez, a full stack developer and software engineer. I am enthusiastic about the field, eager to learn the latest programming languages, new technologies and development tools. Also, I am passionate about open source and GNU-Linux systems.</p>
-
-  <section>
-  	<h2>Contact</h2>
-
-  	<p>me at miguelos.me</p>
-  </section>
+{% include about %}
 </div>
 <div class="span8">
   <h2>More!</h2>
