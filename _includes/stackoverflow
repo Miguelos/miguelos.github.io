@@ -1,0 +1,8 @@
+{% if site.author.stackoverflow %}
+<section>
+  <h1>Stack Overflow</h1>
+  <a href="http://stackoverflow.com/users/{{site.author.stackoverflow.id}}/{{site.author.stackoverflow.name}}">
+  <img src="http://stackoverflow.com/users/flair/{{site.author.stackoverflow.id}}.png" width="208" height="58" alt="profile for {{ site.author.stackoverflow.name }} at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for {{ site.author.stackoverflow.name }} at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+  </a>
+</section>
+{% endif %}
