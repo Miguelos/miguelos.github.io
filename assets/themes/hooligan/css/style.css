@@ -353,31 +353,57 @@ div.posts article div.date time {
 
 /* This is for your Custom Content. */
 /* Portfolio */
-/* line 5, ../_sass/_custom.scss */
+/* line 4, ../_sass/_custom.scss */
+#projects {
+  list-style-type: none;
+}
+/* line 7, ../_sass/_custom.scss */
 #projects .project-logo {
   box-shadow: none;
-  opacity: 0.45;
-  filter: alpha(opacity=45);
-  /* For IE8 and earlier */
 }
-/* line 9, ../_sass/_custom.scss */
-#projects .project-logo:hover {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  /* For IE8 and earlier */
+/* line 11, ../_sass/_custom.scss */
+#projects .project {
+  background-color: #222;
+  text-align: center;
+  min-height: 300px;
+  box-shadow: 1px 1px 1px rgba(2, 2, 2, 0.5);
+}
+/* line 16, ../_sass/_custom.scss */
+#projects .project:hover {
+  background-color: #444;
+  box-shadow: 1px 1px 1px rgba(2, 2, 2, 0.5);
+}
+/* line 21, ../_sass/_custom.scss */
+#projects .project > a.thumbnail {
+  color: inherit;
+  border: none;
+  display: block;
+  padding: 10px;
+  box-shadow: none;
+}
+/* line 29, ../_sass/_custom.scss */
+#projects .project img {
+  display: block;
+  height: 150px;
+  margin: 0 auto;
+}
+/* line 35, ../_sass/_custom.scss */
+#projects .project p {
+  text-align: left;
+  padding: 5px;
 }
 
-/* line 16, ../_sass/_custom.scss */
+/* line 42, ../_sass/_custom.scss */
 .qr-code {
   padding: 15px;
 }
 
-/* line 20, ../_sass/_custom.scss */
+/* line 46, ../_sass/_custom.scss */
 .carousel .item > img {
   margin: 0 auto;
 }
 
-/* line 24, ../_sass/_custom.scss */
+/* line 50, ../_sass/_custom.scss */
 #projectCarousel .item > img {
   height: 500px;
 }

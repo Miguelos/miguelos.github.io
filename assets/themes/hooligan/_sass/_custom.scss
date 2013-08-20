@@ -2,13 +2,39 @@
 
 /* Portfolio */
 #projects{
+  list-style-type: none;
+
   .project-logo {
     box-shadow: none;
-    opacity: 0.45;
-    filter: alpha(opacity=45); /* For IE8 and earlier */
-    &:hover{
-      opacity: 1;
-  	  filter: alpha(opacity=100); /* For IE8 and earlier */
+  }
+
+  .project {
+    background-color: #222;
+    text-align: center;
+    min-height: 300px;
+    box-shadow: 1px 1px 1px rgba(2,2,2,0.5);
+    &:hover {
+      background-color:#444;
+      box-shadow: 1px 1px 1px rgba(2,2,2,0.5);
+    }
+  
+    &>a.thumbnail {
+      color: inherit;
+      border: none;
+      display: block;
+      padding: 10px;
+      box-shadow: none;
+    }
+
+    img {
+      display: block;
+      height: 150px;
+      margin: 0 auto;
+    }
+
+    p {
+      text-align: left;
+      padding: 5px;
     }
   }
 }
@@ -24,3 +50,4 @@
 #projectCarousel .item>img{
   height: 500px;
 }
+
