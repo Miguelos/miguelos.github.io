@@ -9,7 +9,7 @@ group: navigation
 {% include about %}
 </div>
 <div class="span8">
-  <h2>More!</h2>
+  <h2>Arround the web!</h2>
   <ul class="nav nav-tabs">
     {% if site.author.coderwall %}
     <li class="active"><a href="#proudify-coderwall" data-toggle="tab">Coderwall</a></li>

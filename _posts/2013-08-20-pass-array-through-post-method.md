@@ -11,13 +11,21 @@ tags: [php, json]
 First use the function <code>json_encode()</code> to encode the array. Then use <code>htmlspecialchars()</code> to avoid errors caused by the quotes in json. Just like the following code:
 
 {% highlight php %}
-echo '<input type="hidden" name="array" value="'.htmlspecialchars(json_encode($array)).'">';
+<?php
+  ...
+  echo '<input type="hidden" name="array" value="'.htmlspecialchars(json_encode($array)).'">';
+  ...
+?>
 {% endhighlight %}
 
 To obtain the array do the inverse operation. First decode using <code>htmlspecialchars_decode()</code> and then use <code>json_decode()</code> to build the original array.
 
 {% highlight php %}
-$array = json_decode(htmlspecialchars_decode($_POST['$array']));
+<?php
+  ...
+  $array = json_decode(htmlspecialchars_decode($_POST['$array']));
+  ...
+?>
 {% endhighlight %}
 
 <!--more-->
