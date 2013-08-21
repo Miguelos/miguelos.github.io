@@ -13,21 +13,23 @@ tagline: Technology enthusiast
 	</div>
 </div>
 
-<div class="span6">
-	<h2>About me</h2>
-	{% include about %}
-</div>
+<div class="row-flow">
+	<div class="span6">
+		<h2>About me</h2>
+		{% include about %}
+	</div>
 
-<div class="span6">
-	<h2>Portfolio</h2>
+	<div class="span6">
+		<h2>Portfolio</h2>
 
-	<p><a href="{{ BASE_PATH }}portfolio">Collection of projects</a></p>
+		<p><a href="{{ BASE_PATH }}portfolio">Collection of projects</a></p>
 
-	<h2>Posts</h2>
+		<h2>Posts</h2>
 
-	<ul class="posts">
-	  {% for post in site.posts limit: 5 %}
-	    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}"     {% unless page.tags == empty %}data-toggle="tooltip" title="Tags: {% for item in post.tags %}{{ item | capitalize }} {% endfor %}" {% endunless %}>{{ post.title }}</a></li> 
-	  {% endfor %}
-	</ul>
+		<ul class="posts">
+		  {% for post in site.posts limit: 5 %}
+		    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}"     {% unless page.tags == empty %}data-toggle="tooltip" title="Tags: {% for item in post.tags %}{{ item | capitalize }} {% endfor %}" {% endunless %}>{{ post.title }}</a></li> 
+		  {% endfor %}
+		</ul>
+	</div>
 </div>
