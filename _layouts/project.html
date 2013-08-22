@@ -60,9 +60,11 @@ description: {{page.description}}
     {% endif %}
   {% endfor %}
   {% if page.title == "Personal website" %}
-    <h2>Mobile design</h2>
-    <p>Check my website on mobile or tablets:</p>
-    {% include mobileview %}
+    <div class="visible-desktop">
+      <h2>Mobile design</h2>
+      <p>Check my website on mobile or tablets.</p>
+      {% include mobileview %}
+    </div>
   {% endif %}
   {% if page.links %}
   <h2>Links</h2>
