@@ -6,9 +6,9 @@ image:
 layout: project
 published: true
 short:     My personal website, blog and portfolio.
-long:   
+long:
   - My personal website. Blog and projects
-title:     Personal website
+title: Personal website
 links:
   Website:   http://miguelos.github.io
   Source-code: 	https://github.com/Miguelos/miguelos.github.io

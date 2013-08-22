@@ -425,3 +425,14 @@ div.posts article div.date time {
   border-radius: 0;
   border-color: rgba(26, 60, 78, 0.6);
 }
+
+/* line 70, ../_sass/_custom.scss */
+.mobile-cutout {
+  background-image: url("../../../images/nexus7.png");
+  background-repeat: no-repeat;
+  margin: 0px 0px 0px 0px;
+  padding: 120px 0px 0px 66px;
+  width: 544px;
+  height: 884px;
+  margin: 0 auto;
+}

@@ -50,15 +50,20 @@ description: {{page.description}}
 
 <div class="span10">
   {% for p in page.long %}
-  {% if forloop.index == 2 %}
-  <a data-toggle="collapse" data-target="#more">more...</a>
-  <div id="more" class="collapse">
-  {% endif %}
-  <p>{{ p }}</p>
-  {% if forloop.index >= 2 and forloop.last %}
-  </div>
-  {% endif %}
+    {% if forloop.index == 2 %}
+    <a data-toggle="collapse" data-target="#more">more...</a>
+    <div id="more" class="collapse">
+    {% endif %}
+    <p>{{ p }}</p>
+    {% if forloop.index >= 2 and forloop.last %}
+    </div>
+    {% endif %}
   {% endfor %}
+  {% if page.title == "Personal website" %}
+    <h2>Mobile design</h2>
+    <p>Check my website on mobile or tablets:</p>
+    {% include mobileview %}
+  {% endif %}
   {% if page.links %}
   <h2>Links</h2>
   {% for link in page.links %}

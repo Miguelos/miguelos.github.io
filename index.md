@@ -33,4 +33,3 @@ tagline: Technology enthusiast
 	</div>
 </div>
 
-
