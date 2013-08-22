@@ -5,15 +5,14 @@ tagline: Technology enthusiast
 ---
 {% include JB/setup %}
 
-<div class="span12">
-	<div class="alert alert-block alert-info">
-	  <button type="button" class="close" data-dismiss="alert">&times;</button>
-	  <strong>Hi!</strong>
-	  <p>I created this site and would really appreciate your feedback. If you find any error in this website, feel free to open a new Issue at <a href="https://github.com/Miguelos/miguelos.github.io/issues"> github.com/Miguelos.github.io/issues</a>. I'm working on updating the content and improving it.</p>
-	</div>
-</div>
-
 <div class="row-flow">
+	<div class="span">
+		<div class="alert alert-block alert-info">
+		  <button type="button" class="close" data-dismiss="alert">&times;</button>
+		  <strong>Hi!</strong>
+		  <p>I created this site and would really appreciate your feedback. If you find any error in this website, feel free to open a new Issue at <a href="https://github.com/Miguelos/miguelos.github.io/issues"> github.com/Miguelos.github.io/issues</a>. I'm working on updating the content and improving it.</p>
+		</div>
+	</div>
 	<div class="span6">
 		<h2>About me</h2>
 		{% include about %}
@@ -33,3 +32,5 @@ tagline: Technology enthusiast
 		</ul>
 	</div>
 </div>
+
+
