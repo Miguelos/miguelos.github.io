@@ -1,0 +1,22 @@
+description:
+comments: false
+image:
+  url: http://www.mat.ucm.es/catedramdeguzman/drupal/sites/all/themes/marinelli/img/banners/inset-banner-p4.jpg
+  title: Cátedra Miguel de guzmán
+  alt:  Cátedra Miguel de guzmán Banner
+layout: project
+published: true
+short: Manteniance and development of the Cátedra Miguel de Guzmán and Instituto GeoGebra de Madrid websites.
+long: 
+title: Drupal work
+links:
+  Instituto GeoGebra de Madrid:   http://www.mat.ucm.es/catedramdeguzman/drupal/igm/igm
+  Cátedra Miguel de Guzmán: http://www.mat.ucm.es/catedramdeguzman/
+  Miguel de Guzmán book sample: http://www.mat.ucm.es/catedramdeguzman/drupal/migueldeguzman/04vida/confmatnovela/espingor2/presenta
+use-of:
+  Framework:
+    Drupal:
+      link: https://drupal.org/
+  Languages: 
+    MySQL:
+    PHP: 

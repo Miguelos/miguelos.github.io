@@ -1,0 +1,22 @@
+description:
+image:
+  url: /assets/images/WebTemplate/selectshot.png
+  title: Web template
+  alt: Web template screenshot
+comments: false
+layout: project
+published: true
+short: Simple website template in one page. 
+long: 
+title: Web template
+links:
+  Demo: http://www.stonemillsoft.com
+  Source code: https://github.com/Miguelos/web-template
+use-of:
+  Library:
+    JQuery:
+      link: http://jquery.com/
+  Languages: 
+    HTML:
+    CSS:
+    JavaScript: 

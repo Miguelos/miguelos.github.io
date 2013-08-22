@@ -33,6 +33,9 @@ use-of:
       link: http://getbootstrap.com/
     Compass:
       link: http://compass-style.org/
+  Library:
+    JQuery:
+      link: http://jquery.com/ 
   Development tools:
     Sublime Text:
       link: http://www.sublimetext.com/
