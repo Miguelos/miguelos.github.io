@@ -3,6 +3,7 @@ layout: page
 title: About me
 header : Post Archive
 group: navigation
+priority: 1
 ---
 
 <div class="span4">
