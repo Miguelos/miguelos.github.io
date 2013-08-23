@@ -7,7 +7,7 @@ title : Sitemap
 
   <!--  Homepage -->
   <url>
-    <loc>{{ site.prduction_url }}/</loc>
+    <loc>{{ site.production_url }}</loc>
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>weekly</changefreq>
 	<priority>0.9</priority>
