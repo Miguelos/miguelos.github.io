@@ -25,11 +25,19 @@ priority: 1
   <div class="tab-content">
     {% if site.author.coderwall %}
     <div class="tab-pane fade active in" id="proudify-coderwall">
-      <a href="https://coderwall.com/miguelos"><img alt="Endorse Miguelos on Coderwall" src="https://api.coderwall.com/miguelos/endorsecount.png" /></a>
+      <blockquote>
+        <p>Coderwall is a space for tech's most talented makers to connect, share, build, and be inspired.</p>
+      </blockquote>
+      <p>Check the badges I earned and feel free to take a look at my profile!</p>
+      <p>My Coderall profile: <a href="https://coderwall.com/miguelos"><img alt="Endorse Miguelos on Coderwall" src="https://api.coderwall.com/miguelos/endorsecount.png" /></a></p>
     </div>
     {% endif %}
     {% if site.author.codeschool %}
     <div class="tab-pane fade" id="proudify-codeschool">
+      <blockquote>
+        <p>Code School teaches web technologies in the comfort of your browser with video lessons, coding challenges, and screencasts. We strive to help you learn by doing.</p>
+      </blockquote>
+      <p>Check the badges I earned and feel free to take a look at my profile!</p>
     </div>
     {% endif %}
     {% if site.author.github %}
