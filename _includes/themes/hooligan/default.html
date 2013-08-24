@@ -129,15 +129,20 @@
     <script>window.jQuery || document.write('<script src="{{ ASSET_PATH }}/js/jquery.min.js"><\/script>')</script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- proudify -->
+    <!-- proudify & flowtype -->
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-proudify.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/flowtype.js"></script>
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/proudify.min.css" type="text/css"/>
     <script type="text/javascript">
       $('#proudify-codeschool').proudify({'username':'{{site.author.codeschool}}', service:'codeschool'});
       $('#proudify-coderwall').proudify({'username':'{{site.author.coderwall}}', service:'coderwall'});
       $('#proudify-github').proudify({'username':'{{site.author.github}}'}); 
+      $('body').flowtype({
+         minFont : 12,
+         maxFont : 18
+      });
     </script>
-    <!-- /proudify -->
+    <!-- /proudify & flowtype -->
 
     {% include JB/analytics %}
   </body>
