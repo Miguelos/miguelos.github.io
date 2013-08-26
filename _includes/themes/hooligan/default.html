@@ -132,13 +132,11 @@
     <!-- proudify & flowtype -->
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-proudify.min.js"></script>
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/proudify.min.css" type="text/css"/>
-    <script type="text/javascript" src="{{ ASSET_PATH }}/js/nprogress.js"></script>
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/nprogress.css" type="text/css"/>
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/flowtype.js"></script>
     <script type="text/javascript">
-      $('#proudify-codeschool').proudify({'username':'{{site.author.codeschool}}', service:'codeschool'});
+      $('#proudify-codeschool').proudify({'username':'{{site.author.codeschool}}', service:'codeschool', completed:true});
       $('#proudify-coderwall').proudify({'username':'{{site.author.coderwall}}', service:'coderwall'});
-      $('#proudify-github').proudify({'username':'{{site.author.github}}'}); 
+      $('#proudify-github').proudify({'username':'{{site.author.github}}', pushed_at:200}); 
       $('body').flowtype({
          minFont : 12,
          maxFont : 16
