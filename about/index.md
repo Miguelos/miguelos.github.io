@@ -37,7 +37,7 @@ priority: 1
       <blockquote>
         <p>Code School teaches web technologies in the comfort of your browser with video lessons, coding challenges, and screencasts. We strive to help you learn by doing.</p>
       </blockquote>
-      <p>Check the badges I earned and feel free to take a look at my profile!</p>
+      <p>Here are my completed courses.</p>
     </div>
     {% endif %}
     {% if site.author.github %}
