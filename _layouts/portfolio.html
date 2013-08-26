@@ -7,6 +7,10 @@ title: Portfolio
   <div class="row-fluid">
     <ul id="projects" class="thumbnails">
       {% for project in page.projects %}
+        {% if forloop.index == 4 %}
+        </ul>
+        <ul id="projects" class="thumbnails">
+        {% endif %}
         <li class="project span4">
           <a href="/portfolio/{{ project[0] }}" class="thumbnail" >
             {% if project[1].image %}
