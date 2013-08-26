@@ -1,0 +1,51 @@
+description:
+priority: 1
+image:
+  url: /assets/images/CGTel/logo.png
+  title: CGTel
+  alt: CGTel icon
+images:
+  -
+    url: /assets/images/CGTel/110.png
+    alt: App screenshot
+  -
+    url: /assets/images/CGTel/123.png
+    alt: App screenshot
+  -
+    url: /assets/images/CGTel/131.png
+    alt: App screenshot
+layout: project
+published: true
+team: This project has been developed by Manuel, Jorge and Me!
+short: CGTel helps users and organizations to optimizing final cost on phone bill.
+long: 
+  - |
+    In this project, it has been developed CGTel, a mobile app for Android OS. CGTel helps users and organizations to optimizing final cost on phone bill. 
+    The application offers some functionalities like plan recommendation, call recommendation, stats and billing prediction. 
+  - |
+    The application offers other features such as rate recommendation, recommendation calling terminal, detail of consumption and prediction of the cost of the next bill by time series analysis. With these features, both the individual user or groups and companies can optimize telephone costs. 
+  - |
+    CGTel has a database with every national price plans and details of each call. This database is updated in real time from the own phones. The application has a database of all phone providers’ rates nationwide and details about calls made by users. 
+    Data are updated in real time from their own terminals. CGTel has been successfully tested in several terminals with different operators and different rates. One key to this success is the configuration of terminals including invoice date, VIP numbers, etc.
+title:     CGTel
+links:
+  website:   http://pendientedemigracion.ucm.es/info/tecnomovil/es/proyectos.html
+  android apk installer: http://pendientedemigracion.ucm.es/info/tecnomovil/aplicaciones/cgtel.apk
+platform:
+  android: true
+use-of:
+  Languages: 
+    Java: 
+    XML:
+    MySQL:
+    PHP: 
+  Libraries:
+    Androidplot:
+      link: http://androidplot.com/
+  Development tools:
+    Android SDK:
+      link: https://developer.android.com/sdk/
+    Eclipse:
+      link: http://www.eclipse.org/
+    Aptana:
+      link: http://www.aptana.com/

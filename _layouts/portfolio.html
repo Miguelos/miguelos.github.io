@@ -6,18 +6,20 @@ title: Portfolio
 <div class="span">
   <div class="row-fluid">
     <ul id="projects" class="thumbnails">
-      {% for project in page.projects %}
+      {% for project in page.projects %} 
         {% if forloop.index == 4 %}
         </ul>
         <ul id="projects" class="thumbnails">
         {% endif %}
         <li class="project span4">
           <a href="/portfolio/{{ project[0] }}" class="thumbnail" >
+            <section>
             {% if project[1].image %}
                 <img data-src="holder.js/150x150" src="{{ project[1].image.url }}" title="{{ project[1].image.title }}" alt="{{ project[1].image.alt }}" />
             {% endif %}
             <h3>{{ project[1].title }}</h3>
             <p>{{ project[1].short }}</p>
+          </section>
           </a>
         </li>
       {% endfor %}
