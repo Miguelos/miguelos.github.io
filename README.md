@@ -9,3 +9,4 @@ Use of...
 * Jekyll Bootstrap theme: [hooligan](https://github.com/dhulihan/hooligan).
 * [Flatterline Jekyll plugins](https://github.com/flatterline/jekyll-plugins).
 * [Proudify](https://github.com/icebreaker/proudify).
+* [FlowType.JS](https://github.com/simplefocus/FlowType.JS).
