@@ -73,7 +73,7 @@
               {% endif %}
               {% if site.author.googleplus %}
                 <li>
-                  <a href="https://plus.google.com/{{ site.author.googleplus }}" class="zocial googleplus icon" target="_blank">
+                  <a rel="author" href="https://plus.google.com/{{ site.author.googleplus }}?rel=author" class="zocial googleplus icon" target="_blank">
                     <span class="hidden-desktop">Google+</span>
                   </a>
                 </li>
@@ -118,7 +118,7 @@
       </div>
 
       <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+        <p>&copy; {{ site.time | date: '%Y' }} By {{ site.author.name }}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://github.com/dhulihan/hooligan" target="_blank">The Hooligan Theme</a>
         </p>
