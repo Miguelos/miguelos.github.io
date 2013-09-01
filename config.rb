@@ -14,4 +14,4 @@ output_style = (environment == :development) ? :expanded : :compressed
 line_comments = (environment == :development) ? true : false
 
 # Output debugging info in development mode.
-sass_options = (environment == :development) ? {:debug_info => true} : {}
+sass_options = (environment == :development) ? {:debug_info => true} : {:debug_info => false}
