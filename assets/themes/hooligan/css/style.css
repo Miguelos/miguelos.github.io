@@ -411,22 +411,16 @@ div.posts article div.date time {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000354}}
 .alert {
   background-color: rgba(194, 113, 0, 0.5);
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
   border-color: rgba(168, 100, 4, 0.6);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000359}}
 .alert-info {
   background-color: rgba(58, 135, 173, 0.5);
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
   border-color: rgba(26, 60, 78, 0.6);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000364}}
 .mobile-cutout {
   background-image: url("../../../images/nexus7.png");
   background-repeat: no-repeat;
@@ -437,13 +431,20 @@ div.posts article div.date time {
   margin: 0 auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000375}}
 .navbar {
   position: fixed;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000380}}
 .content {
   margin-top: 2.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000385}}
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
 }

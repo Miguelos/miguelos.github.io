@@ -53,17 +53,11 @@
 
 .alert{
   background-color: rgba(194, 113, 0, 0.5);
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
   border-color: rgba(168, 100, 4, 0.6);
 }
 
 .alert-info{
   background-color: rgba(58, 135, 173, 0.5);
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
   border-color: rgba(26, 60, 78, 0.6);
 }
 
@@ -85,4 +79,11 @@
 
 .content{
   margin-top: 2.5em;
+}
+
+// No border border-radius: 
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
 }
