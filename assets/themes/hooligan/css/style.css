@@ -435,14 +435,15 @@ div.posts article div.date time {
 .navbar {
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000381}}
 .content {
   margin-top: 2.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000386}}
 * {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
