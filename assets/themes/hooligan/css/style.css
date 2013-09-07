@@ -450,3 +450,10 @@ div.posts article div.date time {
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000393}}
+.tag_box.inline a, .tag_box a {
+  -moz-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
+}

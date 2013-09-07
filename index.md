@@ -20,7 +20,7 @@ tagline: Technology enthusiast
 
 		<ul class="posts">
 		  {% for post in site.posts limit: 5 %}
-		    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}"     {% unless page.tags == empty %}data-toggle="tooltip" title="Tags: {% for item in post.tags %}{{ item | capitalize }} {% endfor %}" {% endunless %}>{{ post.title }}</a></li> 
+		    <li><span>{{ post.category }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}"     {% unless page.tags == empty %}data-toggle="tooltip" title="{% for item in post.tags %}{{ item | capitalize }} {% endfor %}" {% endunless %}>{{ post.title }}</a></li> 
 		  {% endfor %}
 		</ul>
 	</div>
