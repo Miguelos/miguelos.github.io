@@ -433,17 +433,18 @@ div.posts article div.date time {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000375}}
 .navbar {
+  top: 0;
   position: fixed;
   width: 100%;
   z-index: 10;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000382}}
 .content {
   margin-top: 2.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/hooligan\/_sass\/_custom\.scss}line{font-family:\0000387}}
 * {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
