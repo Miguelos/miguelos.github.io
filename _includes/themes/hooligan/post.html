@@ -1,16 +1,20 @@
 <div class="page-header">
+  <section>
   <h1>
     {{ page.title }} 
     {% if page.tagline %}
       <small>{{ page.tagline }}</small>
     {% endif %}
   </h1>
+  </section>
 </div>
 
 <div class="row">
-  <div class="span8">
+  <div class="span9">
+    <section>
     {{ content }}
-    <hr>
+    </section>
+    <section>
     <div class="pagination btn-group">
       {% if page.previous %}
         <a class="btn prev" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
@@ -24,11 +28,10 @@
         <a class="btn next disabled">Next &rarr;</a>
       {% endif %}
     </div>
-    <hr>
-    {% include JB/comments %}
+    </section>
   </div>
   
-  <div class="span4">
+  <div class="span3">
     <section>
       <h4>Published</h4>
       <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
@@ -51,4 +54,11 @@
       </section>
     {% endunless %}         
   </div>
+
+  {% if site.JB.comments.provider and page.comments != false %}
+  <div class="span12">
+    {% include JB/comments %}
+  </div>
+  {% endif %}
+
 </div>

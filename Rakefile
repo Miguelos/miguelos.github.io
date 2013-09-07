@@ -99,7 +99,7 @@ end # task :page
 
 desc "Launch preview environment"
 task :preview do
-  system "jekyll serve --watch & compass watch"
+  system "jekyll serve --watch & compass watch -e development --force --trace"
 end # task :preview
 
 # Public: Alias - Maintains backwards compatability for theme switching.

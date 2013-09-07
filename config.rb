@@ -1,5 +1,4 @@
-# :development or :production
-environment = :development
+# environment = :development or :production
 
 css_dir =   "/assets/themes/hooligan/css"
 sass_dir =  "/assets/themes/hooligan/_sass"
