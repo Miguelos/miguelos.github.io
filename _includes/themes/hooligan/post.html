@@ -14,23 +14,8 @@
     <article>
     {{ content }}
     </article>
-    <section>
-    <div class="pagination btn-group">
-      {% if page.previous %}
-        <a class="btn prev" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
-      {% else %}
-        <a class="btn disabled prev">&larr; Previous</a>
-      {% endif %}
-        <a class="btn" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
-      {% if page.next %}
-        <a class="btn next" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
-      {% else %}
-        <a class="btn next disabled">Next &rarr;</a>
-      {% endif %}
-    </div>
-    </section>
   </div>
-  
+
   <div class="span3">
     <section>
       <h4>Published</h4>
@@ -53,6 +38,22 @@
         </ul>
       </section>
     {% endunless %}         
+  </div>
+
+  <div class="span12">
+    <div class="pagination btn-group">
+      {% if page.previous %}
+        <a class="btn prev" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
+      {% else %}
+        <a class="btn disabled prev">&larr; Previous</a>
+      {% endif %}
+        <a class="btn" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
+      {% if page.next %}
+        <a class="btn next" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
+      {% else %}
+        <a class="btn next disabled">Next &rarr;</a>
+      {% endif %}
+    </div>
   </div>
 
   {% if site.JB.comments.provider and page.comments != false %}
