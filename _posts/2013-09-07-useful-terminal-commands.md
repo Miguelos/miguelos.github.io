@@ -3,6 +3,7 @@ layout: post
 title: "Useful terminal commands"
 description: ""
 category: "link"
+comments: false
 priority: 
 tags: [bash]
 ---

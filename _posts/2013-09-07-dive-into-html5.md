@@ -3,6 +3,7 @@ layout: post
 title: "Dive into HTML5"
 description: ""
 category: "link"
+comments: false
 priority: 
 tags: [html5, documentation]
 ---

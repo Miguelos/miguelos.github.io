@@ -3,6 +3,7 @@ layout: post
 title: "Git interactive cheatsheet"
 description: ""
 category: "link"
+comments: false
 priority: 
 tags: [git, documentation, cheatsheet]
 ---
