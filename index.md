@@ -6,17 +6,20 @@ tagline: Technology enthusiast
 {% include JB/setup %}
 
 <div class="row-flow">
-	<div class="span6">
-		<h2>About me</h2>
+	<div class="span8">
+		<h2><a href="{{ BASE_PATH }}about">About me</a></h2>
 		{% include about %}
 	</div>
 
-	<div class="span6">
-		<h2>Portfolio</h2>
+	<div class="span4">
+		<h2>Blog-roll</h2>
+		{% include blogroll %}
 
-		<p><a href="{{ BASE_PATH }}portfolio">Collection of projects</a></p>
+		<h2><a href="{{ BASE_PATH }}portfolio">Portfolio</a></h2>
 
-		<h2>Posts</h2>
+		<p>Here I have my <a href="{{ BASE_PATH }}portfolio">collection of projects</a></p>
+
+		<h2><a href="{{ BASE_PATH }}blog">Posts</a></h2>
 
 		<ul class="posts">
 		  {% for post in site.posts limit: 5 %}
@@ -24,6 +27,7 @@ tagline: Technology enthusiast
 		  {% endfor %}
 		</ul>
 	</div>
+
 	<div class="span">
 		<div class="alert alert-block alert-info">
 		  <button type="button" class="close" data-dismiss="alert">&times;</button>

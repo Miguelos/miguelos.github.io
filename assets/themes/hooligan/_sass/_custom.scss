@@ -95,3 +95,10 @@
   -webkit-box-shadow: inset 0 0 1px 1px rgba(white, 0.2);
   box-shadow:         inset 0 0 1px 1px rgba(white, 0.2);
 }
+
+// Header links color fix
+h1, h2, h3, h4, h5, h6 {
+  a {
+    color: #888;
+  }
+}
