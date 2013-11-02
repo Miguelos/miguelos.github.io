@@ -103,6 +103,11 @@ task :preview do
   system "jekyll serve --watch & compass watch -e development --force --trace"
 end # task :preview
 
+desc "Launch preview environment with draft posts"
+task :preview_drafts do
+  system "jekyll serve --watch --drafts & compass watch -e development --force --trace"
+end # task :preview
+
 # Public: Alias - Maintains backwards compatability for theme switching.
 task :switch_theme => "theme:switch"
 
