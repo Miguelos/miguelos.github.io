@@ -1,4 +1,4 @@
-to avoid metapackages like ubuntu-desktop
+To avoid metapackages like ubuntu-desktop
 
 *install ubuntu server
 *initx

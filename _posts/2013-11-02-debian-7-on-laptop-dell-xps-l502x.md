@@ -62,12 +62,13 @@ $ uname -a
 Linux UNKNOWN 3.10-0.bpo.3-amd64 #1 SMP Debian 3.10.11-1~bpo70+1 (2013-09-24) x86_64 GNU/Linux
 {% endhighlight %}
 
+It works! Restart the laptop. Performance has been improved. You can notice how boot time improves.
 
 ### Useful links
 - Dell XPS 15 L502X & Ubuntu 12.04 Linux: [http://hanynowsky.wordpress.com/2012/04/07/dell-xps-15-l502x-ubuntu-linux/](http://hanynowsky.wordpress.com/2012/04/07/dell-xps-15-l502x-ubuntu-linux/)
 - Ubuntu hardware support Dell XPS 15 L502x [UbuntuOnL502x](UbuntuOnL502x)
 
 ### Sources
-+ http://www.debian-administration.org/articles/327
++ [http://www.debian-administration.org/articles/327](http://www.debian-administration.org/articles/327)
 
 [UbuntuOnL502x]: https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops/Dell/XPS/15

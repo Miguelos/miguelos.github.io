@@ -3,10 +3,13 @@ layout: post
 title: "Linux check hardware temperature"
 category : post
 tagline: ""
-tags : [linux, debian, dell xps l502x]
+tags : [linux, Debian, dell xps l502x]
 ---
+{% include JB/setup %}
 
-## Check stats
+How check hardware temperature on Debian 7.2 (and others).
+
+## Install
 
 Install *lm-sensors* and *hddtemp*
 
@@ -39,8 +42,7 @@ Unloading cpuid... OK
 
 Follow the steps adding the neccessary files to /etc/modules and running '/etc/init.d/kmod start' to finish the configuration.
 
-
-Check temperature
+## Check temperature
 
 After following sensors-detect steps, you'll be able to check the temperature. Simply run *sensors* on terminal or use programs like *xsensors*.
 
@@ -63,6 +65,8 @@ nouveau-pci-0100
 Adapter: PCI adapter
 temp1:        +63.0°C  (high = +100.0°C, crit = +110.0°C)
 {% endhighlight %}
+
+## HDD temperature
 
 For disk temperature run *hddtemp*.
 
