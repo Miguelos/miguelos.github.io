@@ -6,6 +6,6 @@ tagline: ""
 tags : [linux, debian, bash, shell]
 ---
 
-Util basic git aliases:
+Util basic git aliases.
 
-{% gist 091ea12da7f7cb342847 %}
+{% gist 7368790 %}
