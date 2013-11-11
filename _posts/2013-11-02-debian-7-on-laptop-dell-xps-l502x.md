@@ -42,10 +42,10 @@ I prefer wait and install the backport version.
 https://bugzilla.kernel.org/show_bug.cgi?id=40802
 {% endhighlight %}
 
-Enable blackports to update the kernel. Add repository to /etc/apt/sources.list.
+Enable backports to update the kernel. Add repository to /etc/apt/sources.list.
 
 {% highlight console %}
-# blackports
+# backports
 deb http://ftp.uk.debian.org/debian/ wheezy-backports main 
 {% endhighlight %}
 
