@@ -1,0 +1,217 @@
+---
+layout: post
+title: "Configure SSD Debian 7"
+category : post
+tagline: "on laptop Dell XPS L502x"
+tags : [ssd, configuration, linux, debian, dell xps l502x]
+---
+
+First of all, at least install Linux kernel 3.9 or newer to support SSD caching. It's possible that TRIM support will be enabled by default for SSD in future kernel releases(1)[http://www.phoronix.com/scan.php?page=news_item&px=MTUxOTY]. so always it's good to use latest version. I'm waiting for the kernel 3.12 that will fix a problem with the 9 in 1 card reader in my XPS L502x.
+
+In addition use the most mature file system: ext4 while waitng for btrfs[https://btrfs.wiki.kernel.org/index.php/Main_Page].
+
+
+#check status and firmware:
+
+check partition alignment [http://www.commandlinefu.com/commands/view/10762/check-if-you-partition-are-aligned]
+fdisk -l /dev/sda | grep -E sda[0-9]+ | sed s/*// |  awk '{printf ("%s %f ",$1,$2/512); if($2%512){ print "BAD" }else {print "Good"} }' | column -t
+
+everything ok
+
+
+##
+
+{}
+# sudo smartctl -a /dev/sda
+...
+=== START OF INFORMATION SECTION ===
+Model Family:     Indilinx Barefoot_2/Everest/Martini based SSDs
+Device Model:     OCZ-VERTEX4
+Serial Number:    OCZ-****
+LU WWN Device Id: 5 e83a97 6f3bba64b
+Firmware Version: 1.5
+User Capacity:    128,035,676,160 bytes [128 GB]
+Sector Size:      512 bytes logical/physical
+Rotation Rate:    Solid State Device
+Device is:        In smartctl database [for details use: -P show]
+ATA Version is:   ACS-2 (minor revision not indicated)
+SATA Version is:  SATA 3.1, 6.0 Gb/s (current: 6.0 Gb/s)
+Local Time is:    Sat Nov 23 12:58:28 2013 GMT
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART overall-health self-assessment test result: PASSED
+
+General SMART Values:
+Offline data collection status:  (0x00)	Offline data collection activity
+					was never started.
+					Auto Offline Data Collection: Disabled.
+Self-test execution status:      (   0)	The previous self-test routine completed
+					without error or no self-test has ever 
+					been run.
+Total time to complete Offline 
+data collection: 		(    0) seconds.
+Offline data collection
+capabilities: 			 (0x1d) SMART execute Offline immediate.
+					No Auto Offline data collection support.
+					Abort Offline collection upon new
+					command.
+					Offline surface scan supported.
+					Self-test supported.
+					No Conveyance Self-test supported.
+					No Selective Self-test supported.
+SMART capabilities:            (0x0003)	Saves SMART data before entering
+					power-saving mode.
+					Supports SMART auto save timer.
+Error logging capability:        (0x00)	Error logging NOT supported.
+					General Purpose Logging supported.
+Short self-test routine 
+recommended polling time: 	 (   0) minutes.
+Extended self-test routine
+recommended polling time: 	 (   0) minutes.
+
+SMART Attributes Data Structure revision number: 18
+Vendor Specific SMART Attributes with Thresholds:
+ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
+  1 Raw_Read_Error_Rate     0x0000   006   000   000    Old_age   Offline      -       6
+  3 Spin_Up_Time            0x0000   100   100   000    Old_age   Offline      -       0
+  4 Start_Stop_Count        0x0000   100   100   000    Old_age   Offline      -       0
+  5 Reallocated_Sector_Ct   0x0000   100   100   000    Old_age   Offline      -       0
+  9 Power_On_Hours          0x0000   100   100   000    Old_age   Offline      -       839
+ 12 Power_Cycle_Count       0x0000   100   100   000    Old_age   Offline      -       1136
+232 Lifetime_Writes         0x0000   100   100   000    Old_age   Offline      -       5013524935
+233 Media_Wearout_Indicator 0x0000   099   000   000    Old_age   Offline      -       99
+{endhighlighting}
+
+There is a firmware update for my drive. However, I'll skip it: "Both firmware v1.5 and v1.5.1 offer identical performance for your particular drive"[http://ocz.com/consumer/download/firmware].
+
+
+
+
+# TEst performance
+$ sudo hdparm -Tt /dev/sda
+
+/dev/sda:
+ Timing cached reads:   14284 MB in  2.00 seconds = 7146.43 MB/sec
+ Timing buffered disk reads: 1080 MB in  3.00 seconds = 359.77 MB/sec
+
+
+$ sudo dd if=/dev/zero of=tempfile bs=1M count=1024 conv=fdatasync,notrunc
+1024+0 records in
+1024+0 records out
+1073741824 bytes (1.1 GB) copied, 3.26231 s, 329 MB/s
+
+# echo 3 > /proc/sys/vm/drop_caches
+# dd if=tempfile of=/dev/null bs=1M count=1024
+1024+0 records in
+1024+0 records out
+1073741824 bytes (1.1 GB) copied, 0.174334 s, 6.2 GB/s
+
+# dd if=tempfile of=/dev/null bs=1M count=1024
+1024+0 records in
+1024+0 records out
+1073741824 bytes (1.1 GB) copied, 0.152703 s, 7.0 GB/s
+
+
+
+
+# configure fstab
+
+
+
+Disable realtime reducing inecesary writes to the disk. That will increase SSD lifetime.
+
+Verify trim suport 
+sudo hdparm -I /dev/sda |grep TRIM
+	   *	Data Set Management TRIM supported (limit 16 blocks)
+
+TRIM it's not needed. SSD's garbage collection it's enough. So If you leave spare space in the SSD (about 8GB) It won't be neccesary. To enable it add discard option to ftstab. 
+
+add to ssd partitions in /etc/sources.list
+noatime,nodiratime,discard
+
+
+
+
+# change scheduler
+
+Enable deadline schedule for solid drives only
+
+{}
+for f in /sys/block/sd?/queue/rotational; do printf "$f is "; cat $f; done
+/sys/block/sda/queue/rotational is 0
+/sys/block/sdb/queue/rotational is 1
+{}
+
+If your SSD drive it isn't beeing detected, you can update it here: https://wiki.debian.org/udev
+
+In my case only for sda:
+
+echo "block/sda/queue/scheduler = deadline" >> /etc/sysfs.conf
+(adjust sdX to match your SSD) reboot or
+
+echo deadline > /sys/block/sda/queue/scheduler
+
+# check changes 
+
+{}
+# for f in /sys/block/sd?/queue/scheduler; do printf "$f is "; cat $f; done
+/sys/block/sda/queue/scheduler is noop [deadline] cfq 
+/sys/block/sdb/queue/scheduler is noop deadline [cfq] 
+{}
+
+# Swap
+
+for better longevity of the disc disable swappines. Having 8gb of ram, swap is rarely used
+{}
+echo 'vm.swappiness=0' > /etc/sysctl.d/local.conf
+{}
+
+if you want to use swap be sure to put it in the HDD. If you place the swap in the SSD, It almost won't be used unless you hibernate the computer.
+
+
+
+
+# Extra
+ changes 
+If you're worried about SSD lifetime, check out iotop to see which programs write more
+iotop -oPa
+
+realocate /var to a HDD partition
+
+
+# Update grub2 config 
+
+change GRUB_CMDLINE_LINUX_DEFAULT value in /etc/default/grub. Add elevator=deadline
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet elevator=deadline"
+
+# update-grub2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+More 
+about Partitioning https://wiki.debian.org/Multi%20HDD/SSD%20Partition%20Scheme
+
+sources
+https://wiki.debian.org/SSDOptimization
+https://wiki.archlinux.org/index.php/Solid_State_Drives
+https://en.wikipedia.org/wiki/TRIM
+https://wiki.archlinux.org/index.php/SSD_Benchmarking
+https://wiki.archlinux.org/index.php/SSD_Benchmarking#OCZ-VERTEX_4_128_GB
+

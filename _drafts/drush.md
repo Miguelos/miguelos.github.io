@@ -1,0 +1,1 @@
+wget 'http://drupalcode.org/viewvc/drupal/contributions/modules/drubuntu/drubuntu-bootstrap.sh?view=co' -Odrubuntu-bootstrap.sh ; cat drubuntu-bootstrap.sh ; read -n1 -p "Run above script? (y/n)" ; if [ "$REPLY" = "y" ]; then bash drubuntu-bootstrap.sh; fi

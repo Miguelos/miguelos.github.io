@@ -1,0 +1,20 @@
+Special Touch Keys
+
+The special touch keys are strangely mapped by default. One changes brightness, one does next track. They seem to be linked to the same key sequences as the Fn+F# keys that do the same job. To fix this, make this new file:
+/opt/dell_touchkeys_keymap
+0x90 previoussong # Previous song
+0xA2 playpause # Play/Pause
+0x99 nextsong # Next song
+0xDB computer # First touch key, Dell apparently uses a key sequence here where 0xDB is a modifer, 0x2D stands for the touch key and 0x19 for the monitor toggle
+0x85 prog1 # Second touch key
+0x84 chromium # Third touch key
+and add this to /etc/rc.local:
+/etc/rc.local
+…
+# Fix touch keys
+/usr/lib/udev/keymap input/event0 /opt/dell_touchkeys_keymap
+
+
+source 
+
+https://wiki.archlinux.org/index.php/Dell_XPS_15

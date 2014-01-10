@@ -70,3 +70,33 @@ Linux UNKNOWN 3.10-0.bpo.3-amd64 #1 SMP Debian 3.10.11-1~bpo70+1 (2013-09-24) x8
 + http://www.debian-administration.org/articles/327
 
 [UbuntuOnL502x]: https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops/Dell/XPS/15
+
+
+
+----
+
+debian testing
+
+change sources:
+
+insert sources.list here
+
+distupgrade
+
+wifi
+
+https://wiki.debian.org/iwlwifi
+
+Debian 6.0 "Squeeze"
+Add a "non-free" component to /etc/apt/sources.list, for example:
+# Debian 6.0 "Squeeze"
+deb http://http.debian.net/debian/ squeeze main contrib non-free
+Update the list of available packages and install the firmware-iwlwifi package:
+# aptitude update && aptitude install firmware-iwlwifi
+As the iwlagn module is automatically loaded for supported devices, reinsert this module to access installed firmware:
+# modprobe -r iwlagn ; modprobe iwlagn
+Configure your wireless interface as appropriate.
+
+restart 
+wifi working!
+
