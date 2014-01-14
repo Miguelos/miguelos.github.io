@@ -31,8 +31,7 @@ tagline:
 	<div class="span">
 		<div class="alert alert-block alert-info">
 		  <button type="button" class="close" data-dismiss="alert">&times;</button>
-		  <strong>Hi!</strong>
-		  <p>I would really appreciate your feedback. If you find any error in this website, feel free to open a new Issue at <a href="https://github.com/Miguelos/miguelos.github.io/issues"> github.com/Miguelos.github.io/issues</a>.</p>
+		  <strong>Feedback</strong>: <a href="https://github.com/Miguelos/miguelos.github.io/issues"> github.com/Miguelos.github.io/issues</a>.</p>
 		</div>
 	</div>
 </div>
