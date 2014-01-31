@@ -1,4 +1,9 @@
 /* Partials */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_base\.scss}line{font-family:\000032}}
+body {
+  padding-top: 70px;
+}
+
 /* Responsive Overrides */
 @media (max-width: 767px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_responsive\.scss}line{font-family:\000033}}
@@ -106,66 +111,14 @@ div.posts article div.date time {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000346}}
-.carousel .item > img {
-  margin: 0 auto;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000350}}
-#projectCarousel .item > img {
-  height: 500px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000354}}
-.alert {
-  background-color: rgba(194, 113, 0, 0.5);
-  border-color: rgba(168, 100, 4, 0.6);
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000359}}
-.alert-info {
-  background-color: rgba(58, 135, 173, 0.5);
-  border-color: rgba(26, 60, 78, 0.6);
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000364}}
-.mobile-cutout {
-  background-image: url("../../../images/nexus7.png");
-  background-repeat: no-repeat;
-  margin: 0px 0px 0px 0px;
-  padding: 120px 0px 0px 66px;
-  width: 544px;
-  height: 884px;
-  margin: 0 auto;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000375}}
-.navbar {
-  top: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000382}}
-.content {
-  margin-top: 2.5em;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000387}}
-* {
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000393}}
 .tag_box.inline a, .tag_box a {
   -moz-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
   box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\00003101}}
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #888;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000353}}
+.dark body {
+  background-color: #333;
+  color: orange;
 }

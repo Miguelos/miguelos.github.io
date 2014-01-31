@@ -43,7 +43,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#" onclick="$('html').addClass('dark');">
           <i class="fa fa-circle-o"></i>
         </a>
       </div>
@@ -79,15 +79,13 @@
       <section role="main" class="content">
         {{ content }}
       </section>
-      <div class="footer-push"/>
+      <div class="footer-push"></div>
     </section>
 
-    <footer role="footer" class="rowfluid">
-      <details>
-        <summary class="span4">{{ site.time | date: '%Y' }} By {{ site.author.name }}
-        </summary>
-        <p class="span7">This site was built with HTML5 and CSS3 with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a> and <a href="http://github.com/dhulihan/hooligan" target="_blank">The Hooligan Theme</a>. Use of <a href="http://www.compass-style.org/">Compass</a>, <a href="http://pygments.org/">Pygments</a> syntax highlighting, <a href="https://github.com/flatterline/jekyll-plugins">Flatterline Jekyll</a>, <a href="https://github.com/icebreaker/proudify">Proudify</a>, <a href="https://github.com/simplefocus/FlowType.JS">FlowType.JS</a>, <a href="http://jquery.com/">JQuery</a>.</p>
-      <details>
+    <footer class="rowfluid">
+      <strong class="span4">{{ site.time | date: '%Y' }} By {{ site.author.name }}
+      </strong>
+      <p class="span7">This site was built with HTML5 and CSS3 with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a> and <a href="http://github.com/dhulihan/hooligan" target="_blank">The Hooligan Theme</a>. Use of <a href="http://www.compass-style.org/">Compass</a>, <a href="http://pygments.org/">Pygments</a> syntax highlighting, <a href="https://github.com/flatterline/jekyll-plugins">Flatterline Jekyll</a>, <a href="https://github.com/icebreaker/proudify">Proudify</a>, <a href="https://github.com/simplefocus/FlowType.JS">FlowType.JS</a>, <a href="http://jquery.com/">JQuery</a>.</p>
     </footer>
 
     <!-- js  -->
