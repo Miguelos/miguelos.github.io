@@ -21,6 +21,8 @@
         height: auto;
         margin: 0 10%;
         @include filter(grayscale(0.2));
+        @include transition-property(margin);
+        @include transition-duration(2s);
       }
       figcaption {
         position: absolute;
@@ -30,9 +32,12 @@
         padding: 10px;
         background-color: $backgroundColor;
         @include opacity(0);
+        @include transition-property(all);
+        @include transition-duration(0.5s);
       }
       &:hover {
         background-color: $backgroundColor;
+        @include box-shadow(rgba(#111, 0.7) 0 0 2px 2px inset);
         img {
           @include filter(grayscale(0.8));
           margin: 40% -10%;
