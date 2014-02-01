@@ -1,40 +1,46 @@
 /* This is for your Custom Content. */
 
 /* Portfolio */
-#projects{
-  list-style-type: none;
-
-  .project-logo {
-    box-shadow: none;
-  }
-
+#projects {
   .project {
-    background-color: #222;
-    text-align: center;
-    min-height: 300px;
-    box-shadow: 1px 1px 1px rgba(2,2,2,0.5);
-    &:hover {
-      background-color:#444;
-      box-shadow: 1px 1px 1px rgba(2,2,2,0.5);
-    }
-  
-    &>a.thumbnail {
-      color: inherit;
-      border: none;
-      display: block;
-      padding: 10px;
-      box-shadow: none;
-    }
-
-    img {
-      display: block;
-      height: 150px;
-      margin: 0 auto;
-    }
-
-    p {
-      text-align: left;
-      padding: 5px;
+    position: relative;
+    height: 250px;
+    max-width: 500px;
+    padding: 2px;
+    .image-crop {
+      height: 100%;
+      max-width: 100%;
+      background-color: $backgroundColor2;
+      overflow: hidden;
+      vertical-align: middle;
+      img {
+        min-width: 50%;
+        min-height: 50%;
+        max-width: 120%;
+        max-height: 120%;
+        height: auto;
+        margin: 0 10%;
+        @include filter(grayscale(0.2));
+      }
+      figcaption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background-color: $backgroundColor;
+        @include opacity(0);
+      }
+      &:hover {
+        background-color: $backgroundColor;
+        img {
+          @include filter(grayscale(0.8));
+          margin: 40% -10%;
+        }
+        figcaption {
+          @include opacity(0.8);
+        }
+      }
     }
   }
 }

@@ -6,10 +6,10 @@ group: navigation
 priority: 1
 ---
 
-<div class="col-sm-5 col-md-4">
+<div class="col-sm-4 col-md-3 col-lg-4">
 {% include about %}
 </div>
-<aside class="col-sm-7 col-md-8">
+<aside class="col-sm-8 col-md-9 col-lg-8">
   <h2>Arround the web!</h2>
   <ul class="nav nav-tabs">
     {% if site.author.coderwall %}
