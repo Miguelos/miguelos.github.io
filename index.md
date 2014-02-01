@@ -11,10 +11,10 @@ layout: page
 
   <aside class="col-sm-5 col-md-4">
     <section id="my-notes">
-      <h2>My notes</h2>
-      <ul class="posts">
+      <h2><a href="{{ BASE_PATH }}blog">My notes</a></h2>
+      <ul class="fa-ul">
         {% for post in site.posts limit: 7 %}
-          <li><span>{{ post.category }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}"     {% unless page.tags == empty %}data-toggle="tooltip" title="{% for item in post.tags %}{{ item | capitalize }} {% endfor %}" {% endunless %}>{{ post.title }}</a></li> 
+          <li><i class="fa fa-li {% if post.category == 'post' %} fa-file-text{% else %} fa-link {% endif %}"> </i><a href="{{ BASE_PATH }}{{ post.url }}" {% unless page.tags == empty %}data-toggle="tooltip" title="{% for item in post.tags %}{{ item | capitalize }} {% endfor %}" {% endunless %}>{{ post.title }}</a></li> 
         {% endfor %}
       </ul>
     </section>

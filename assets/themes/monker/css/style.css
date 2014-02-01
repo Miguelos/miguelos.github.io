@@ -117,12 +117,6 @@ div.posts article div.date time {
   box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000353}}
-.dark body {
-  background-color: #333;
-  color: orange;
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_sticky-footer\.scss}line{font-family:\000034}}
 html, body {
   height: 100%;
@@ -154,4 +148,10 @@ footer {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_notification\.scss}line{font-family:\000037}}
 .notification-bottom {
   bottom: 60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_dark\.scss}line{font-family:\000032}}
+.dark body {
+  background-color: #333;
+  color: #DDD;
 }
