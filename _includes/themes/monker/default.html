@@ -33,89 +33,90 @@
   </head>
 
   <body>
+    <div id="page-wrap">
+      <nav class="navbar navbar-default navbar-fixed-top container" role="navigation">
 
-    <nav class="navbar navbar-default navbar-fixed-top container" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-navbar-colapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" onclick="$('html').addClass('dark');$('fa').animate({color:'red'},1000);">
+            <i class="fa fa-code"></i>
+          </a>
+        </div>
 
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-navbar-colapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#" onclick="$('html').addClass('dark');">
-          <i class="fa fa-code"></i>
-        </a>
-      </div>
+        <div class="navbar-collapse collapse" id="header-navbar-colapse">
+          <ul class="nav navbar-nav">
+            {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include JB/pages_list %}
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+                <li class="divider-vertical"></li>
+                  {% if site.JB.rss_path %}
+                  <li>
+                    <a href="{{ BASE_PATH }}{{ site.JB.rss_path }}" target="_blank" class="">
+                      <i class="fa fa-rss-square"></i>
+                    </a>
+                  </li>
+                {% endif %}
+                {% if site.author.github %}
+                  <li>
+                    <a href="https://github.com/{{ site.author.github }}" target="_blank" class="">
+                      <i class="fa fa-github-square"></i>
+                    </a>
+                  </li>
+                {% endif %}
+                {% if site.author.googleplus %}
+                  <li>
+                    <a rel="author" href="https://plus.google.com/{{ site.author.googleplus }}?rel=author" class="">
+                      <i class="fa fa-google-plus-square"></i> 
+                    </a>
+                  </li>
+                {% endif %}    
+                {% if site.author.twitter %}
+                  <li>
+                    <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" class="">
+                      <i class="fa fa-twitter-square"></i>
+                    </a>
+                  </li>
+                {% endif %}                          
+                {% if site.author.facebook %}
+                  <li>
+                    <a href="http://www.facebook.com/{{ site.author.facebook }}" target="_blank" class="">
+                      <i class="fa fa-facebook-square"></i>
+                    </a>
+                  </li>
+                {% endif %}           
+                {% if site.author.linkedin %}
+                  <li>
+                    <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" class="">
+                      <i class="fa fa-linkedin-square"></i>
+                    </a>
+                  </li>
+                {% endif %}                    
+                {% if site.author.feedburner %}
+                  <li>
+                    <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" target="_blank" class="">
+                      <i class="fa fa-feedburner-square"></i>
+                    </a>
+                  </li>
+                {% endif %}
+          </ul>
+        </div><!--/.nav-collapse -->
 
-      <div class="navbar-collapse collapse" id="header-navbar-colapse">
-        <ul class="nav navbar-nav">
-          {% assign pages_list = site.pages %}
-          {% assign group = 'navigation' %}
-          {% include JB/pages_list %}
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-              <li class="divider-vertical"></li>
-                {% if site.JB.rss_path %}
-                <li>
-                  <a href="{{ BASE_PATH }}{{ site.JB.rss_path }}" target="_blank" class="">
-                    <i class="fa fa-rss-square"></i>
-                  </a>
-                </li>
-              {% endif %}
-              {% if site.author.github %}
-                <li>
-                  <a href="https://github.com/{{ site.author.github }}" target="_blank" class="">
-                    <i class="fa fa-github-square"></i>
-                  </a>
-                </li>
-              {% endif %}
-              {% if site.author.googleplus %}
-                <li>
-                  <a rel="author" href="https://plus.google.com/{{ site.author.googleplus }}?rel=author" class="">
-                    <i class="fa fa-google-plus-square"></i> 
-                  </a>
-                </li>
-              {% endif %}    
-              {% if site.author.twitter %}
-                <li>
-                  <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" class="">
-                    <i class="fa fa-twitter-square"></i>
-                  </a>
-                </li>
-              {% endif %}                          
-              {% if site.author.facebook %}
-                <li>
-                  <a href="http://www.facebook.com/{{ site.author.facebook }}" target="_blank" class="">
-                    <i class="fa fa-facebook-square"></i>
-                  </a>
-                </li>
-              {% endif %}           
-              {% if site.author.linkedin %}
-                <li>
-                  <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" class="">
-                    <i class="fa fa-linkedin-square"></i>
-                  </a>
-                </li>
-              {% endif %}                    
-              {% if site.author.feedburner %}
-                <li>
-                  <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" target="_blank" class="">
-                    <i class="fa fa-feedburner-square"></i>
-                  </a>
-                </li>
-              {% endif %}
-        </ul>
-      </div><!--/.nav-collapse -->
+      </nav>
 
-    </nav>
-
-    <section class="container">
-      <section role="main" class="content">
-        {{ content }}
+      <section class="container">
+        <section role="main" class="content">
+          {{ content }}
+        </section>
+        <div class="footer-push"></div>
       </section>
-      <div class="footer-push"></div>
-    </section>
+    </div><!--/.page-wrap -->
 
     <footer class="container">
       <div class="row">
@@ -129,6 +130,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-proudify.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-color.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/flowtype.js"></script>
     <script type="text/javascript">
       $('#proudify-codeschool').proudify({'username':'{{site.author.codeschool}}', service:'codeschool', completed:true});

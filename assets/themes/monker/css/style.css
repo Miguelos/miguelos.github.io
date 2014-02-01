@@ -122,3 +122,36 @@ div.posts article div.date time {
   background-color: #333;
   color: orange;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_sticky-footer\.scss}line{font-family:\000034}}
+html, body {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_sticky-footer\.scss}line{font-family:\000038}}
+#page-wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -70px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_sticky-footer\.scss}line{font-family:\0000318}}
+.footer-push,
+footer {
+  height: 60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_notification\.scss}line{font-family:\000031}}
+.notification {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  position: absolute;
+  right: 5px;
+  margin: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_notification\.scss}line{font-family:\000037}}
+.notification-bottom {
+  bottom: 60px;
+}

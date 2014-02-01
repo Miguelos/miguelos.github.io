@@ -1,13 +1,13 @@
-<div class="page-header">
-  <section>
+{% if page.title %}
+<header class="page-header">
   <h1>
     {{ page.title }} 
     {% if page.tagline %}
       <small>{{ page.tagline }}</small>
     {% endif %}
   </h1>
-  </section>
-</div>
+</header>
+{% endif %}
 
 <div class="row-fluid">
   <div class="span9">
@@ -28,7 +28,7 @@
           {{ page.category }}
         </span>
       </section>
-    {% endif %}     
+    {% endif %}
     {% unless page.tags == empty %}
       <section>
         <h4>Tags</h4>
@@ -37,7 +37,7 @@
           {% include JB/tags_list %}
         </ul>
       </section>
-    {% endunless %}         
+    {% endunless %}
   </div>
 </div>
 
