@@ -1,4 +1,4 @@
-{% if page.title %}
+{% if page.group != 'navigation' and page.title %}
 <header class="page-header-wrapper">
   <div class="page-header">
       <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
