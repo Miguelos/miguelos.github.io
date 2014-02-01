@@ -150,8 +150,14 @@ footer {
   bottom: 60px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_light\.scss}line{font-family:\000032}}
+html.light footer {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_dark\.scss}line{font-family:\000032}}
-.dark body {
+html.dark body {
   background-color: #333;
   color: #DDD;
 }

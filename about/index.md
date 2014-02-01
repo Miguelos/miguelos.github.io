@@ -6,10 +6,10 @@ group: navigation
 priority: 1
 ---
 
-<div class="span4">
+<div class="col-sm-5 col-md-4">
 {% include about %}
 </div>
-<div class="span8">
+<aside class="col-sm-7 col-md-8">
   <h2>Arround the web!</h2>
   <ul class="nav nav-tabs">
     {% if site.author.coderwall %}
@@ -17,9 +17,6 @@ priority: 1
     {% endif %}
     {% if site.author.codeschool %}
     <li><a href="#proudify-codeschool" data-toggle="tab">Codeschool</a></li>
-    {% endif %}
-    {% if site.author.github %}
-    <li><a href="#proudify-github" data-toggle="tab">Github</a></li>
     {% endif %}
   </ul>
   <div class="tab-content">
@@ -40,9 +37,5 @@ priority: 1
       <p>Here are my completed courses.</p>
     </div>
     {% endif %}
-    {% if site.author.github %}
-    <div class="tab-pane fade" id="proudify-github">
-    </div>
-    {% endif %}
   </div>
-</div>
+</aside>
