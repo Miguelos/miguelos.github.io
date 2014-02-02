@@ -50,7 +50,7 @@ description: {{page.description}}
 {% endif %}
 
 
-<div class="{% if leftCol %} col-xs-10{% else %} col-xs-12{% endif %}">
+<div class="project-text {% if leftCol %} col-xs-10{% else %} col-xs-12{% endif %}">
   {% for p in page.long %}
     {% if forloop.index == 2 %}
     <a data-toggle="collapse" data-target="#more">more...</a>
