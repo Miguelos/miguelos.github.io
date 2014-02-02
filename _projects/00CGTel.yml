@@ -27,9 +27,9 @@ long:
   - |
     CGTel has a database with every national price plans and details of each call. This database is updated in real time from the own phones. The application has a database of all phone providers’ rates nationwide and details about calls made by users. 
     Data are updated in real time from their own terminals. CGTel has been successfully tested in several terminals with different operators and different rates. One key to this success is the configuration of terminals including invoice date, VIP numbers, etc.
-title:     CGTel
+title: CGTel
 links:
-  website:   http://pendientedemigracion.ucm.es/info/tecnomovil/es/proyectos.html
+  website: http://pendientedemigracion.ucm.es/info/tecnomovil/es/proyectos.html
   android apk installer: http://pendientedemigracion.ucm.es/info/tecnomovil/aplicaciones/cgtel.apk
 platform:
   android: true

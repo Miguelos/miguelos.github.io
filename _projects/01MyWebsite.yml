@@ -1,9 +1,14 @@
 description: My personal website. Blog and projects
 priority: 0.9
-image:
-  url: /assets/images/Web/screenshot-mobile.png
-  title: My website
-  alt: My website screenshot
+images:
+  -
+    url: /assets/images/Web/screenshot-mobile.png
+    title: My website mobile view
+    alt: My website screenshot
+  -
+    url: /assets/images/Web/screenshot-mobile2.png
+    title: My website mobile view
+    alt: My website screenshot
 layout: project
 published: true
 short:     My personal website, blog and portfolio.
