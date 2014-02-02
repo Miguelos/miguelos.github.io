@@ -121,15 +121,16 @@
 
     <footer>
       <div class="container">
-        <p><strong>{{ site.time | date: '%Y' }} | {{ site.author.name }}</strong> This site was built with HTML5 and CSS3 with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>.<span class="hidden-xs"> Use of <a href="http://www.compass-style.org/">Compass</a>, <a href="http://pygments.org/">Pygments</a> syntax highlighting, <a href="https://github.com/flatterline/jekyll-plugins">Flatterline Jekyll</a>, <a href="https://github.com/icebreaker/proudify">Proudify</a>, <a href="https://github.com/simplefocus/FlowType.JS">FlowType.JS</a>, <a href="http://jquery.com/">JQuery</a>.</span></p>
+        <strong>{{ site.time | date: '%Y' }} | {{ site.author.name }}</strong>
+        <p>This site was built with HTML5 and CSS3 with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>.<span class="hidden-xs"> Use of <a href="http://www.compass-style.org/">Compass</a>, <a href="http://pygments.org/">Pygments</a> syntax highlighting, <a href="https://github.com/flatterline/jekyll-plugins">Flatterline Jekyll</a>, <a href="https://github.com/icebreaker/proudify">Proudify</a>, <a href="https://github.com/simplefocus/FlowType.JS">FlowType.JS</a>, <a href="http://jquery.com/">JQuery</a>.</span><p>
       </div>
     </footer>
 
     <!-- js  -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-proudify.min.js"></script>
-    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-color.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.proudify.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.color.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/flowtype.js"></script>
     <script type="text/javascript">
       $('#proudify-codeschool').proudify({'username':'{{site.author.codeschool}}', service:'codeschool', completed:true});

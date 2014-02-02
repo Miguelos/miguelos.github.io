@@ -260,10 +260,10 @@ div.posts article div.date time {
   max-width: 120%;
   max-height: 120%;
   height: auto;
-  margin: 0 10%;
-  -webkit-filter: grayscale(0.2);
-  -moz-filter: grayscale(0.2);
-  filter: grayscale(0.2);
+  -webkit-filter: grayscale(0.8);
+  -moz-filter: grayscale(0.8);
+  filter: grayscale(0.8);
+  margin: 30% -10%;
   -webkit-transition-property: margin;
   -moz-transition-property: margin;
   -o-transition-property: margin;
@@ -273,7 +273,7 @@ div.posts article div.date time {
   -o-transition-duration: 2s;
   transition-duration: 2s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000325}}
 #projects .project .image-crop figcaption {
   position: absolute;
   bottom: 0;
@@ -281,8 +281,6 @@ div.posts article div.date time {
   height: 100%;
   padding: 10px;
   background-color: white;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -291,27 +289,28 @@ div.posts article div.date time {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000337}}
-#projects .project a:hover .image-crop, #projects .project a:focus .image-crop {
-  background-color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000339}}
-#projects .project a:hover .image-crop img, #projects .project a:focus .image-crop img {
-  -webkit-filter: grayscale(0.8);
-  -moz-filter: grayscale(0.8);
-  filter: grayscale(0.8);
-  margin: 40% -10%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000343}}
-#projects .project a:hover .image-crop figcaption, #projects .project a:focus .image-crop figcaption {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000345}}
-#projects .project a:hover .image-crop figcaption p, #projects .project a:hover .image-crop figcaption h1, #projects .project a:hover .image-crop figcaption h2, #projects .project a:hover .image-crop figcaption h3, #projects .project a:focus .image-crop figcaption p, #projects .project a:focus .image-crop figcaption h1, #projects .project a:focus .image-crop figcaption h2, #projects .project a:focus .image-crop figcaption h3 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000335}}
+#projects .project .image-crop figcaption p, #projects .project .image-crop figcaption h1, #projects .project .image-crop figcaption h2, #projects .project .image-crop figcaption h3 {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000341}}
+#projects .project a:hover .image-crop, #projects .project a:focus .image-crop {
+  background-color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000343}}
+#projects .project a:hover .image-crop img, #projects .project a:focus .image-crop img {
+  margin: 20% 20%;
+  -webkit-filter: grayscale(0.2);
+  -moz-filter: grayscale(0.2);
+  filter: grayscale(0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000347}}
+#projects .project a:hover .image-crop figcaption, #projects .project a:focus .image-crop figcaption {
+  text-shadow: 0px 1px 10px #555;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_sticky-footer\.scss}line{font-family:\000034}}
