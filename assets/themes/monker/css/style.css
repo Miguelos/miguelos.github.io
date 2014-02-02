@@ -1,7 +1,51 @@
 /* Partials */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_base\.scss}line{font-family:\000034}}
-body {
+#page-wrap {
   padding-top: 70px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_base\.scss}line{font-family:\000038}}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_base\.scss}line{font-family:\0000315}}
+.bg .bg-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 10;
+  color: #FFF;
+  text-shadow: 0px 0px 30px #000;
+  font-size: 3em;
+  line-height: 1em;
+  padding: 30% 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_base\.scss}line{font-family:\0000330}}
+.bg .bg-photo {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(/assets/themes/monker/img/gran_via.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_base\.scss}line{font-family:\0000340}}
+.blink {
+  text-decoration: blink;
 }
 
 /* Responsive Overrides */
@@ -64,23 +108,34 @@ div.posts article div.date time {
 }
 
 /* This is for your Custom Content. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\000034}}
+.qr-code {
+  padding: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\000038}}
+.tag_box.inline a, .tag_box a {
+  -moz-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
 /* Portfolio */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\000035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\000033}}
 #projects .project {
-  position: relative;
   height: 250px;
-  max-width: 500px;
   padding: 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\000036}}
 #projects .project .image-crop {
+  position: relative;
   height: 100%;
   max-width: 100%;
   background-color: #dddddd;
   overflow: hidden;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000313}}
 #projects .project .image-crop img {
   min-width: 50%;
   min-height: 50%;
@@ -100,7 +155,7 @@ div.posts article div.date time {
   -o-transition-duration: 2s;
   transition-duration: 2s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000324}}
 #projects .project .image-crop figcaption {
   position: absolute;
   bottom: 0;
@@ -119,36 +174,26 @@ div.posts article div.date time {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000338}}
-#projects .project .image-crop:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000337}}
+#projects .project a:hover .image-crop, #projects .project a:focus .image-crop {
   background-color: white;
-  -webkit-box-shadow: rgba(17, 17, 17, 0.7) 0 0 2px 2px inset;
-  -moz-box-shadow: rgba(17, 17, 17, 0.7) 0 0 2px 2px inset;
-  box-shadow: rgba(17, 17, 17, 0.7) 0 0 2px 2px inset;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000341}}
-#projects .project .image-crop:hover img {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000339}}
+#projects .project a:hover .image-crop img, #projects .project a:focus .image-crop img {
   -webkit-filter: grayscale(0.8);
   -moz-filter: grayscale(0.8);
   filter: grayscale(0.8);
   margin: 40% -10%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000345}}
-#projects .project .image-crop:hover figcaption {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000343}}
+#projects .project a:hover .image-crop figcaption, #projects .project a:focus .image-crop figcaption {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000353}}
-.qr-code {
-  padding: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_custom\.scss}line{font-family:\0000357}}
-.tag_box.inline a, .tag_box a {
-  -moz-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
-  -webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000345}}
+#projects .project a:hover .image-crop figcaption p, #projects .project a:hover .image-crop figcaption h1, #projects .project a:hover .image-crop figcaption h2, #projects .project a:hover .image-crop figcaption h3, #projects .project a:focus .image-crop figcaption p, #projects .project a:focus .image-crop figcaption h1, #projects .project a:focus .image-crop figcaption h2, #projects .project a:focus .image-crop figcaption h3 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_sticky-footer\.scss}line{font-family:\000034}}
@@ -161,13 +206,15 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -70px;
+  margin: 0 auto -75px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_sticky-footer\.scss}line{font-family:\0000318}}
 .footer-push,
 footer {
-  height: 60px;
+  height: 75px;
+  max-height: 75px;
+  overflow: hidden;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_notification\.scss}line{font-family:\000031}}
@@ -181,13 +228,15 @@ footer {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_notification\.scss}line{font-family:\000037}}
 .notification-bottom {
-  bottom: 60px;
+  bottom: 75px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_light\.scss}line{font-family:\000032}}
 html.light footer {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
+  border-width: 1px 0 0 0;
+  border-style: solid;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_dark\.scss}line{font-family:\000032}}

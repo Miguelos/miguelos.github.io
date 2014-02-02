@@ -60,50 +60,50 @@
                   <li class="divider-vertical"></li>
                     {% if site.JB.rss_path %}
                     <li>
-                      <a href="{{ BASE_PATH }}{{ site.JB.rss_path }}" target="_blank" class="">
-                        <i class="fa fa-rss-square"></i>
+                      <a href="{{ BASE_PATH }}{{ site.JB.rss_path }}" target="_blank">
+                        <i class="fa fa-lg fa-rss-square"></i>
                       </a>
                     </li>
                   {% endif %}
                   {% if site.author.github %}
                     <li>
-                      <a href="https://github.com/{{ site.author.github }}" target="_blank" class="">
-                        <i class="fa fa-github-square"></i>
+                      <a href="https://github.com/{{ site.author.github }}" target="_blank">
+                        <i class="fa fa-lg fa-github-square"></i>
                       </a>
                     </li>
                   {% endif %}
                   {% if site.author.googleplus %}
                     <li>
-                      <a rel="author" href="https://plus.google.com/{{ site.author.googleplus }}?rel=author" class="">
-                        <i class="fa fa-google-plus-square"></i> 
+                      <a rel="author" href="https://plus.google.com/{{ site.author.googleplus }}?rel=author" target="_blank">
+                        <i class="fa fa-lg fa-google-plus-square"></i> 
                       </a>
                     </li>
                   {% endif %}    
                   {% if site.author.twitter %}
                     <li>
-                      <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" class="">
-                        <i class="fa fa-twitter-square"></i>
+                      <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
+                        <i class="fa fa-lg fa-twitter-square"></i>
                       </a>
                     </li>
                   {% endif %}                          
                   {% if site.author.facebook %}
                     <li>
-                      <a href="http://www.facebook.com/{{ site.author.facebook }}" target="_blank" class="">
-                        <i class="fa fa-facebook-square"></i>
+                      <a href="http://www.facebook.com/{{ site.author.facebook }}" target="_blank">
+                        <i class="fa fa-lg fa-facebook-square"></i>
                       </a>
                     </li>
                   {% endif %}           
                   {% if site.author.linkedin %}
                     <li>
-                      <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" class="">
-                        <i class="fa fa-linkedin-square"></i>
+                      <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
+                        <i class="fa fa-lg fa-linkedin-square"></i>
                       </a>
                     </li>
                   {% endif %}                    
                   {% if site.author.feedburner %}
                     <li>
-                      <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" target="_blank" class="">
-                        <i class="fa fa-feedburner-square"></i>
+                      <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" target="_blank">
+                        <i class="fa fa-lg fa-feedburner-square"></i>
                       </a>
                     </li>
                   {% endif %}
@@ -113,19 +113,15 @@
         </div><!--/.container -->
       </nav>
 
-      <section class="container">
-        <section role="main" class="content">
-          {{ content }}
-        </section>
-        <div class="footer-push"></div>
+      <section class="container" role="main">
+        {{ content }}
       </section>
+        <div class="footer-push"></div>
     </div><!--/.page-wrap -->
 
-    <footer class="container">
-      <div class="row">
-        <strong class="col-md-4">{{ site.time | date: '%Y' }} By {{ site.author.name }}
-        </strong>
-        <p class="col-md-7">This site was built with HTML5 and CSS3 with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a> and <a href="http://github.com/dhulihan/hooligan" target="_blank">The Hooligan Theme</a>. Use of <a href="http://www.compass-style.org/">Compass</a>, <a href="http://pygments.org/">Pygments</a> syntax highlighting, <a href="https://github.com/flatterline/jekyll-plugins">Flatterline Jekyll</a>, <a href="https://github.com/icebreaker/proudify">Proudify</a>, <a href="https://github.com/simplefocus/FlowType.JS">FlowType.JS</a>, <a href="http://jquery.com/">JQuery</a>.</p>
+    <footer>
+      <div class="container">
+        <p><strong>{{ site.time | date: '%Y' }} | {{ site.author.name }}</strong> This site was built with HTML5 and CSS3 with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>.<span class="hidden-xs"> Use of <a href="http://www.compass-style.org/">Compass</a>, <a href="http://pygments.org/">Pygments</a> syntax highlighting, <a href="https://github.com/flatterline/jekyll-plugins">Flatterline Jekyll</a>, <a href="https://github.com/icebreaker/proudify">Proudify</a>, <a href="https://github.com/simplefocus/FlowType.JS">FlowType.JS</a>, <a href="http://jquery.com/">JQuery</a>.</span></p>
       </div>
     </footer>
 

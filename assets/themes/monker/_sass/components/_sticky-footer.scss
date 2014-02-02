@@ -1,4 +1,4 @@
-$footerHeight: 60px;
+$footerHeight: 75px;
 
 //Page full height
 html, body {
@@ -10,11 +10,13 @@ html, body {
   height: auto !important;
   height: 100%;
   // Negative indent footer by it's height
-  margin: 0 auto -70px;
+  margin: 0 auto -75px;
 }
 
 //footer fixed height
 .footer-push,
 footer {
   height: $footerHeight;
+  max-height: $footerHeight;
+  overflow: hidden;
 }
