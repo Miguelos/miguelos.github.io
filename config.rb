@@ -1,3 +1,4 @@
+require 'animation'
 # environment = :development or :production
 
 css_dir =   "/assets/themes/monker/css"
