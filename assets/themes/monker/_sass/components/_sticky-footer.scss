@@ -1,0 +1,22 @@
+$footerHeight: 75px;
+
+//Page full height
+html, body {
+  height: 100%;
+}
+
+#page-wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  // Negative indent footer by it's height
+  margin: 0 auto -75px;
+}
+
+//footer fixed height
+.footer-push,
+footer {
+  height: $footerHeight;
+  max-height: $footerHeight;
+  overflow: hidden;
+}

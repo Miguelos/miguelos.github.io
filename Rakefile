@@ -100,7 +100,7 @@ end # task :page
 
 desc "Launch preview environment"
 task :preview do
-  system "jekyll serve --watch & compass watch -e development --force --trace"
+  system "jekyll serve --watch --trace & compass watch -e development --force --trace"
 end # task :preview
 
 desc "Launch preview environment with draft posts"

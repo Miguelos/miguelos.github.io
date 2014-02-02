@@ -1,28 +1,21 @@
 ---
 layout: page
-title: Portfolio
 ---
 
-<div class="span">
-  <div class="row-fluid">
-    <ul id="projects" class="thumbnails">
-      {% for project in page.projects %} 
-        {% if forloop.index == 4 %}
-        </ul>
-        <ul id="projects" class="thumbnails">
-        {% endif %}
-        <li class="project span4">
-          <a href="/portfolio/{{ project[0] }}" class="thumbnail" >
-            <section>
-            {% if project[1].image %}
-                <img data-src="holder.js/150x150" src="{{ project[1].image.url }}" title="{{ project[1].image.title }}" alt="{{ project[1].image.alt }}" />
-            {% endif %}
-            <h3>{{ project[1].title }}</h3>
-            <p>{{ project[1].short }}</p>
-          </section>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+<div class="row">
+  <section id="projects" class="">
+    {% for project in page.projects %} 
+      <section class="col-xs-12 col-sm-6 col-md-4 project">
+        <a href="/portfolio/{{ project[0] }}">
+          {% if project[1].image %}
+          <figure class="image-crop">
+            <img src="{{ project[1].image.url }}" title="{{ project[1].image.title }}" alt="{{ project[1].image.alt }}" />
+            <figcaption><h3>{{ project[1].title }}</h3>
+            <p>{{ project[1].short }}</p></figcaption>
+          </figure>
+          {% endif %}
+        </a>
+      </section>
+    {% endfor %}
+  </section>
 </div>

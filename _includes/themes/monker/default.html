@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="{{ page.theme.color-styles[0] }}">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% if page.title %}
+        {{ page.title }} - 
+      {% endif %}
+      {{ site.title }}
+    </title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{ ASSET_PATH }}/css/pygments.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{ ASSET_PATH }}/css/font-awesome.css" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- extra css -->
+    <link href="{{ ASSET_PATH }}/css/proudify.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- fav and touch icons -->
+    <link rel="shortcut icon" href="http://icons.iconarchive.com/icons/xenatt/the-circle/512/App-Terminal-icon.png">
+<!--    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+    <div id="page-wrap">
+
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-navbar-colapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ HOME_PATH }}">
+              <i class="fa fa-code"></i>
+            </a>
+          </div>
+
+          <div class="navbar-collapse collapse" id="header-navbar-colapse">
+            <ul class="nav navbar-nav">
+              {% assign pages_list = site.pages %}
+              {% assign group = 'navigation' %}
+              {% include JB/pages_list %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                  <li class="divider-vertical"></li>
+                    {% if site.JB.rss_path %}
+                    <li>
+                      <a href="{{ BASE_PATH }}{{ site.JB.rss_path }}" target="_blank">
+                        <i class="fa fa-lg fa-rss-square"></i>
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if site.author.github %}
+                    <li>
+                      <a href="https://github.com/{{ site.author.github }}" target="_blank">
+                        <i class="fa fa-lg fa-github-square"></i>
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if site.author.googleplus %}
+                    <li>
+                      <a rel="author" href="https://plus.google.com/{{ site.author.googleplus }}?rel=author" target="_blank">
+                        <i class="fa fa-lg fa-google-plus-square"></i> 
+                      </a>
+                    </li>
+                  {% endif %}    
+                  {% if site.author.twitter %}
+                    <li>
+                      <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
+                        <i class="fa fa-lg fa-twitter-square"></i>
+                      </a>
+                    </li>
+                  {% endif %}                          
+                  {% if site.author.facebook %}
+                    <li>
+                      <a href="http://www.facebook.com/{{ site.author.facebook }}" target="_blank">
+                        <i class="fa fa-lg fa-facebook-square"></i>
+                      </a>
+                    </li>
+                  {% endif %}           
+                  {% if site.author.linkedin %}
+                    <li>
+                      <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
+                        <i class="fa fa-lg fa-linkedin-square"></i>
+                      </a>
+                    </li>
+                  {% endif %}                    
+                  {% if site.author.feedburner %}
+                    <li>
+                      <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" target="_blank">
+                        <i class="fa fa-lg fa-feedburner-square"></i>
+                      </a>
+                    </li>
+                  {% endif %}
+            </ul>
+          </div><!--/.nav-collapse -->
+
+        </div><!--/.container -->
+      </nav>
+
+      <section class="container" role="main">
+        {{ content }}
+      </section>
+        <div class="footer-push"></div>
+    </div><!--/.page-wrap -->
+
+    <footer>
+      <div class="container">
+        <strong>{{ site.time | date: '%Y' }} | {{ site.author.name }}</strong>
+        <p>This site was built with HTML5 and CSS3 with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>.<span class="hidden-xs"> Use of <a href="http://www.compass-style.org/">Compass</a>, <a href="http://pygments.org/">Pygments</a> syntax highlighting, <a href="https://github.com/flatterline/jekyll-plugins">Flatterline Jekyll</a>, <a href="https://github.com/icebreaker/proudify">Proudify</a>, <a href="https://github.com/simplefocus/FlowType.JS">FlowType.JS</a>, <a href="http://jquery.com/">JQuery</a>.</span><p>
+      </div>
+    </footer>
+
+    <!-- js  -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.proudify.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.color.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/flowtype.js"></script>
+    <script type="text/javascript">
+      $('#proudify-codeschool').proudify({'username':'{{site.author.codeschool}}', service:'codeschool', completed:true});
+      $('#proudify-coderwall').proudify({'username':'{{site.author.coderwall}}', service:'coderwall'});
+      $('#proudify-github').proudify({'username':'{{site.author.github}}', pushed_at:200}); 
+      $('body').flowtype({
+         minFont : 12,
+         maxFont : 14
+      });
+    </script>
+    <!-- /js plugins -->
+
+    {% include JB/analytics %}
+
+  </body>
+</html>

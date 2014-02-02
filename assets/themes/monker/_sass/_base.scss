@@ -1,0 +1,74 @@
+@import "animation";
+
+$backgroundColor: #FFF;
+$backgroundColor2: #DDD;
+
+#page-wrap {
+  padding-top: 50px + 20px; // nav height + nav margin-bottom
+}
+
+nav, footer {
+  padding-top: 5px;
+  box-shadow: 0 0 10px;
+}
+
+nav {
+  .fa {
+    @include scale(1);
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    &:hover {
+      @include scale(1.1);
+    }
+  }
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  .bg-title {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 40%;
+    left: 0;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 10;
+    color: #FFF;
+    text-shadow: 0px 0px 30px #000;
+    font-size: 3em;
+    line-height: 1em;
+  }
+  .bg-subtitle {
+    color: #DDD;
+  }
+  .bg-photo{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    @include background(image-url("/assets/themes/monker/img/gran_via.jpg") no-repeat center bottom);
+    @include background-size(cover);
+    @include opacity(0.3);
+  }
+}
+
+.blink {
+  @include animation-duration(0.5s);
+  @include animation-name(blink);
+  @include animation-iteration-count(infinite);
+  @include animation-direction(alternate);
+  @include animation-timing-function(ease-in-out);
+}
+@include keyframes(blink) {
+    0%, 60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
