@@ -313,6 +313,17 @@ div.posts article div.date time {
   text-shadow: 0px 1px 10px #555;
 }
 
+/* Project page */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000357}}
+.l-left-col img {
+  max-width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_portfolio\.scss}line{font-family:\0000360}}
+.carousel .item > img {
+  margin: 0 auto;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_sticky-footer\.scss}line{font-family:\000034}}
 html, body {
   height: 100%;

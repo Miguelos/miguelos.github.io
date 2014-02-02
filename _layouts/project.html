@@ -4,11 +4,9 @@ group: project
 description: {{page.description}}
 ---
 
-<div class="span2">
+<div class="l-left-col col-md-2">
 {% if page.image %}
-  <div>
-    <img class="img-polaroid" src="{{ page.image.url }}" title="{{ page.image.title }}" alt="{{ page.image.alt }}" />
-  </div>
+  <img class="img-polaroid" src="{{ page.image.url }}" title="{{ page.image.title }}" alt="{{ page.image.alt }}" />
 {% endif %}
 {% if page.qr-code %}
   <div class="qr-code">
@@ -24,7 +22,7 @@ description: {{page.description}}
 </div>
 
 {% if page.images %}
-<div id="projectCarousel" class="carousel slide span10">
+<div id="projectCarousel" class="carousel slide col-md-10">
   <div class="carousel-inner">
     {% for image in page.images %}
     <div class="item{% if forloop.first %} active{% endif %}">
@@ -48,7 +46,7 @@ description: {{page.description}}
 {% endif %}
 
 
-<div class="span10">
+<div class="col-md-10">
   {% for p in page.long %}
     {% if forloop.index == 2 %}
     <a data-toggle="collapse" data-target="#more">more...</a>
@@ -75,11 +73,11 @@ description: {{page.description}}
   {% endif %}
 </div>
 
-<div class="span12">
+<div class="col-md-12">
   {% if page.use-of %}
     <h2>Use of</h2>
     {% for cat in page.use-of %}
-    <div class="span4 tag_box">
+    <div class="col-md-4 tag_box">
       <h3>{{ cat[0] }}</h3>
       <ul>
         {% for elem in cat[1] %}
@@ -93,6 +91,6 @@ description: {{page.description}}
   {% endif %}
 </div>
 
-<div class="span12">
+<div class="col-md-12">
 {% include JB/comments %}
 </div>
