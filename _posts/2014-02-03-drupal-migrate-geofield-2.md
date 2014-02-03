@@ -2,7 +2,7 @@
 layout: post
 title: "Migrate Geofield 2.0"
 description: "How to migrate Drupal Geofield with subfield notation"
-category: ""
+category: "post"
 tags: [Drupal, Drupal Migrate, Drupal Geofield, PHP]
 ---
 {% include JB/setup %}
@@ -12,7 +12,7 @@ If you follow Geofield's example in the documentation, you will get this error:
 
 Here is how I managed to migrate Geofield (latitude/longitude) using subfield notation.
 
-To migrate Geofield (2.0) using **migrate_extras** handler, apply the patch in https://drupal.org/node/1997316.
+To migrate Geofield (2.0) using **migrate_extras** handler, apply latest patch in [https://drupal.org/node/1997316](https://drupal.org/node/1997316).
 
 Code for mapping fields:
 
@@ -46,4 +46,7 @@ Inside prepareRow():
 {% endhighlight %}
 
 ### Useful links
-[http://drupal.stackexchange.com/a/101707/13365](http://drupal.stackexchange.com/a/101707/13365)
+- [Geofield patch for migrate extras.](https://drupal.org/node/1997316)
+- [http://drupal.stackexchange.com/a/101707/13365](http://drupal.stackexchange.com/a/101707/13365)
+
+
