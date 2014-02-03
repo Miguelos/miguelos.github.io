@@ -3,7 +3,7 @@ layout: post
 title: "Pass array through POST method"
 description: ""
 category: post
-tags: [php, json]
+tags: [PHP, json]
 ---
 {% include JB/setup %}
 
