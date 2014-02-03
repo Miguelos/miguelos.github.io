@@ -107,63 +107,68 @@ nav .fa:hover {
 }
 
 @-moz-keyframes blink {
-  /* line 68, ../_sass/_base.scss */
+  /* line 69, ../_sass/_base.scss */
   0%, 60% {
     opacity: 1;
   }
 
-  /* line 71, ../_sass/_base.scss */
+  /* line 72, ../_sass/_base.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-webkit-keyframes blink {
-  /* line 68, ../_sass/_base.scss */
+  /* line 69, ../_sass/_base.scss */
   0%, 60% {
     opacity: 1;
   }
 
-  /* line 71, ../_sass/_base.scss */
+  /* line 72, ../_sass/_base.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-o-keyframes blink {
-  /* line 68, ../_sass/_base.scss */
+  /* line 69, ../_sass/_base.scss */
   0%, 60% {
     opacity: 1;
   }
 
-  /* line 71, ../_sass/_base.scss */
+  /* line 72, ../_sass/_base.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-ms-keyframes blink {
-  /* line 68, ../_sass/_base.scss */
+  /* line 69, ../_sass/_base.scss */
   0%, 60% {
     opacity: 1;
   }
 
-  /* line 71, ../_sass/_base.scss */
+  /* line 72, ../_sass/_base.scss */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes blink {
-  /* line 68, ../_sass/_base.scss */
+  /* line 69, ../_sass/_base.scss */
   0%, 60% {
     opacity: 1;
   }
 
-  /* line 71, ../_sass/_base.scss */
+  /* line 72, ../_sass/_base.scss */
   100% {
     opacity: 0;
   }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/_base\.scss}line{font-family:\0000377}}
+.container[role=main] {
+  padding: 15px;
 }
 
 /* Responsive Overrides */
