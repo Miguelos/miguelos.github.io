@@ -7,7 +7,7 @@ tags : [linux, debian, dell xps l502x]
 ---
 {% include JB/setup %}
 
-Here I'm writing down all the steps I followed after installing *Debian 7*. I've already installed Ubuntu Server 12 and build up from there. Everything works fine [using ubuntu][https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops/Dell/XPS/15]. However, lets try *Debian 7*!
+Here I'm writing down all the steps I followed after installing *Debian 7*. I've already installed Ubuntu Server 12 and build up from there. Everything works fine [using ubuntu][UbuntuOnL502x]. However, lets try *Debian 7*!
 
 Debian version: 
 
@@ -66,7 +66,9 @@ It works! Restart the laptop. Performance has been improved. You can notice how 
 
 ### Useful links
 - Dell XPS 15 L502X & Ubuntu 12.04 Linux: [http://hanynowsky.wordpress.com/2012/04/07/dell-xps-15-l502x-ubuntu-linux/](http://hanynowsky.wordpress.com/2012/04/07/dell-xps-15-l502x-ubuntu-linux/)
-- Ubuntu hardware support Dell XPS 15 L502x: [https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops/Dell/XPS/15](https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops/Dell/XPS/15)
+- Ubuntu hardware support Dell XPS 15 L502x [UbuntuOnL502x][UbuntuOnL502x]
 
 ### Sources
 + [http://www.debian-administration.org/articles/327](http://www.debian-administration.org/articles/327)
+
+[UbuntuOnL502x]: https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops/Dell/XPS/15
