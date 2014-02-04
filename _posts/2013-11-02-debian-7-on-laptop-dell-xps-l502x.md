@@ -7,7 +7,7 @@ tags : [linux, debian, dell xps l502x]
 ---
 {% include JB/setup %}
 
-Here I'm writing down all the steps I followed after installing *Debian 7*. I've already installed Ubuntu Server 12 and build up from there. Everything works fine [using ubuntu][UbuntuOnL502x]. However, lets try *Debian 7*!
+Here I'm writing down all the steps I followed after installing *Debian 7*. I've already installed Ubuntu Server 12 and build up from there. Everything works fine [using ubuntu][https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops/Dell/XPS/15]. However, lets try *Debian 7*!
 
 Debian version: 
 
