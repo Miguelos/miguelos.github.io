@@ -10,3 +10,6 @@ Use of...
 * [Flatterline Jekyll plugins](https://github.com/flatterline/jekyll-plugins).
 * [Proudify](https://github.com/icebreaker/proudify).
 * [FlowType.JS](https://github.com/simplefocus/FlowType.JS).
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Miguelos/miguelos.github.io/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
