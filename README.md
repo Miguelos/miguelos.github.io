@@ -2,7 +2,11 @@
 
 My personal page build powered by [JekyllBootstrap](https://github.com/plusjade/jekyll-bootstrap).
 
-[http://miguelos.me](http://miguelos.me)
+## Build requirements
+
+* Ruby version 1.9.x or higher
+* Jekyll: http://jekyllrb.com/docs/installation/
+* Compass
 
 Use of...
 * [JekyllBootstrap](https://github.com/plusjade/jekyll-bootstrap).
