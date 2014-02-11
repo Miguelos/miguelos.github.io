@@ -4,9 +4,13 @@ My personal page build powered by [JekyllBootstrap](https://github.com/plusjade/
 
 ## Build requirements
 
-* Ruby version 1.9.x or higher
+* Ruby version 1.9.x
 * Jekyll: http://jekyllrb.com/docs/installation/
 * Compass
+
+### Note on errors
+* If you get "undefined method `exists?' for Dir:Class (NoMethodError)" be sure to have installed ruby 1.9.x
+
 
 Use of...
 * [JekyllBootstrap](https://github.com/plusjade/jekyll-bootstrap).
