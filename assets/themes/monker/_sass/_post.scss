@@ -1,27 +1,12 @@
 /* Posts */
-article.post {
-	header {
-		margin-bottom:10px;
-		h1, h2 {
-			margin: 0;
-		}
-		.category {			
-			display:inline-block;
-			color:rgba(255,255,255,1);
-			border-left:1px solid rgba(255,255,255,0.2);
-			padding-left:6px;
-			margin-left:3px;
-			&:before {
-				// content: "in";
-			}
-		}
+article {
+	img {
+		max-width: 100%;
 	}
-} 
+}
 
 div.posts {
 	article {
-		// padding-bottom:10px;
-		// margin-bottom:10px;
 		div.date {
 			font-size:10px;
 			padding:10px 0;
@@ -34,7 +19,7 @@ div.posts {
 					background-color: rgba(0, 0, 0, 0.3);
 					@include border-radius;
 					padding:5px 10px;
-				}				
-		} 
+				}
+		}
 	}
 }
