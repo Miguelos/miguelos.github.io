@@ -1,9 +1,9 @@
 
-*install debian
+# install debian
 
 I leaved the desktop environment option blank
 
-{debian netinstall png}
+![debian netinstall](debian_netinstall.png)
 
 but selected laptop option:
 {}
@@ -56,15 +56,15 @@ toub ALL=(ALL:ALL) ALL
 
 One of the reasons to install Ubuntu Server instead of Desktop is to avoid metapackages like ubuntu-desktop. Instead of strip down Ubuntu Desktop, It's much easier to install whatever you need from the server edition.
 
-*xorg
+* xorg
 
-*openbox
+* openbox
 
 ## Terminal
 
-*terminator
-*tint2
-*kupfler
+* terminator
+* tint2
+* kupfler
 
 ## Basic programs
 *chromium
