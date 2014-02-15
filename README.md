@@ -12,7 +12,7 @@ My personal page build powered by [JekyllBootstrap](https://github.com/plusjade/
 * If you get "undefined method `exists?' for Dir:Class (NoMethodError)" be sure to have installed ruby 1.9.x
 
 
-Use of...
+## Use of...
 * [JekyllBootstrap](https://github.com/plusjade/jekyll-bootstrap).
 * [Font Awesome](https://github.com/FortAwesome/Font-Awesome/)
 * [Flatterline Jekyll plugins](https://github.com/flatterline/jekyll-plugins).
