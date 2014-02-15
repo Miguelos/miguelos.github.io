@@ -3,12 +3,14 @@ layout: post
 title: "Jekyll Bootstrap sticky footer"
 category : post
 tagline: ""
-tags : [jekyll, jekyll-bootstrap, bootstrap, css, sass, html]
+tags : [Jekyll, Jekyll-Bootstrap, Bootstrap, CSS, SASS, HTML]
 ---
+
+## How to add a sticky footer
 
 To use the sticky footer you'll need to modify the default theme template and add some css.
 
-_include/theme/_THEMENAME_/default.html:
+_include/theme/THEMENAME/default.html_:
 
 {% highlight html %}
     ...
