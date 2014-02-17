@@ -4,7 +4,7 @@ title: "Responsive designe tools"
 description: ""
 category: "link"
 priority: 
-tags: [HTML,CSS,REsponsive design]
+tags: [HTML,CSS,Responsive design]
 ---
 {% include JB/setup %}
 
