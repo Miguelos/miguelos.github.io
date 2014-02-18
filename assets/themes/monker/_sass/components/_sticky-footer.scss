@@ -10,10 +10,11 @@ html, body {
   height: auto !important;
   height: 100%;
   // Negative indent footer by it's height
-  margin: 0 auto -75px;
+  margin: 0 auto (-$footerHeight);
+  padding-bottom: $footerHeight;
 }
 
-//footer fixed height
+// footer fixed height
 .footer-push,
 footer {
   height: $footerHeight;
