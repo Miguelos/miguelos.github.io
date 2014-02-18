@@ -5,6 +5,7 @@ $backgroundColor2: #DDD;
 
 #page-wrap {
   padding-top: 50px + 20px; // nav height + nav margin-bottom
+  display: table; // to allow the content be centered vertically (not i IE8 or less)
 }
 
 nav, footer {
@@ -75,5 +76,7 @@ nav {
 }
 
 .container[role=main] {
+  display: table-cell;
+  vertical-align: middle;
   padding: 15px;
 }
