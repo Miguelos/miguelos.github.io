@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>
       {% if page.title %}
-        {{ page.title }} - 
+        {{ page.title }} -
       {% endif %}
       {{ site.title }}
     </title>
@@ -75,31 +75,31 @@
                   {% if site.author.googleplus %}
                     <li>
                       <a rel="author" href="https://plus.google.com/{{ site.author.googleplus }}?rel=author" target="_blank">
-                        <i class="fa fa-lg fa-google-plus-square"></i> 
+                        <i class="fa fa-lg fa-google-plus-square"></i>
                       </a>
                     </li>
-                  {% endif %}    
+                  {% endif %}
                   {% if site.author.twitter %}
                     <li>
                       <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
                         <i class="fa fa-lg fa-twitter-square"></i>
                       </a>
                     </li>
-                  {% endif %}                          
+                  {% endif %}
                   {% if site.author.facebook %}
                     <li>
                       <a href="http://www.facebook.com/{{ site.author.facebook }}" target="_blank">
                         <i class="fa fa-lg fa-facebook-square"></i>
                       </a>
                     </li>
-                  {% endif %}           
+                  {% endif %}
                   {% if site.author.linkedin %}
                     <li>
                       <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
                         <i class="fa fa-lg fa-linkedin-square"></i>
                       </a>
                     </li>
-                  {% endif %}                    
+                  {% endif %}
                   {% if site.author.feedburner %}
                     <li>
                       <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" target="_blank">
@@ -135,7 +135,7 @@
     <script type="text/javascript">
       $('#proudify-codeschool').proudify({'username':'{{site.author.codeschool}}', service:'codeschool', completed:true});
       $('#proudify-coderwall').proudify({'username':'{{site.author.coderwall}}', service:'coderwall'});
-      $('#proudify-github').proudify({'username':'{{site.author.github}}', pushed_at:200}); 
+      $('#proudify-github').proudify({'username':'{{site.author.github}}', pushed_at:200});
       $('body').flowtype({
          minFont : 12,
          maxFont : 14
