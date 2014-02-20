@@ -4,7 +4,7 @@ title: "Drush Multi Processing "
 description: "Speed up Drupal migration"
 category: "link"
 priority: 0.2
-tags: [link]
+tags: [drupal, drush, drupal-migrate]
 ---
 {% include JB/setup %}
 
