@@ -10,5 +10,5 @@ tags: [link]
 
 One way to speed up Drupal migrations (2 parts):
 
-* http://deeson-online.co.uk/labs/multi-processing-part-1-how-make-drush-rush
-* http://deeson-online.co.uk/labs/multi-processing-part-2-how-make-migrate-move
+* [http://deeson-online.co.uk/labs/multi-processing-part-1-how-make-drush-rush](http://deeson-online.co.uk/labs/multi-processing-part-1-how-make-drush-rush)
+* [http://deeson-online.co.uk/labs/multi-processing-part-2-how-make-migrate-move](http://deeson-online.co.uk/labs/multi-processing-part-2-how-make-migrate-move)
