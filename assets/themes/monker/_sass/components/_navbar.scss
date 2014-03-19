@@ -1,0 +1,9 @@
+.navbar-default .navbar-nav>li>a {
+  text-align: center;
+}
+.navbar-default .navbar-right {
+  margin: 0;
+  &>li {
+    float: right;
+  }
+}
