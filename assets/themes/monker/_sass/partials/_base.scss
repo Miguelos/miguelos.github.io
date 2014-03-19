@@ -14,16 +14,6 @@ nav, footer {
   box-shadow: 0 0 10px;
 }
 
-nav {
-  .fa {
-    @include scale(1);
-    @include transition-property(all);
-    @include transition-duration(0.5s);
-    &:hover {
-      @include scale(1.1);
-    }
-  }
-}
 
 .bg {
   position: absolute;

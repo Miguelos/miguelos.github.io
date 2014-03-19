@@ -1,0 +1,32 @@
+.navbar-default .navbar-nav>li>a {
+  text-align: center;
+}
+.navbar-default .navbar-right {
+  margin: 0;
+  &>li {
+    float: right;
+  }
+}
+
+nav {
+  .fa {
+    @include scale(1);
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    &:hover {
+      @include scale(1.1);
+    }
+  }
+  .fa-google-plus* {
+    color: $bc-google-plus;
+  }
+  .fa-linkedin* {
+    color: $bc-linkedin;
+  }
+  .fa-github* {
+    color: $bc-github;
+  }
+  .fa-rss* {
+    color: $bc-rss;
+  }
+}

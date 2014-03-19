@@ -1,14 +1,21 @@
 @import "compass";
 
-/* Partials */
-@import "base";
-@import "responsive";
-@import "post";
-@import "custom";
+/** Variables and mixins **/
+@import "utils/brandcolors";
+@import "utils/responsive";
 
-@import "components/navbar";
-@import "components/sticky-footer";
-@import "components/portfolio";
+/* Partials */
+@import "partials/base";
+@import "partials/navbar";
+@import "partials/sticky-footer";
+
+/** Pages **/
+@import "partials/post";
+@import "partials/portfolio";
+
+@import "partials/custom";
+
 @import "components/notification";
+
 @import "color-styles/light";
-@import "color-styles/dark";
+//@import "color-styles/dark"; Not yet! :(
