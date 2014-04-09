@@ -1,0 +1,47 @@
+$bgColor: #e78c45;
+$fgColor: #eee8d5;
+$borderColor: #b58900;
+$highColor: #cb4b16;
+
+html.calid {
+
+  a {
+    color: $highColor;
+    font-weight: bold;
+  }
+
+  nav {
+    background-color: $bgColor;
+    border-color: $borderColor;
+
+    &.navbar-default .navbar-nav>li>a {
+      color: $fgColor;
+    }
+    &.navbar-default .navbar-nav>.active>a,
+    &.navbar-default .navbar-nav>.active>a:hover,
+    &.navbar-default .navbar-nav>.active>a:focus {
+      color: $fgColor;
+      background-color: $highColor;
+    }
+
+    .navbar-brand {
+      color: white;
+      &:hover {
+        background-color: $highColor;
+        color: white;
+      }
+    }
+
+  }
+
+  footer {
+    background-color: $bgColor;
+    border-color: $borderColor;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    color: $fgColor;
+  }
+
+
+}
+

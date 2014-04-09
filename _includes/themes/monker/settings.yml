@@ -1,3 +1,3 @@
 theme :
   name : monker
-  color-styles: ["light", "dark"]
+  color-styles: ["calid", "light", "dark"]

@@ -10,8 +10,11 @@ $backgroundColor3: #BBB;
 }
 
 nav, footer {
-  padding-top: 5px;
   box-shadow: 0 0 10px;
+}
+
+footer {
+  padding-top: 20px;
 }
 
 .bg {
@@ -58,15 +61,24 @@ nav, footer {
 }
 
 @include keyframes(blink) {
-    0%, 60% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+  0%, 60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .container[role=main] {
   vertical-align: middle;
   padding: 15px;
+
+  @include animation-duration(2.5s);
+  @include animation-name(in);
+}
+
+@-webkit-keyframes in {
+  0% {opacity: 0;}
+  50% {opacity: 0.85;}
+  100% {opacity: 1;}
 }
