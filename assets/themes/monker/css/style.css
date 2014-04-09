@@ -437,21 +437,26 @@ html.calid nav {
 html.calid nav.navbar-default .navbar-nav > li > a {
   color: #eee8d5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000322}}
-html.calid nav.navbar-default .navbar-nav > .active > a, html.calid nav.navbar-default .navbar-nav > .active > a:hover, html.calid nav.navbar-default .navbar-nav > .active > a:focus {
-  color: #eee8d5;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000319}}
+html.calid nav.navbar-default .navbar-nav > li > a:hover {
   background-color: #cb4b16;
+  color: white;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000327}}
+html.calid nav.navbar-default .navbar-nav > .active > a, html.calid nav.navbar-default .navbar-nav > .active > a:hover, html.calid nav.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #cb4b16;
+  color: #eee8d5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000332}}
 html.calid nav .navbar-brand {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000334}}
 html.calid nav .navbar-brand:hover {
   background-color: #cb4b16;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000342}}
 html.calid footer {
   background-color: #e78c45;
   border-color: #b58900;

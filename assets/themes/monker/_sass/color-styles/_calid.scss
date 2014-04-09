@@ -16,12 +16,17 @@ html.calid {
 
     &.navbar-default .navbar-nav>li>a {
       color: $fgColor;
+      &:hover {
+        background-color: $highColor;
+        color: white;
+      }
     }
+
     &.navbar-default .navbar-nav>.active>a,
     &.navbar-default .navbar-nav>.active>a:hover,
     &.navbar-default .navbar-nav>.active>a:focus {
-      color: $fgColor;
       background-color: $highColor;
+      color: $fgColor;
     }
 
     .navbar-brand {
