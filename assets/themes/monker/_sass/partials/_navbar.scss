@@ -9,26 +9,27 @@
 }
 
 nav {
-  .fa {
+  li a {
     @include scale(1);
     @include transition-property(all);
-    @include transition-duration(0.5s);
+    @include transition-duration(0.1s);
+    &:hover, &.active {
+      @include scale(1.2);
+    }
   }
-  li a {
-    &:hover {
-      @include scale(1.1);
-    } 
+  .googleplus-link:hover {
+    background-color: $bc-google-plus !important;
   }
-  .fa-google-plus* {
-    color: $bc-google-plus;
+  .linkedin-link:hover {
+    background-color: $bc-linkedin !important;
   }
-  .fa-linkedin* {
-    color: $bc-linkedin;
+  .github-link:hover {
+    background-color: $bc-github !important;
   }
-  .fa-github* {
-    color: $bc-github;
+  .rss-link:hover {
+    background-color: $bc-rss !important;
   }
-  .fa-rss* {
-    color: $bc-rss;
+  .stackoverflow-link:hover {
+    background-color: $bc-stackoverflow !important;
   }
 }
