@@ -4,11 +4,13 @@ title : RSS Feed
 ---
 
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<atom:link href="{{ site.production_url }}{{ site.rss_path }}" rel="self" type="application/rss+xml" />
+
 <channel>
         <title>{{ site.title }}</title>
         <description>{{ site.title }} - {{ site.author.name }}</description>
-        <link>{{ site.production_url }}{{ site.rss_path }}</link>
+        <link>{{ site.production_url }}</link>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
         <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         <ttl>1800</ttl>
