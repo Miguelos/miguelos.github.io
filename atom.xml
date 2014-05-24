@@ -11,8 +11,8 @@ title : Atom Feed
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{ site.production_url }}/</id>
  <author>
-   {% if site.author.name != null }}<name>{{ site.author.name }}</name>{% endif %}
-   {% if site.author.email != null }}<email>{{ site.author.email }}</email>{% endif %}
+   {% if site.author.name != null %}<name>{{ site.author.name }}</name>{% endif %}
+   {% if site.author.email != null %}<email>{{ site.author.email }}</email>{% endif %}
  </author>
 
  {% for post in site.posts %}
