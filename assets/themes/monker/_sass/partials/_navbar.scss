@@ -22,7 +22,12 @@
     }
   }
 
-  nav {
+nav {
+
+  .navbar-toggle {
+    border-radius: 0;
+  }
+
   .googleplus-link:hover {
     background-color: $bc-google-plus !important;
   }
