@@ -434,15 +434,15 @@ div.posts article div.date time {
   position: relative;
   width: 100%;
   margin: 0 auto;
+  padding: 0;
   margin-top: 20px;
   list-style-type: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\000039}}
 .posts-collate li {
   margin: 1em;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000312}}
 .posts-collate li:after {
   content: "";
   display: block;
@@ -450,56 +450,46 @@ div.posts article div.date time {
   clear: both;
   visibility: hidden;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000322}}
-article.post {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000321}}
+.posts-collate article.post {
   position: relative;
   width: 50%;
   float: left;
   text-align: right;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000329}}
-article.link {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000328}}
+.posts-collate article.link {
   position: relative;
   width: 50%;
   float: right;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000335}}
-.flag-wrapper {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000334}}
+.posts-collate .flag-wrapper {
   position: relative;
   display: inline-block;
   text-align: center;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000342}}
-.flag {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000339}}
+.posts-collate .flag-wrapper .flag {
   position: relative;
   display: inline;
   border-radius: 0;
   font-weight: 600;
   text-align: left;
+  font-size: 0.8em;
+  line-height: 1.5em;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000350}}
-.date-wrapper {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000351}}
+.posts-collate .date-wrapper {
   display: inline-block;
   line-height: 1em;
   font-size: 0.7em;
   color: #666;
   vertical-align: middle;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000364}}
-.date {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000358}}
+.posts-collate .date-wrapper .date {
   display: inline-block;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000368}}
-.tags {
-  font-size: 0.8em;
-  line-height: 1.5em;
 }
 
 @media screen and (max-width: 600px) {
@@ -507,42 +497,36 @@ article.link {
   .posts-collate {
     width: 100%;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000380}}
-  article.post,
-  article.link {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000379}}
+  .posts-collate article.post,
+  .posts-collate article.link {
     float: none;
     width: 100%;
     text-align: center;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000387}}
-  .flag-wrapper {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000386}}
+  .posts-collate .flag-wrapper {
     text-align: center;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000391}}
-  .flag {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000389}}
+  .posts-collate .flag-wrapper .flag {
     z-index: 15;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000395}}
-  .date-wrapper {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\0000394}}
+  .posts-collate .date-wrapper {
     display: block;
     position: relative;
     margin: 4px 0 0 0;
     z-index: 14;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\00003108}}
-  .tags {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\00003107}}
+  .posts-collate .tags {
     position: relative;
     z-index: 15;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\00003115}}
-  article.post .tags,
-  article.link .tags {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/components\/_posts_collate\.scss}line{font-family:\00003114}}
+  .posts-collate article.post .tags,
+  .posts-collate article.link .tags {
     position: relative;
     z-index: 15;
   }
