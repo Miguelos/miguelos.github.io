@@ -1,0 +1,121 @@
+.posts-collate {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  list-style-type: none;
+
+  li {
+    margin: 1em;
+  }
+
+}
+
+.posts-collate li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+article.post {
+  position: relative;
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+article.link {
+  position: relative;
+  width: 50%;
+  float: right;
+}
+
+.flag-wrapper {
+  position: relative;
+  display: inline-block;
+
+  text-align: center;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  border-radius: 0;
+  font-weight: 600;
+  text-align: left;
+}
+
+.date-wrapper {
+  display: inline-block;
+  line-height: 1em;
+  font-size: 0.7em;
+  color: #666;
+  vertical-align: middle;
+}
+
+article.post .date-wrapper {
+}
+
+article.link .date-wrapper {
+}
+
+.date {
+  display: inline-block;
+}
+
+.tags {
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+
+  .posts-collate {
+    width: 100%;
+  }
+
+  article.post,
+  article.link {
+    float: none;
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .flag-wrapper {
+    text-align: center;
+  }
+
+  .flag {
+    z-index: 15;
+  }
+
+  .date-wrapper {
+    display: block;
+    position: relative;
+    margin: 4px 0 0 0;
+    z-index: 14;
+  }
+
+  article.post .date-wrapper {
+  }
+
+  article.link .date-wrapper {
+  }
+
+  .tags {
+    position: relative;
+
+    z-index: 15;
+  }
+
+  article.post .tags,
+  article.link .tags {
+    position: relative;
+
+    z-index: 15;
+  }
+
+}

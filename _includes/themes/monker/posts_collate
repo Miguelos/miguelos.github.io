@@ -6,176 +6,28 @@ Usage:
   example:
     {% assign posts_collate = site.posts %}
     {% include JB/posts_collate %}
-
-  Ordering:
-    Posts are displayed in reverse chronological order.
-    For normal chronological order:
-      1) Change the for loop to this:
-        => 'for post in site.posts reversed'
-      2) Next make sure to change 'post.previous.date' to:
-        => 'post.next.date'
-        
 -->{% endcomment %}
-<style type="text/css">
 
-.timeline {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 20px;
-  list-style-type: none;
-}
-
-.timeline li {
-  margin: 1em;
-}
-
-.timeline li:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-.direction-l {
-  position: relative;
-  width: 50%;
-  float: left;
-  text-align: right;
-}
-
-.direction-r {
-  position: relative;
-  width: 50%;
-  float: right;
-}
-
-.flag-wrapper {
-  position: relative;
-  display: inline-block;
-
-  text-align: center;
-}
-
-.flag {
-  position: relative;
-  display: inline;
-  border-radius: 5px;
-  
-  font-weight: 600;
-  text-align: left;
-}
-
-.time-wrapper {
-  display: inline;
-  
-  line-height: 1em;
-  font-size: 0.66666em;
-  color: #666;
-  vertical-align: middle;
-}
-
-.direction-l .time-wrapper {
-  float: left;
-}
-
-.direction-r .time-wrapper {
-  float: right;
-}
-
-.time {
-  display: inline-block;
-}
-
-.tags {
-  font-size: 0.77777em;
-  font-style: italic;
-  line-height: 1.5em;
-}
-
-
-/* ================ Timeline Media Queries ================ */
-
-@media screen and (max-width: 660px) {
-
-.timeline {
-  width: 100%;
-}
-
-.direction-l,
-.direction-r {
-  float: none;
-  width: 100%;
-
-  text-align: center;
-}
-
-.flag-wrapper {
-  text-align: center;
-}
-
-.flag {
-  z-index: 15;
-}
-
-.time-wrapper {
-  display: block;
-  position: relative;
-  margin: 4px 0 0 0;
-  z-index: 14;
-}
-
-.direction-l .time-wrapper {
-  float: none;
-}
-
-.direction-r .time-wrapper {
-  float: none;
-}
-
-.tags {
-  position: relative;
-
-  z-index: 15;
-}
-
-.direction-l .tags,
-.direction-r .tags {
-  position: relative;
-
-  z-index: 15;
-}
-
-}
-
-</style>
-
-
-<ul class="timeline">
+<ul class="posts-collate">
 
 {% if site.JB.posts_collate.provider == "custom" %}
   {% include custom/posts_collate %}
 {% else %}
   {% for post in posts_collate  %}
-    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-    {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-    {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-  
+
     <li>
-      <div class="{% if post.category == 'post' %}direction-l{%else%}direction-r{% endif %}">
-        <div class="flag-wrapper">
-          <span class="flag">
+      <article class="{{ post.category }}">
+        <div class="item-wrapper">
+          <span class="item">
             <i class="fa {% if post.category == 'post' %} fa-file-text{% else %} fa-paperclip {% endif %}"></i>
             <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
           </span>
-          <span class="time-wrapper">
-            <span class="time">{{ post.date | date: "%e %B %Y" }}</span>
+          <span class="date-wrapper">
+            <span class="date">{{ post.date | date: "%e %B %Y" }}</span>
           </span>
-          <div class="tags">{% for tag in post.tags %}<span class="tag">{{ tag }}</span> {% endfor %}</div>
+{% comment %}<!--          <div class="tags-wrapper">{% for tag in post.tags %}<span class="tag">{{ tag }}</span> {% endfor %}</div>-->{% endcomment %}
         </div>
-      </div>
+      </article>
     </li>
 
   {% endfor %}
