@@ -10,8 +10,10 @@ published: true
 short: Website template in one page. 
 long: 
 title: Web template
+team:
+  size: 1
 links:
-  Demo: http://www.stonemillsoft.com
+  Demo:
   Source code: https://github.com/Miguelos/web-template
 use-of:
   Library:

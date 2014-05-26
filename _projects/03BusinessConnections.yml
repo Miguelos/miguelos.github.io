@@ -19,6 +19,8 @@ images:
     alt: Website screenshot mobile size
 layout: project
 published: true
+team:
+  size: 3
 short: Business Connections, an Evening Standard project.
 long: Business Connections, an Evening Standard project, contains commerce workflows, ticket flagging, and event management. Fully responsive web design.
 title: Business Connections

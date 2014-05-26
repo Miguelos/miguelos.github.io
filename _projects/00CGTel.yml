@@ -17,6 +17,7 @@ images:
 layout: project
 published: true
 team: This project has been developed by Manuel, Jorge and Me!
+  size: 3
 short: CGTel helps users and organizations to optimizing final cost on phone bill.
 long: 
   - |

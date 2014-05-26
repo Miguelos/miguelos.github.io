@@ -10,6 +10,8 @@ published: true
 short: Manteniance and development of the Cátedra Miguel de Guzmán and Instituto GeoGebra de Madrid websites.
 long: 
 title: Drupal work
+team:
+  size:
 links:
   Instituto GeoGebra de Madrid:   http://www.mat.ucm.es/catedramdeguzman/drupal/igm/igm
   Cátedra Miguel de Guzmán: http://www.mat.ucm.es/catedramdeguzman/

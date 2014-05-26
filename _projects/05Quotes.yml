@@ -12,6 +12,8 @@ images:
     url: /assets/images/Quotes/screenshot-2.png
     alt: App screenshot
 layout: project
+team:
+  size: 1
 published: true
 short:     Collection of quotes for Android.
 long:
