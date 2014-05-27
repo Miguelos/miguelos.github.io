@@ -4,6 +4,10 @@ $backgroundColor: #FFF;
 $backgroundColor2: #DDD;
 $backgroundColor3: #BBB;
 
+* {
+  word-break: break-word;
+}
+
 #page-wrap {
   padding-top: 50px + 20px; // nav height + nav margin-bottom
   display: table; // to allow the content be centered vertically (not i IE8 or less)
