@@ -392,21 +392,23 @@ div.posts article div.date time {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/partials\/_portfolio\.scss}line{font-family:\0000347}}
 #projects .project a:hover .image-crop figcaption, #projects .project a:focus .image-crop figcaption {
+  background: none;
+  font-weight: bold;
   text-shadow: 0px 1px 10px #555;
 }
 
 /* Project page */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/partials\/_portfolio\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/partials\/_portfolio\.scss}line{font-family:\0000359}}
 .l-left-col img {
   max-width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/partials\/_portfolio\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/partials\/_portfolio\.scss}line{font-family:\0000362}}
 .carousel .item > img {
   margin: 0 auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/partials\/_portfolio\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/partials\/_portfolio\.scss}line{font-family:\0000366}}
 .project-text {
   padding: 10px 0;
 }
@@ -544,40 +546,70 @@ div.posts article div.date time {
 html.calid body {
   background-color: #fdf6e3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000329}}
+html.calid body ::selection {
+  background: #b58900;
+  color: #eee8d5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000334}}
+html.calid body ::-moz-selection {
+  background: #b58900;
+  color: #eee8d5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000339}}
+html.calid body ::-webkit-selection {
+  background: #b58900;
+  color: #eee8d5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000345}}
 html.calid a {
   color: #b58900;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000348}}
+html.calid a::selection {
+  background: #839496;
+  color: #fdf6e3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000353}}
+html.calid a::-moz-selection {
+  background: #839496;
+  color: #fdf6e3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000358}}
+html.calid a::-webkit-selection {
+  background: #839496;
+  color: #fdf6e3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000364}}
 html.calid nav {
   background-color: #666666;
   border-color: #839496;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000368}}
 html.calid nav.navbar-default .navbar-nav > li > a {
   color: #eee8d5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000370}}
 html.calid nav.navbar-default .navbar-nav > li > a:hover {
   background-color: #b58900;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000378}}
 html.calid nav.navbar-default .navbar-nav > .active > a, html.calid nav.navbar-default .navbar-nav > .active > a:hover, html.calid nav.navbar-default .navbar-nav > .active > a:focus {
   background-color: #b58900;
   color: #eee8d5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000383}}
 html.calid nav .navbar-brand {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000385}}
 html.calid nav .navbar-brand:hover {
   background-color: #b58900;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/miguelo\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/monker\/_sass\/color-styles\/_calid\.scss}line{font-family:\0000393}}
 html.calid footer {
   background-color: #666666;
   border-color: #839496;

@@ -6,7 +6,7 @@ layout: page
   <section id="projects" class="">
     {% for project in page.projects %} 
       <section class="col-xs-12 col-sm-6 col-md-4 project">
-        <a href="/portfolio/{{ project[0] }}">
+        <a href="{% if project[1].link %}{{ project[1].link }}{% else %}/portfolio/{{ project[0] }}{% endif %}">
           <figure class="image-crop">
             {% if project[1].image %}
             <img src="{{ project[1].image.url }}" title="{{ project[1].image.title }}" alt="{{ project[1].image.alt }}" />

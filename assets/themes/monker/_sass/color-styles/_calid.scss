@@ -26,11 +26,39 @@ html.calid {
 
   body {
     background-color: $bgColor2;
+    ::selection {
+      background:$highColor;
+      color:$fgColor;
+    }
+
+    ::-moz-selection {
+      background:$highColor;
+      color:$fgColor;
+    }
+
+    ::-webkit-selection {
+      background:$highColor;
+      color:$fgColor;
+    }
   }
 
   a {
     color: $highColor;
     font-weight: bold;
+    &::selection {
+      background:$borderColor;
+      color:$bgColor2;
+    }
+
+    &::-moz-selection {
+      background:$borderColor;
+      color:$bgColor2;
+    }
+
+    &::-webkit-selection {
+      background:$borderColor;
+      color:$bgColor2;
+    }
   }
 
   nav {

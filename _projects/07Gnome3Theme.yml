@@ -1,0 +1,13 @@
+description: Minimalistic Gnome3 theme
+priority: 0.3
+link: http://miguelos.me/ACIDO/
+image:
+  url: https://raw.github.com/Miguelos/ACIDO/dev/ACIDO/gnome-shell/preview-acido.png
+  title: Gnome3 theme
+  alt: Gnome3 theme screenshot
+published: true
+short: Website template in one page. 
+long: 
+title: Gnome3 theme
+team:
+  size: 1
