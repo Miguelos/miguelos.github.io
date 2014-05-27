@@ -7,7 +7,7 @@ description: {{page.description}}
 {% assign leftCol = page.image or page.qr-code or page.team %}
 
 {% if leftCol %}
-<div class="l-left-col col-xs-2">
+<aside class="l-left-col col-xs-2">
 {% if page.image %}
   <img class="img-polaroid" src="{{ page.image.url }}" title="{{ page.image.title }}" alt="{{ page.image.alt }}" />
 {% endif %}
@@ -16,13 +16,13 @@ description: {{page.description}}
     <img src="{{ page.qr-code.url }}" title="{{ page.title }} QR code" alt="{{ page.title }} QR code" />
   </div>
 {% endif %}
-{% if page.team %}
+{% if page.team.size %}
   <div class="team-description">
-      <h3>{{ page.title }} Team size:</h3>
+      <h3>Team size:</h3>
       <p>{{ page.team.size }}</p>
   </div>
 {% endif %}
-</div>
+</aside>
 {% endif %}
 
 {% if page.images %}
