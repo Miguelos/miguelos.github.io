@@ -1,0 +1,121 @@
+$sidebar-width: 320px;
+$toggle-width: 50px;
+
+body.sidebar-closed {
+  .sidebar-wrapper {
+    left: $toggle-width - $sidebar-width;
+    .sidebar-content{
+      opacity: 0.5;
+    }
+  }
+  .container {
+    margin-left: $toggle-width;
+  }
+}
+
+.sidebar-wrapper {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: $sidebar-width;
+  position: fixed;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  .sidebar-toggle{
+    position: absolute;
+    right: -25px;
+    top: 25px;
+  }
+
+  .sidebar-content{
+    height: 100%;
+    opacity: 1;
+
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+
+
+    .sidebar-header{
+      height: 20%;
+    }
+
+    .header-cover {
+      background-size: cover;
+    }
+
+    .sidebar-icon img{
+      width: 33%;
+      margin: 0 33%;
+    }
+
+    .sidebar-nav{
+      height: 80%;
+
+      .nav-main{
+        margin: 0 !important;
+        float: none;
+        &:not {
+          display: block;
+        }
+        li {
+          float: none;
+          display: block;
+          a {
+            padding-top: 12px;
+            padding-bottom: 12px;
+          }
+        }
+      }
+
+      .social-links {
+        position: absolute;
+        bottom: 0;
+        padding: 15px;
+        li {
+          margin: 0 5px;
+          float: left;
+        }
+
+        .rss-link{
+          background: $bc-rss;
+        }
+        .google-plus-link{
+          background: $bc-google-plus;
+        }
+        .github-link{
+          background: $bc-github;
+        }
+        .twitter-link{
+          background: $bc-twitter;
+        }
+        .facebook-link{
+          background: $bc-facebook;
+        }
+        .linkedin-link{
+          background: $bc-linkedin;
+        }
+        .stackoverflow-link{
+          background: $bc-stackoverflow;
+        }
+      }
+    }
+  }
+
+
+}
+
+// Content
+.container {
+  padding-left: $sidebar-width;
+  margin-top: 10px;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+}

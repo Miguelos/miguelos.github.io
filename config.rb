@@ -1,9 +1,7 @@
-require 'animation'
-
 # environment = :development or :production
 
-css_dir =   "/assets/themes/monker/css"
-sass_dir =  "/assets/themes/monker/_sass"
+css_dir =   "/assets/themes/material-monker/css"
+sass_dir =  "/assets/themes/material-monker/_sass"
 images_dir = "images"
 generated_images_dir = images_dir + "/generated"
 javascripts_dir = "js"
