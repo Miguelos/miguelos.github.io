@@ -7,7 +7,7 @@
   list-style-type: none;
 
   li {
-    padding: 1em;
+    margin-bottom: 1em;
 
     &:after {
       content: "";
@@ -16,22 +16,20 @@
       clear: both;
       visibility: hidden;
     }
-    &:hover {
-      background: rgba(6,6,6,0.1);
+
+    a {
+      background-color: $fg-color !important;
+      article {
+        color: black;
+        padding: 1em;
+      }
     }
   }
 
   article.post {
-    position: relative;
-    width: 50%;
-    float: left;
-    text-align: right;
   }
 
   article.link {
-    position: relative;
-    width: 50%;
-    float: right;
   }
 
   .flag-wrapper {
@@ -55,7 +53,7 @@
     display: inline-block;
     line-height: 1em;
     font-size: 0.7em;
-    color: #666;
+    color: $gray-color;
     vertical-align: middle;
 
     .date {

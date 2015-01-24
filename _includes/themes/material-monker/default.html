@@ -42,7 +42,8 @@
       <aside id="sidebar" class="sidebar-wrapper shadow-z-2">
         <div class="sidebar-content">
           <!--Sidebar header-->
-          <div class="sidebar-header header-cover" style="background-image: url({{ ASSET_PATH }}/img/header.jpg);">
+          <div class="sidebar-header">
+            <div class="header-background" style="background-image: url({{ ASSET_PATH }}/img/header.jpg);"></div>
             <div class="sidebar-icon">
                 <img src="{{ ASSET_PATH }}/img/icon.svg">
             </div>
@@ -56,6 +57,7 @@
               {% assign group = 'navigation' %}
               {% include JB/pages_list %}
             </ul>
+
             <ul class="nav navbar-nav social-links">
               <li class="divider-vertical"></li>
                 {% if site.JB.rss_path %}
@@ -117,6 +119,7 @@
             </ul>
 
           </nav>
+
         </div>
 
         <button class="btn btn-fab btn-raised btn-primary sidebar-toggle sidebar-toggle-button shadow-z-3"><i class="fa fa-list"></i></button>
@@ -125,15 +128,7 @@
       <section class="container" role="main">
         {{ content }}
       </section>
-        <div class="footer-push"></div>
     </div><!--/.page-wrap -->
-
-    <footer>
-      <div class="container">
-        <strong>{{ site.time | date: '%Y' }} | {{ site.author.name }}</strong>
-        <p>This site was built with HTML5 and CSS3 with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>.<span class="hidden-xs"> Use of <a href="http://www.compass-style.org/">Compass</a>, <a href="http://pygments.org/">Pygments</a> syntax highlighting, <a href="https://github.com/flatterline/jekyll-plugins">Flatterline Jekyll</a>, <a href="https://github.com/icebreaker/proudify">Proudify</a>, <a href="https://github.com/simplefocus/FlowType.JS">FlowType.JS</a>, <a href="http://jquery.com/">JQuery</a>.</span><p>
-      </div>
-    </footer>
 
     <!-- js  -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

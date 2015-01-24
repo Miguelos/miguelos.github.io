@@ -1,0 +1,40 @@
+// Monakai colors
+$bg-color: rgb(39, 40, 34);
+$fg-color: rgb(248, 248, 242);
+$green-color: rgb(166, 226, 46);
+$pink-color: rgb(249, 38, 114);
+$yellow-color: rgb(230, 219, 116);
+$blue-color: rgb(102, 217, 239);
+$gray-color: rgb(117, 113, 94);
+$purple-color: rgb(174, 129, 255);
+$orange-color: rgb(253, 151, 31);
+
+/* Colors overrides */
+
+.navbar.navbar,
+.navbar-default.navbar,
+.btn-primary:not(.btn-link):not(.btn-flat),
+.nav-tabs {
+  background-color: $bg-color !important;
+  a:hover, a:focus {
+    color: $green-color !important;
+  }
+  .active {
+    a, i {
+      color: $purple-color !important;
+    }
+  }
+}
+
+a, a:hover, a:focus {
+  color: black;
+}
+
+pre {
+  background-color: inherit;
+  border-radius: 0;
+  border: none;
+  -moz-box-shadow:    inset 0 0 15px black;
+  -webkit-box-shadow: inset 0 0 15px black;
+  box-shadow:         inset 0 0 15px black;
+}
