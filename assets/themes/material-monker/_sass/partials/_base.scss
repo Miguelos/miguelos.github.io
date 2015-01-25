@@ -13,8 +13,8 @@ $orange-color: rgb(253, 151, 31);
 
 .navbar.navbar,
 .navbar-default.navbar,
-.btn-primary:not(.btn-link):not(.btn-flat),
-.nav-tabs {
+.nav-tabs,
+.btn-primary {
   background-color: $bg-color !important;
   a:hover, a:focus {
     color: $green-color !important;
@@ -27,7 +27,7 @@ $orange-color: rgb(253, 151, 31);
 }
 
 a, a:hover, a:focus {
-  color: black;
+  color: $bg-color;
 }
 
 pre {

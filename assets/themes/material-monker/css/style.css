@@ -4,34 +4,34 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000317}}
 .navbar.navbar,
 .navbar-default.navbar,
-.btn-primary:not(.btn-link):not(.btn-flat),
-.nav-tabs {
+.nav-tabs,
+.btn-primary {
   background-color: #272822 !important;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000319}}
 .navbar.navbar a:hover, .navbar.navbar a:focus,
 .navbar-default.navbar a:hover,
 .navbar-default.navbar a:focus,
-.btn-primary:not(.btn-link):not(.btn-flat) a:hover,
-.btn-primary:not(.btn-link):not(.btn-flat) a:focus,
 .nav-tabs a:hover,
-.nav-tabs a:focus {
+.nav-tabs a:focus,
+.btn-primary a:hover,
+.btn-primary a:focus {
   color: #a6e22e !important;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000323}}
 .navbar.navbar .active a, .navbar.navbar .active i,
 .navbar-default.navbar .active a,
 .navbar-default.navbar .active i,
-.btn-primary:not(.btn-link):not(.btn-flat) .active a,
-.btn-primary:not(.btn-link):not(.btn-flat) .active i,
 .nav-tabs .active a,
-.nav-tabs .active i {
+.nav-tabs .active i,
+.btn-primary .active a,
+.btn-primary .active i {
   color: #ae81ff !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000329}}
 a, a:hover, a:focus {
-  color: black;
+  color: #272822;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000333}}
@@ -63,11 +63,10 @@ body.sidebar-closed .sidebar-toggle i {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000320}}
 body.sidebar-closed .container {
-  padding-left: 25px;
   margin-left: 50px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000325}}
 .sidebar-wrapper {
   left: 0;
   top: 0;
@@ -75,6 +74,7 @@ body.sidebar-closed .container {
   z-index: 1000;
   width: 320px;
   position: fixed;
+  background-color: #272822;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -104,8 +104,8 @@ body.sidebar-closed .container {
   transition: all 0.3s ease-in-out;
   height: 100%;
   background-size: cover;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000367}}
 .sidebar-wrapper .sidebar-content .sidebar-icon img {
@@ -115,72 +115,76 @@ body.sidebar-closed .container {
   margin: 0 33%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000374}}
+.sidebar-wrapper .sidebar-content .sidebar-about {
+  padding: 5%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000378}}
 .sidebar-wrapper .sidebar-content .sidebar-nav {
   height: 80%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000381}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .nav-main {
   margin: 0 !important;
   float: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000384}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .nav-main:not {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000387}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .nav-main li {
   float: none;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000390}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .nav-main li a {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000397}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .social-links {
   position: absolute;
   bottom: 0;
   padding: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003101}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .social-links li {
   margin: 0 5px;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003106}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .social-links .rss-link {
   background: #ee802f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003109}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .social-links .google-plus-link {
   background: #dd4b39;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003112}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .social-links .github-link {
   background: #171515;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003115}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .social-links .twitter-link {
   background: #55acee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003118}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .social-links .facebook-link {
   background: #3b5998;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003121}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .social-links .linkedin-link {
   background: #0e76a8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003124}}
 .sidebar-wrapper .sidebar-content .sidebar-nav .social-links .stackoverflow-link {
   background: #ef8236;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\00003135}}
 .container {
   padding-left: 320px;
-  margin-left: 25;
+  margin-left: 40px;
   margin-top: 10px;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;

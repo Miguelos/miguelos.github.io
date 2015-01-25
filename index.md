@@ -25,9 +25,3 @@ layout: page
     </section>
   </aside>
 </div>
-
-<aside class="notification notification-bottom alert alert-block alert-info">
-  <button type="button" class="close" data-dismiss="alert">&times;</button>
-  <p><strong>Feedback</strong>: <a href="https://github.com/Miguelos/miguelos.github.io/issues"> github.com/Miguelos.github.io/issues</a>.</p>
-</aside>
-

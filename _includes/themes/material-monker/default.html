@@ -2,12 +2,7 @@
 <html lang="en" class="{{ page.theme.color-styles[1] }}">
   <head>
     <meta charset="utf-8">
-    <title>
-      {% if page.title %}
-        {{ page.title }} -
-      {% endif %}
-      {{ site.title }}
-    </title>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +22,7 @@
     <link href="{{ ASSET_PATH }}/css/proudify.min.css" rel="stylesheet" type="text/css"/>
 
     <!-- fav and touch icons -->
-    <link rel="shortcut icon" href="http://icons.iconarchive.com/icons/xenatt/the-circle/512/App-Terminal-icon.png">
+    <link rel="shortcut icon" href="{{ ASSET_PATH }}/img/icon.svg">
 <!--    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -42,11 +37,10 @@
       <aside id="sidebar" class="sidebar-wrapper shadow-z-2">
         <div class="sidebar-content">
           <!--Sidebar header-->
-          <div class="sidebar-header">
-            <div class="header-background" style="background-image: url({{ ASSET_PATH }}/img/header.jpg);"></div>
-            <div class="sidebar-icon">
-                <img src="{{ ASSET_PATH }}/img/icon.svg">
-            </div>
+          <a href="{{ HOME_PATH }}">
+            <div class="sidebar-header">
+              <div class="header-background" style="background-image: url({{ ASSET_PATH }}/img/header.jpg);"></div>
+            </a>
           </div>
 
           <!--Sidebar navigation-->
@@ -58,47 +52,51 @@
               {% include JB/pages_list %}
             </ul>
 
+            <section class="sidebar-about">
+              {% include about %}
+            </section>
+
             <ul class="nav navbar-nav social-links">
               <li class="divider-vertical"></li>
                 {% if site.JB.rss_path %}
                 <li>
                   <a href="{{ BASE_PATH }}{{ site.JB.rss_path }}" class="btn btn-fab btn-fab-mini btn-link btn-sm rss-link" target="_blank">
-                    <i class="fa fa-lg fa-rss-square"></i>
+                    <i class="fa fa-lg fa-rss"></i>
                   </a>
                 </li>
               {% endif %}
               {% if site.author.github %}
                 <li>
                   <a href="https://github.com/{{ site.author.github }}" class="btn btn-fab btn-fab-mini btn-link btn-sm github-link" target="_blank">
-                    <i class="fa fa-lg fa-github-square"></i>
+                    <i class="fa fa-lg fa-github"></i>
                   </a>
                 </li>
               {% endif %}
               {% if site.author.googleplus %}
                 <li>
                   <a rel="author" href="https://plus.google.com/{{ site.author.googleplus }}?rel=author" class="btn btn-fab btn-fab-mini btn-link btn-sm google-plus-link" target="_blank">
-                    <i class="fa fa-lg fa-google-plus-square"></i>
+                    <i class="fa fa-lg fa-google-plus"></i>
                   </a>
                 </li>
               {% endif %}
               {% if site.author.twitter %}
                 <li>
                   <a href="https://twitter.com/{{ site.author.twitter }}" class="btn btn-fab btn-fab-mini btn-link btn-sm twitter-link" target="_blank">
-                    <i class="fa fa-lg fa-twitter-square"></i>
+                    <i class="fa fa-lg fa-twitter"></i>
                   </a>
                 </li>
               {% endif %}
               {% if site.author.facebook %}
                 <li>
                   <a href="http://www.facebook.com/{{ site.author.facebook }}" class="btn btn-fab btn-fab-mini btn-link btn-sm facebook-link" target="_blank">
-                    <i class="fa fa-lg fa-facebook-square"></i>
+                    <i class="fa fa-lg fa-facebook"></i>
                   </a>
                 </li>
               {% endif %}
               {% if site.author.linkedin %}
                 <li>
                   <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" class="btn btn-fab btn-fab-mini btn-link btn-sm linkedin-link" target="_blank">
-                    <i class="fa fa-lg fa-linkedin-square"></i>
+                    <i class="fa fa-lg fa-linkedin"></i>
                   </a>
                 </li>
               {% endif %}
@@ -112,7 +110,7 @@
               {% if site.author.feedburner %}
                 <li>
                   <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" class="btn btn-fab btn-fab-mini btn-link btn-sm feedburner-link" target="_blank">
-                    <i class="fa fa-lg fa-feedburner-square"></i>
+                    <i class="fa fa-lg fa-feedburner"></i>
                   </a>
                 </li>
               {% endif %}
