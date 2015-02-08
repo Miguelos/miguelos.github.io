@@ -10,39 +10,3 @@ $purple-color: rgb(174, 129, 255);
 $orange-color: rgb(253, 151, 31);
 
 /* Colors overrides */
-
-.navbar.navbar, .navbar-default.navbar {
-  background-color: $bg-color !important;
-  color: $fg-color !important;
-}
-
-#sidebar {
-  .navbar.nav-main,
-  .navbar-default.navbar,
-  .nav-tabs,
-  .btn-primary {
-    a:hover, a:focus {
-      color: $green-color !important;
-    }
-    .active {
-      a, i {
-        color: $purple-color !important;
-      }
-    }
-  }
-}
-
-pre {
-  background-color: inherit;
-  border-radius: 0;
-  border: none;
-  -moz-box-shadow:    inset 0 0 15px black;
-  -webkit-box-shadow: inset 0 0 15px black;
-  box-shadow:         inset 0 0 15px black;
-}
-
-.container{
-  a, a:hover, a:focus {
-    color: $bg-color !important;
-  }
-}

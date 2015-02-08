@@ -2,10 +2,10 @@
 layout: page
 ---
 
-<div class="row">
-  <section id="projects" class="">
-    {% for project in page.projects %} 
-      <section class="col-xs-12 col-sm-6 col-md-4 project">
+<ul id="projects" class="">
+  {% for project in page.projects %}
+    <li>
+      <section class="project">
         <a href="{% if project[1].link %}{{ project[1].link }}{% else %}/portfolio/{{ project[0] }}{% endif %}">
           <figure class="image-crop">
             {% if project[1].image %}
@@ -16,6 +16,5 @@ layout: page
           </figure>
         </a>
       </section>
-    {% endfor %}
-  </section>
-</div>
+  {% endfor %}
+</ul>
