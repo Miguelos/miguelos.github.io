@@ -1,40 +1,34 @@
 /** Variables and mixins **/
 /* Partials */
 /* Colors overrides */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000317}}
-.navbar.navbar,
-.navbar-default.navbar,
-.nav-tabs,
-.btn-primary {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000314}}
+.navbar.navbar, .navbar-default.navbar {
   background-color: #272822 !important;
+  color: #f8f8f2 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000319}}
-.navbar.navbar a:hover, .navbar.navbar a:focus,
-.navbar-default.navbar a:hover,
-.navbar-default.navbar a:focus,
-.nav-tabs a:hover,
-.nav-tabs a:focus,
-.btn-primary a:hover,
-.btn-primary a:focus {
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000324}}
+#sidebar .navbar.nav-main a:hover, #sidebar .navbar.nav-main a:focus,
+#sidebar .navbar-default.navbar a:hover,
+#sidebar .navbar-default.navbar a:focus,
+#sidebar .nav-tabs a:hover,
+#sidebar .nav-tabs a:focus,
+#sidebar .btn-primary a:hover,
+#sidebar .btn-primary a:focus {
   color: #a6e22e !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000323}}
-.navbar.navbar .active a, .navbar.navbar .active i,
-.navbar-default.navbar .active a,
-.navbar-default.navbar .active i,
-.nav-tabs .active a,
-.nav-tabs .active i,
-.btn-primary .active a,
-.btn-primary .active i {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000328}}
+#sidebar .navbar.nav-main .active a, #sidebar .navbar.nav-main .active i,
+#sidebar .navbar-default.navbar .active a,
+#sidebar .navbar-default.navbar .active i,
+#sidebar .nav-tabs .active a,
+#sidebar .nav-tabs .active i,
+#sidebar .btn-primary .active a,
+#sidebar .btn-primary .active i {
   color: #ae81ff !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000329}}
-a, a:hover, a:focus {
-  color: #272822;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000335}}
 pre {
   background-color: inherit;
   border-radius: 0;
@@ -42,6 +36,11 @@ pre {
   -moz-box-shadow: inset 0 0 15px black;
   -webkit-box-shadow: inset 0 0 15px black;
   box-shadow: inset 0 0 15px black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_base\.scss}line{font-family:\0000345}}
+.container a, .container a:hover, .container a:focus {
+  color: #272822 !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\000035}}
@@ -63,7 +62,7 @@ body.sidebar-closed .sidebar-toggle i {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000320}}
 body.sidebar-closed .container {
-  margin-left: 50px;
+  padding-left: 50px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/media\/datos\/ws\/ws-github\/miguelos\.github\.io\/assets\/themes\/material-monker\/_sass\/partials\/_sidebar\.scss}line{font-family:\0000325}}

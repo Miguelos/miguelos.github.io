@@ -11,23 +11,25 @@ $orange-color: rgb(253, 151, 31);
 
 /* Colors overrides */
 
-.navbar.navbar,
-.navbar-default.navbar,
-.nav-tabs,
-.btn-primary {
+.navbar.navbar, .navbar-default.navbar {
   background-color: $bg-color !important;
-  a:hover, a:focus {
-    color: $green-color !important;
-  }
-  .active {
-    a, i {
-      color: $purple-color !important;
-    }
-  }
+  color: $fg-color !important;
 }
 
-a, a:hover, a:focus {
-  color: $bg-color;
+#sidebar {
+  .navbar.nav-main,
+  .navbar-default.navbar,
+  .nav-tabs,
+  .btn-primary {
+    a:hover, a:focus {
+      color: $green-color !important;
+    }
+    .active {
+      a, i {
+        color: $purple-color !important;
+      }
+    }
+  }
 }
 
 pre {
@@ -37,4 +39,10 @@ pre {
   -moz-box-shadow:    inset 0 0 15px black;
   -webkit-box-shadow: inset 0 0 15px black;
   box-shadow:         inset 0 0 15px black;
+}
+
+.container{
+  a, a:hover, a:focus {
+    color: $bg-color !important;
+  }
 }
