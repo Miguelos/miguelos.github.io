@@ -15,8 +15,8 @@ Usage:
 {% else %}
   {% for post in posts_collate  %}
 
-    <li>
-      <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-default">
+    <li class="list-item">
+      <a href="{{ BASE_PATH }}{{ post.url }}">
         <article class="{{ post.category }}">
             <i class="fa {% if post.category == 'post' %} fa-file-text{% else %} fa-paperclip {% endif %}"></i>
             {{ post.title }}

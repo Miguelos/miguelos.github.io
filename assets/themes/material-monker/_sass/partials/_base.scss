@@ -1,12 +1,62 @@
-// Monakai colors
-$bg-color: rgb(39, 40, 34);
-$fg-color: rgb(248, 248, 242);
-$green-color: rgb(166, 226, 46);
-$pink-color: rgb(249, 38, 114);
-$yellow-color: rgb(230, 219, 116);
-$blue-color: rgb(102, 217, 239);
-$gray-color: rgb(117, 113, 94);
-$purple-color: rgb(174, 129, 255);
-$orange-color: rgb(253, 151, 31);
 
-/* Colors overrides */
+img {
+  max-width: 100%;
+}
+
+.tag_box{
+  span {
+    font-size: 12px;
+    color: #CCC;
+  }
+}
+
+// Carousel overrides
+.carousel {
+  height: 500px;
+  overflow: hidden;
+  .carousel-inner {
+    height: 100%;
+    .item {
+      height: 100%;
+      img {
+        margin: auto;
+        max-height: 100%;
+      }
+    }
+  }
+
+  // Flat carousel controls
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    bottom: inherit;
+    width: 50px;
+    height: 50px;
+    text-shadow: none;
+    background-color: $nephritis;
+    opacity: 1;
+    &.btn-rounded {
+      padding: 12px;
+    }
+    &.right, &.left {
+      background-image: none;
+    }
+  }
+  .carousel-indicators {
+    .active {
+      background-color: $nephritis;
+    }
+    li {
+      border-color: $nephritis;
+      box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    }
+  }
+}
+
+// Overrides for pygments
+pre {
+  color: inherit;
+  background-color: inherit;
+  border: none;
+}
+

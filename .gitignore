@@ -12,3 +12,6 @@ Thumbs.db
 # sass-cache files
 *.sass-cache*
 *.fuse_hidden*
+
+# WebStorm
+.idea

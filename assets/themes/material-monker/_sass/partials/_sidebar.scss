@@ -8,15 +8,10 @@ body.sidebar-closed {
       filter: blur(0);
       -webkit-filter: blur(0);
     }
-    .sidebar-content{
+    .sidebar-content {
       opacity: 0.5;
     }
   }
-
-  .sidebar-toggle i{
-    color: $purple-color !important;
-  }
-
   .container {
     padding-left: $toggle-width;
   }
@@ -29,19 +24,24 @@ body.sidebar-closed {
   z-index: 1000;
   width: $sidebar-width;
   position: fixed;
-  background-color: $bg-color;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 
-  .sidebar-toggle{
+  .sidebar-toggle-button {
     position: absolute;
     right: -25px;
     top: 25px;
+
+    i {
+      padding: 10px;
+    }
+
   }
 
-  .sidebar-content{
+  .sidebar-nav {
     height: 100%;
     opacity: 1;
 
@@ -49,85 +49,79 @@ body.sidebar-closed {
     -moz-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
 
-
-    .sidebar-header{
-      height: 20%;
-    }
-
-    .header-background {
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      height: 100%;
-      background-size: cover;
-      filter: blur(2px);
-      -webkit-filter: blur(2px);
-    }
-
-    .sidebar-icon img{
-      position: absolute;
-      top: 10px;
-      width: 33%;
-      margin: 0 33%;
+    .sidebar-icon {
+      position: relative;
+      height: 15%;
+      padding-top: 20px;
+      img {
+        height: 65%;
+        margin: 0 auto;
+        display: block;
+      }
     }
 
     .sidebar-about {
       padding: 5%;
     }
 
-    .sidebar-nav{
-      height: 80%;
-
-      .nav-main{
-        margin: 0 !important;
+    .nav-main {
+      margin: 0 !important;
+      float: none;
+      li {
         float: none;
-        &:not {
-          display: block;
-        }
-        li {
-          float: none;
-          display: block;
-          a {
-            padding-top: 12px;
-            padding-bottom: 12px;
+        display: block;
+
+        a {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          &:hover {
+            background-color: rgba(0,0,0,.03);
           }
         }
       }
+    }
 
-      .social-links {
-        position: absolute;
-        bottom: 0;
-        padding: 15px;
-        li {
-          margin: 0 5px;
-          float: left;
-        }
+    .social-links {
+      position: absolute;
+      bottom: 0;
+      padding: 15px;
 
-        .rss-link{
-          background: $bc-rss;
+      a {
+        padding: 5px;
+        color: #ffffff;
+        i {
+          padding: 7px;
         }
-        .google-plus-link{
-          background: $bc-google-plus;
-        }
-        .github-link{
-          background: $bc-github;
-        }
-        .twitter-link{
-          background: $bc-twitter;
-        }
-        .facebook-link{
-          background: $bc-facebook;
-        }
-        .linkedin-link{
-          background: $bc-linkedin;
-        }
-        .stackoverflow-link{
-          background: $bc-stackoverflow;
-        }
+      }
+
+      li {
+        margin: 0 5px;
+        float: left;
+      }
+
+      .rss-link {
+        background: $bc-rss;
+      }
+      .google-plus-link {
+        background: $bc-google-plus;
+      }
+      .github-link {
+        background: $bc-github;
+      }
+      .twitter-link {
+        background: $bc-twitter;
+      }
+      .facebook-link {
+        background: $bc-facebook;
+      }
+      .linkedin-link {
+        background: $bc-linkedin;
+      }
+      .stackoverflow-link {
+        background: $bc-stackoverflow;
       }
     }
   }
-
 
 }
 

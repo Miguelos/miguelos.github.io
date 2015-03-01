@@ -33,3 +33,15 @@ permalink: about/
     {% endif %}
   </ul>
 </section>
+
+<!-- /js plugins -->
+<script type="text/javascript">
+    $('#proudify-codeschool').proudify({
+    'username': '{{site.author.codeschool}}',
+    service: 'codeschool',
+    completed: true
+    });
+    $('#proudify-coderwall').proudify({'username': '{{site.author.coderwall}}', service: 'coderwall'});
+    $('#proudify-github').proudify({'username': '{{site.author.github}}', pushed_at: 200});
+</script>
+<!-- /js plugins -->

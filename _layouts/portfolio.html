@@ -2,19 +2,14 @@
 layout: page
 ---
 
-<ul id="projects" class="">
+<ul id="projects" class="material-list">
   {% for project in page.projects %}
-    <li>
-      <section class="project">
+    <li class="list-item">
+        {% if project[1].image %}<img class="bg-img" src="{{ project[1].image.url }}"/>{% endif %}
         <a href="{% if project[1].link %}{{ project[1].link }}{% else %}/portfolio/{{ project[0] }}{% endif %}">
-          <figure class="image-crop">
-            {% if project[1].image %}
-            <img src="{{ project[1].image.url }}" title="{{ project[1].image.title }}" alt="{{ project[1].image.alt }}" />
-            {% endif %}
-            <figcaption><h3>{{ project[1].title }}</h3>
-            <p>{{ project[1].short }}</p></figcaption>
-          </figure>
+            <h3>{{ project[1].title }}</h3>
+            <p>{{ project[1].short }}</p>
         </a>
-      </section>
+    </li>
   {% endfor %}
 </ul>
