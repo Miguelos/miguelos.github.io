@@ -62,7 +62,8 @@
                 {% if site.JB.rss_path %}
                 <li>
                     <a href="{{ BASE_PATH }}{{ site.JB.rss_path }}"
-                       class="btn btn-rounded btn-fab btn-rounded btn-fab-mini btn-link btn-sm rss-link" target="_blank">
+                       class="btn btn-rounded btn-fab btn-rounded btn-fab-mini btn-link btn-sm rss-link"
+                       target="_blank">
                         <i class="fa fa-lg fa-rss"></i>
                     </a>
                 </li>
@@ -143,12 +144,21 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.proudify.min.js"></script>
 <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.color.js"></script>
+<!-- /js plugins -->
 <script type="text/javascript">
     $(".sidebar-toggle").click(function (e) {
         e.preventDefault();
         $("body").toggleClass("sidebar-closed");
     });
+    $('#proudify-codeschool').proudify({
+        'username': '{{site.author.codeschool}}',
+        service: 'codeschool',
+        completed: true
+    });
+    $('#proudify-coderwall').proudify({'username': '{{site.author.coderwall}}', service: 'coderwall'});
+    $('#proudify-github').proudify({'username': '{{site.author.github}}', pushed_at: 200});
 </script>
+<!-- /js plugins -->
 {% include JB/analytics %}
 
 </body>

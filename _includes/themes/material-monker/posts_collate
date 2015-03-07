@@ -20,9 +20,7 @@ Usage:
         <article class="{{ post.category }}">
             <i class="fa {% if post.category == 'post' %} fa-file-text{% else %} fa-paperclip {% endif %}"></i>
             {{ post.title }}
-            <span class="date-wrapper">
-              <span class="date">{{ post.date | date: "%e %B %Y" }}</span>
-            </span>
+            <span class="date-wrapper date">{{ post.date | date: "%e %B %Y" }}</span>
     {% comment %}<!--          <div class="tags-wrapper">{% for tag in post.tags %}<span class="tag">{{ tag }}</span> {% endfor %}</div>-->{% endcomment %}
         </article>
       </a>

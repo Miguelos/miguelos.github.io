@@ -10,6 +10,12 @@ img {
   }
 }
 
+@media (min-width: 400px){
+  .container[role=main] {
+    width: 90%;
+  }
+}
+
 // Carousel overrides
 .carousel {
   height: 500px;
