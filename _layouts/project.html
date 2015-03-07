@@ -7,7 +7,7 @@ description: {{page.description}}
 {% assign leftCol = page.image or page.qr-code or page.team %}
 
 {% if leftCol %}
-<aside class="l-left-col col-xs-2">
+<aside class="l-left-col col-xs-12 col-md-2">
 {% if page.image %}
   <img class="img-polaroid" src="{{ page.image.url }}" title="{{ page.image.title }}" alt="{{ page.image.alt }}" />
 {% endif %}
@@ -26,7 +26,7 @@ description: {{page.description}}
 {% endif %}
 
 {% if page.images %}
-<div id="project-carousel" class="carousel slide{% if leftCol %} col-xs-10{% else %} col-xs-12{% endif %}" data-ride="carousel" data-interval="3500">
+<div id="project-carousel" class="carousel slide col-xs-12 col-md-10" data-ride="carousel" data-interval="3500">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         {% for image in page.images %}

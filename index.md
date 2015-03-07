@@ -19,11 +19,7 @@ layout: page
   </section>
 
   <section class="col-sm-12" role="tabpanel">
-    <h2>Arround the web!</h2>
-    <section class="col-sm-12" id="linkedin">
-      <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-     <script type="IN/MemberProfile" data-id="uk.linkedin.com/in/miguelgpms" data-format="inline" data-related="false"></script>
-    </section>
+    <h2>Elsewhere</h2>
     <ul class="nav nav-tabs" role="tablist">
       {% if site.author.coderwall %}
       <li id="proudify-coderwall" class="col-sm-12 col-md-6">

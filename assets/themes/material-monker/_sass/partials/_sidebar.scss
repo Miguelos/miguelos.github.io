@@ -1,5 +1,5 @@
 $sidebar-width: 320px;
-$toggle-width: 50px;
+$toggle-width: 40px;
 
 body.sidebar-closed {
   .sidebar-wrapper {
@@ -18,9 +18,11 @@ body.sidebar-closed {
 }
 
 .sidebar-wrapper {
+  @include transition(all, 0.1s, ease);
   left: 0;
   top: 0;
   bottom: 0;
+  padding-right: $toggle-width;
   z-index: 1000;
   width: $sidebar-width;
   position: fixed;
@@ -31,14 +33,14 @@ body.sidebar-closed {
   transition: all 0.3s ease-in-out;
 
   .sidebar-toggle-button {
+    width: 40px;
     position: absolute;
-    right: -25px;
-    top: 25px;
-
-    i {
-      padding: 10px;
-    }
-
+    right: 0;
+    top: 0;
+    bottom: 0;
+    outline: none;
+    border: none;
+    border-radius: 0;
   }
 
   .sidebar-nav {
@@ -48,7 +50,7 @@ body.sidebar-closed {
     color: $fg-dark-color;
     border: none;
     border-radius: 0;
-    
+
     -webkit-transition: all 0.6s ease-in-out;
     -moz-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
@@ -79,10 +81,10 @@ body.sidebar-closed {
           padding-bottom: 12px;
           color: #f2f2f2;
           &:hover {
-            background-color: rgba(0,0,0,.03);
+            background-color: rgba(0, 0, 0, .03);
           }
-          &.active{
-            background-color: rgba(0,0,0,0.5);
+          &.active {
+            background-color: rgba(0, 0, 0, 0.5);
           }
         }
       }
@@ -134,12 +136,17 @@ body.sidebar-closed {
 
 // Content
 .container {
-  padding-left: $sidebar-width;
-  margin-left: 25px + 15px; // Bootstrap rows have -15 margin on both sides
-  margin-top: 10px;
+  padding-left: $toggle-width;
+}
 
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+@media (min-width: 850px) {
+  .container {
+    padding-left: $sidebar-width;
+    margin-left: 25px + 15px; // Bootstrap rows have -15 margin on both sides
+    margin-top: 10px;
 
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
 }

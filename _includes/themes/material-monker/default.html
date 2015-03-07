@@ -24,11 +24,10 @@
     <link href="{{ ASSET_PATH }}/css/proudify.min.css" rel="stylesheet" type="text/css"/>
 
     <!-- fav and touch icons -->
-    <link rel="shortcut icon" href="{{ ASSET_PATH }}/img/icon.svg">
-    <link rel="apple-touch-icon" href="{{ ASSET_PATH }}/img/icon.svg">
-    <!--    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-      -->
+    <link rel="shortcut icon" type="image/svg+xml" data-pis="{{ ASSET_PATH }}/img/icon.svg">
+    <link rel="alt shortcut icon" type="image/png" data-pis="{{ ASSET_PATH }}/img/icon.png">
+    <link rel="icon" type="image/png" href="{{ ASSET_PATH }}/img/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="{{ ASSET_PATH }}/img/favicon-32x32.png" sizes="32x32" />
 
 </head>
 
@@ -128,7 +127,7 @@
 
         </nav>
 
-        <button class="btn btn-rounded btn-fab btn-raised btn-primary sidebar-toggle sidebar-toggle-button"><i
+        <button class="btn btn-fab btn-raised btn-primary sidebar-toggle sidebar-toggle-button"><i
                 class="fa fa-list"></i></button>
     </aside>
 
@@ -150,6 +149,9 @@
         e.preventDefault();
         $("body").toggleClass("sidebar-closed");
     });
+    if ($(window).width() < 600) {
+        $("body").toggleClass("sidebar-closed");
+    }
     $('#proudify-codeschool').proudify({
         'username': '{{site.author.codeschool}}',
         service: 'codeschool',

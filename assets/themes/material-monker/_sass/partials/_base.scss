@@ -10,6 +10,10 @@ img {
   }
 }
 
+body{
+  background-color: $bg-color;
+}
+
 @media (min-width: 400px){
   .container[role=main] {
     width: 90%;
