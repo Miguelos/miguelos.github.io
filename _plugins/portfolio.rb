@@ -50,6 +50,7 @@ module Jekyll
         Dir.chdir('_projects')
         Dir["*.yml"].each do |path|
           name = File.basename(path, '.yml')
+          # Delete  two first characters from the file name.
           name[0] = ''
           name[0] = ''
           self.write_project_index(site, "_projects/#{path}", name)

@@ -5,7 +5,7 @@ layout: page
 <ul id="projects">
     {% for project in page.projects %}
     <li class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-        <a href="{% if project[1].link %}{{ project[1].link }}{% else %}/portfolio/{{ project[0] }}{% endif %}">
+        <a href="{% if project[1].link %}{{ project[1].link }}{% else %}/portfolio/{{ project[0] }}{% endif %}" {% if project[1].link %}target="_blank"{% endif %}>
             <figure>{% if project[1].image %}<img class="bg-img" src="{{ project[1].image.url }}"/>{% endif %}
                 <figcaption>
                     <h3>{{ project[1].title }}</h3>

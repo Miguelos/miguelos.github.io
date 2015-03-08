@@ -1,0 +1,31 @@
+description: Trending movies
+priority: 0.3
+link: https://play.google.com/store/apps/details?id=me.miguelgp.topmovies
+image:
+  url: https://lh4.ggpht.com/8xK6XLlGDqN7465EAHPgKyZKIpcjb06btBJayp_e33BVr6OjDugumvObaT7_rErUCbY=w300-rw
+  title:
+  alt: App logo
+published: true
+short: Android app
+long:
+title: Trending movies
+team:
+  size: 1
+platform:
+  android: true
+use-of:
+  Languages:
+    Java:
+    XML:
+    MySQL:
+    PHP:
+  Libraries:
+    Androidplot:
+      link: http://androidplot.com/
+  Development tools:
+    Android SDK:
+      link: https://developer.android.com/sdk/
+    Eclipse:
+      link: http://www.eclipse.org/
+    Aptana:
+      link: http://www.aptana.com/

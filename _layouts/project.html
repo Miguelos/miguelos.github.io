@@ -18,8 +18,11 @@ description: {{page.description}}
 {% endif %}
 {% if page.team.size %}
   <div class="team-description">
-      <h3>Team size:</h3>
-      <p>{{ page.team.size }}</p>
+      <h3>
+      {% for i in (1..page.team.size) %}
+          <i class="fa fa-user"></i>
+      {%endfor%}
+      </h3>
   </div>
 {% endif %}
 </aside>
@@ -68,24 +71,9 @@ description: {{page.description}}
 
 <div class="project-text {% if leftCol %} col-xs-10{% else %} col-xs-12{% endif %}">
   {% for p in page.long %}
-    {% if forloop.index == 2 %}
-    <a data-toggle="collapse" data-target="#more">more...</a>
-    <div id="more" class="collapse">
-    {% endif %}
     <p>{{ p }}</p>
-    {% if forloop.index >= 2 and forloop.last %}
-    </div>
-    {% endif %}
   {% endfor %}
-  {% if page.title == "Personal website" %}
-    <div class="visible-desktop">
-      <h2>Mobile design</h2>
-      <p>Check my website on mobile or tablets.</p>
-      {% include mobileview %}
-    </div>
-  {% endif %}
   {% if page.links %}
-  <h2>Links</h2>
   {% for link in page.links %}
     <div class="website" id="{{ link[0] }}">{{ link[0] }}: <a href="{{ link[1] }}">{{ link[1] }}</a></div>
   {% endfor %}
@@ -95,7 +83,6 @@ description: {{page.description}}
 
 <div class="col-xs-12">
   {% if page.use-of %}
-    <h2>Use of</h2>
     {% for cat in page.use-of %}
     <div class="col-md-4 tag_box">
       <h3>{{ cat[0] }}</h3>
@@ -111,6 +98,6 @@ description: {{page.description}}
   {% endif %}
 </div>
 
-<div class="col-xs-12">
+<div class="col-xs-12" role="comments">
 {% include JB/comments %}
 </div>

@@ -14,8 +14,8 @@ body{
   background-color: $bg-color;
 }
 
-@media (min-width: 400px){
-  .container[role=main] {
+@media (min-width: 400px) {
+  .container {
     width: 90%;
   }
 }
@@ -37,6 +37,7 @@ body{
 
   // Flat carousel controls
   .carousel-control {
+    margin: 0 10px;
     position: absolute;
     top: 50%;
     bottom: inherit;

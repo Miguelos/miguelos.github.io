@@ -50,6 +50,7 @@ use-of:
     JQuery:
       link: http://jquery.com/ 
   Development tools:
+    WebStorm IDE:
     Sublime Text:
       link: http://www.sublimetext.com/
     Rake:

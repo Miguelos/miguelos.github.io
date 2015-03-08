@@ -1,0 +1,27 @@
+description: Going Out, an Evening Standard project.
+priority: 0.6
+image:
+  url: /assets/images/go/screenshot-desktop.png
+  title: Tablet view
+  alt: Website screenshot tablet size
+images:
+  -
+    url: /assets/images/go/screenshot-desktop.png
+    title: Desktop view
+    alt: Website screenshot desktop size
+layout: project
+published: true
+team:
+  size: 3
+short: Going Out, an Evening Standard project.
+long: Going Out, an Evening Standard project, is aimed to let Evening Standard readers know about the actuality of events, attractions, pubs, etc.
+title: Going Out
+links:
+  Website: http://www.standard.co.uk/goingout
+use-of:
+  Framework:
+    Drupal:
+      link: https://drupal.org/
+  Languages:
+    MySQL:
+    PHP:

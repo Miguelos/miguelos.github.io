@@ -1,0 +1,27 @@
+description: Homes & Property
+priority: 0.6
+image:
+  url: /assets/images/hp/hp.png
+  title: Tablet view
+  alt: Website screenshot tablet size
+images:
+  -
+    url: /assets/images/hp/hp.png
+    title: Desktop view
+    alt: Website screenshot desktop size
+layout: project
+published: true
+team:
+  size: 3
+short: Homes & Property, an Evening Standard project.
+long: Homes & Property is website that allows users to search for their new home. I was in charge of the maintenance and evolutionary.
+title: Homes & Property
+links:
+  Website: http://www.homesandproperty.co.uk/
+use-of:
+  Framework:
+    Drupal:
+      link: https://drupal.org/
+  Languages:
+    MySQL:
+    PHP:
