@@ -38,6 +38,13 @@ author:
 #
 production_url : http://miguelos.me
 
+# Used by minify-html
+env: production
+
+# Extra gems
+gems:
+  - octopress-minify-html
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
