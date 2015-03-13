@@ -63,7 +63,7 @@ GEM
     json (1.8.2)
     kramdown (1.6.0)
     liquid (2.6.2)
-    listen (2.8.5)
+    listen (2.8.6)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
