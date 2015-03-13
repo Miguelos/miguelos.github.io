@@ -1,0 +1,27 @@
+description: MyHomeFiles
+priority: 0.6
+image:
+  url: /assets/images/mhf/mhf.jpg
+  title: Tablet view
+  alt: Website screenshot tablet size
+images:
+  -
+    url: /assets/images/mhf/mhf.jpg
+    title: Desktop view
+    alt: Website screenshot desktop size
+layout: project
+published: true
+team:
+  size: 3
+short: MyHomeFiles.
+long: MyHomeFiles is a new site, designed by Classic Folios. The purpose of the site is to provide information for new homeowners, putting all information about a home in one place. The site is available for use by home development companies, who wish to communicate with the owners of their houses on a development-by-development basis. I was the main developer in charge of implement the new versions of the site.
+title: MyHomeFiles
+links:
+  Website: http://www.myhomefiles.co.uk
+use-of:
+  Framework:
+    Drupal:
+      link: https://drupal.org/
+  Languages:
+    MySQL:
+    PHP:

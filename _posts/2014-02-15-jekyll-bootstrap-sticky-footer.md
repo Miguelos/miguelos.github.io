@@ -31,7 +31,7 @@ _include/theme/THEMENAME/default.html_:
 
 Sass code:
 
-{% highlight sass %}
+{% highlight scss %}
     /* Sticky footer */
     $footerHeight: 75px;
 

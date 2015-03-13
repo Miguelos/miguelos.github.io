@@ -1,0 +1,38 @@
+// Rounded buttons style
+.btn-rounded {
+  border-radius: 50%;
+  padding: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+
+
+  &:active:before {
+    width: 400%;
+    padding-top: 400%;
+
+    transition: width .2s ease-out, padding-top .2s ease-out;
+  }
+
+  &:before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 0;
+    padding-top: 0;
+
+    border-radius: 100%;
+
+    background-color: rgba(236, 240, 241, .3);
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+

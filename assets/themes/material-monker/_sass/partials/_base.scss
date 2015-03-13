@@ -1,0 +1,73 @@
+
+img {
+  max-width: 100%;
+}
+
+.tag_box{
+  span {
+    font-size: 12px;
+    color: #CCC;
+  }
+}
+
+body{
+  background-color: $bg-color;
+}
+
+@media (min-width: 400px) {
+  .container {
+    width: 90%;
+  }
+}
+
+// Carousel overrides
+.carousel {
+  height: 500px;
+  overflow: hidden;
+  .carousel-inner {
+    height: 100%;
+    .item {
+      height: 100%;
+      img {
+        margin: auto;
+        max-height: 100%;
+      }
+    }
+  }
+
+  // Flat carousel controls
+  .carousel-control {
+    margin: 0 10px;
+    position: absolute;
+    top: 50%;
+    bottom: inherit;
+    width: 50px;
+    height: 50px;
+    text-shadow: none;
+    background-color: $nephritis;
+    opacity: 1;
+    &.btn-rounded {
+      padding: 12px;
+    }
+    &.right, &.left {
+      background-image: none;
+    }
+  }
+  .carousel-indicators {
+    .active {
+      background-color: $nephritis;
+    }
+    li {
+      border-color: $nephritis;
+      box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    }
+  }
+}
+
+// Overrides for pygments
+pre {
+  color: inherit;
+  background-color: inherit;
+  border: none;
+}
+

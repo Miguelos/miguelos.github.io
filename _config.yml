@@ -2,6 +2,8 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:title 
 
+relative_permalinks: false
+
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "config.rb"]
 highlighter: pygments
 
@@ -35,6 +37,13 @@ author:
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://miguelos.me
+
+# Used by minify-html
+env: production
+
+# Extra gems
+gems:
+  - octopress-minify-html
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

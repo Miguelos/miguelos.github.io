@@ -2,40 +2,33 @@
 layout: page
 title: About me
 header : Post Archive
-group: navigation
 priority: 1
+permalink: about/
 ---
 
-<div class="col-sm-4 col-md-3 col-lg-4">
-{% include about %}
-</div>
-<aside class="col-sm-8 col-md-9 col-lg-8">
+<section class="about">
+  {% include about %}
+</section>
+<section class="" role="tabpanel">
   <h2>Arround the web!</h2>
-  <ul class="nav nav-tabs">
+  <ul class="nav nav-tabs" role="tablist">
     {% if site.author.coderwall %}
-    <li class="active"><a href="#proudify-coderwall" data-toggle="tab">Coderwall</a></li>
-    {% endif %}
-    {% if site.author.codeschool %}
-    <li><a href="#proudify-codeschool" data-toggle="tab">Codeschool</a></li>
-    {% endif %}
-  </ul>
-  <div class="tab-content">
-    {% if site.author.coderwall %}
-    <div class="tab-pane fade active in" id="proudify-coderwall">
+    <li id="proudify-coderwall">
+      <h3>Coderwall</h3>
       <blockquote>
         <p>Coderwall is a space for tech's most talented makers to connect, share, build, and be inspired.</p>
       </blockquote>
       <p>Check the badges I earned and feel free to take a look at my profile!</p>
-      <p>My Coderall profile: <a href="https://coderwall.com/miguelos"><img alt="Endorse Miguelos on Coderwall" src="https://api.coderwall.com/miguelos/endorsecount.png" /></a></p>
-    </div>
+      <a href="https://coderwall.com/miguelos" target="_blank">My Coderall profile.</a>
+    </li>
     {% endif %}
     {% if site.author.codeschool %}
-    <div class="tab-pane fade" id="proudify-codeschool">
+    <li id="proudify-codeschool">
+      <h3>Codeschool</h3>
       <blockquote>
         <p>Code School teaches web technologies in the comfort of your browser with video lessons, coding challenges, and screencasts. We strive to help you learn by doing.</p>
       </blockquote>
       <p>Here are my completed courses.</p>
-    </div>
     {% endif %}
-  </div>
-</aside>
+  </ul>
+</section>

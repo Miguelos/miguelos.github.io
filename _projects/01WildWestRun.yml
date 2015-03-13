@@ -1,0 +1,56 @@
+description: Wild West Run
+priority: 0.9
+image:
+  url: /assets/images/wild-west-run/Icon.png
+  title: Wild West Run
+  alt: Wild West Run Icon
+images:
+  -
+    url: /assets/images/wild-west-run/3.png
+    title:
+    alt: Wild West Run mobile screenshot
+  -
+    url: /assets/images/wild-west-run/6.png
+    title:
+    alt: Wild West Run mobile screenshot
+  -
+    url: /assets/images/wild-west-run/7.png
+    title:
+    alt: Wild West Run mobile screenshot
+layout: project
+published: true
+team:
+  size: 1
+short:     2D multiplatform game.
+long:
+  - The ultimate vertical scrolling adventure. An old school 8-bit game in which you'll have to reach the sun but be careful! Stones and cactus are dangerous in the wild west!
+  - Help our 8-bit guy reach the sun. Run through treacherous obstacles. Every level increase the difficulty of the game as well as the speed! You'll need to pass some stones first! It is easy to start but hard to get a great score. If you don't get a good score, don't worry, you always will be able to RETRY!Can you run fast enough?
+  - <a href="https://play.google.com/store/apps/details?id=me.miguelos.runo.android&amp;utm_medium=referral&amp;utm_source=indiedb&amp;utm_campaign=apps"><img src="http://media.moddb.com/images/games/1/37/36779/auto/en_generic_rgb_wo_45.png" alt="Get it on Google Play"></a>
+  - <a href="http://www.indiedb.com/games/wild-west-run" title="View Wild West Run on Indie DB" target="_blank"><img src="http://button.indiedb.com/rating/medium/games/36779.png" alt="Wild West Run" /></a>
+title: Wild West Run
+links:
+  Website:   http://miguelos.github.io
+  Source-code: 	https://github.com/Miguelos/miguelos.github.io
+  Feedback:     https://github.com/Miguelos/miguelos.github.io/issues
+platform:
+  Android: true
+  iOS: false
+  Web: true
+use-of:
+  Languages:
+    Java:
+    xml:
+  Frameworks:
+    LibGDX:
+      link: http://libgdx.badlogicgames.com/
+  Libraries:
+    Google Play Services:
+      link: https://developer.android.com/google/play-services/
+  Development tools:
+    Eclipse:
+    Android SDK:
+    Adobe Photoshop:
+    Adobe Illustrator:
+    Gimp:
+
+

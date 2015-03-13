@@ -1,7 +1,7 @@
 description: Business Connections, an Evening Standard project.
 priority: 0.7
 image:
-  url: /assets/images/BC/screenshot-tablet.png
+  url: /assets/images/BC/bc-thumb.png
   title: Tablet view
   alt: Website screenshot tablet size
 images:
@@ -22,7 +22,7 @@ published: true
 team:
   size: 3
 short: Business Connections, an Evening Standard project.
-long: Business Connections, an Evening Standard project, contains commerce workflows, ticket flagging, and event management. Fully responsive web design.
+long: Business Connections, an Evening Standard project, contains commerce workflows, ticket system, and event management. Fully responsive web design.
 title: Business Connections
 links:
   Website: http://www.standard.co.uk/businessconnections
