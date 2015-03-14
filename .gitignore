@@ -13,5 +13,6 @@ Thumbs.db
 *.sass-cache*
 *.fuse_hidden*
 
-# WebStorm
-.idea
+# InteliJ config files
+.idea/
+atlassian-ide-plugin.xml
