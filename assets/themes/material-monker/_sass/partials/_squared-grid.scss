@@ -1,0 +1,37 @@
+.squared-grid {
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 70vw;
+    width: 70vw;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 480px) {
+  .squared-grid {
+    li {
+      height: 35vw;
+      width: 35vw;
+    }
+  }
+}
+
+@media (min-width: 680px) {
+  .squared-grid {
+    li {
+      height: 24vw;
+      width: 24vw;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .squared-grid {
+    li {
+      height: 15vw;
+      width: 15vw;
+    }
+  }
+}

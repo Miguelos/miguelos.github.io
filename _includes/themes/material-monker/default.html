@@ -8,7 +8,7 @@
     {% endif %}
     <meta name="author" content="{{ site.author.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="60">
+    <meta http-equiv="refresh" content="600">
 
     <!-- HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -150,7 +150,7 @@
         e.preventDefault();
         $("body").toggleClass("sidebar-closed");
     });
-    if ($(window).width() < 600) {
+    if ($(window).width() < 850) {
         $("body").toggleClass("sidebar-closed");
     }
     $('#proudify-codeschool').proudify({
