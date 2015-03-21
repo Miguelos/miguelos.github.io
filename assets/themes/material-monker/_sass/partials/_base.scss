@@ -12,6 +12,8 @@ img {
 
 body{
   background-color: $bg-color;
+  word-break: break-word;
+  min-width: 320px;
 }
 
 @media (min-width: 400px) {
