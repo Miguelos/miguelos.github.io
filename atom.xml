@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Miguel</title>
+ <link href="http://miguelos.me//atom.xml" rel="self"/>
+ <link href="http://miguelos.me"/>
+ <updated>2015-03-21T15:29:20+00:00</updated>
+ <id>http://miguelos.me/</id>
+ <author>
+   <name>Miguel González Pérez</name>
+   
+ </author>
+
+ 
+ <entry>
+   <title>Dotfiles</title>
+   <link href="http://miguelos.me/post/dotfiles"/>
+   <updated>2014-02-21T00:00:00+00:00</updated>
+   <id>http://miguelos.me/post/dotfiles</id>
+   <content type="html">
+&lt;p&gt;I’m used to work in different computers and synchronizing my dotfiles has become a priority in my &lt;em&gt;todo&lt;/em&gt; list.&lt;/p&gt;
+
+&lt;h2 id=&quot;inspiration&quot;&gt;Inspiration&lt;/h2&gt;
+
+&lt;p&gt;There are a lot of dotfiles projects out there!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/search?q=dotfiles&amp;amp;ref=cmdform&quot;&gt;https://github.com/search?q=dotfiles&amp;amp;ref=cmdform&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;…and interesting posts:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/&quot;&gt;http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/&quot;&gt;http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;my-own-dotfiles&quot;&gt;My own dotfiles&lt;/h2&gt;
+
+&lt;p&gt;Previously I’ve been using a fork of the project tastiness to track my dotfiles. Althoug I &lt;em&gt;believe&lt;/em&gt; in forked dotfiles (&lt;a href=&quot;http://dotfiles.org&quot;&gt;dotfiles.org&lt;/a&gt;), I want to come up with my own way to organize it.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Drush Multi Processing </title>
+   <link href="http://miguelos.me/link/drush-multi-processing"/>
+   <updated>2014-02-19T00:00:00+00:00</updated>
+   <id>http://miguelos.me/link/drush-multi-processing</id>
+   <content type="html">
+&lt;p&gt;One way to speed up Drupal migrations (2 parts):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://deeson-online.co.uk/labs/multi-processing-part-1-how-make-drush-rush&quot;&gt;http://deeson-online.co.uk/labs/multi-processing-part-1-how-make-drush-rush&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://deeson-online.co.uk/labs/multi-processing-part-2-how-make-migrate-move&quot;&gt;http://deeson-online.co.uk/labs/multi-processing-part-2-how-make-migrate-move&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Jekyll Bootstrap sticky footer</title>
+   <link href="http://miguelos.me/post/jekyll-bootstrap-sticky-footer"/>
+   <updated>2014-02-15T00:00:00+00:00</updated>
+   <id>http://miguelos.me/post/jekyll-bootstrap-sticky-footer</id>
+   <content type="html">&lt;h2 id=&quot;how-to-add-a-sticky-footer&quot;&gt;How to add a sticky footer&lt;/h2&gt;
+
+&lt;p&gt;To use the sticky footer you’ll need to modify the default theme template and add some css.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;include/theme/THEMENAME/default.html&lt;/em&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;...
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- navbar and content here! --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;footer-push&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;footer&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- footer here! --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/footer&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+    ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Sass code:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/* Sticky footer */&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$footerHeight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;75&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;//Page full height&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;nn&quot;&gt;#page-wrap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;min-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Negative indent footer by it&amp;#39;s height&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$footerHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;margin-right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;margin-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;//footer fixed height&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.footer-push&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;footer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$footerHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;max-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$footerHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;hooligan-theme-with-sticky-footer&quot;&gt;Hooligan theme with sticky footer&lt;/h2&gt;
+
+&lt;p&gt;I’ve used this theme with a sticky footer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/tTWbk.png&quot; alt=&quot;Hooligan theme screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can install it running in your terminal:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;rake theme:install &lt;span class=&quot;nv&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;https://github.com/Miguelos/hooligan.git&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;bootstrap-sticky-footer&quot;&gt;Bootstrap sticky footer&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://getbootstrap.com/examples/sticky-footer-navbar/&quot;&gt;Here&lt;/a&gt; you have the example of a sticky footer for twitter bootstrap.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>AngularJS for JQuery developers</title>
+   <link href="http://miguelos.me/link/angular-for-jquery-devs"/>
+   <updated>2014-02-08T00:00:00+00:00</updated>
+   <id>http://miguelos.me/link/angular-for-jquery-devs</id>
+   <content type="html">
+&lt;p&gt;Execelent post about AngularJS for JQuery developers.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/14994391/how-do-i-think-in-angularjs-if-i-have-a-jquery-background/15012542#15012542&quot;&gt;https://stackoverflow.com/questions/14994391/how-do-i-think-in-angularjs-if-i-have-a-jquery-background/15012542#15012542&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Drush</title>
+   <link href="http://miguelos.me/post/drush"/>
+   <updated>2014-02-04T00:00:00+00:00</updated>
+   <id>http://miguelos.me/post/drush</id>
+   <content type="html">
+&lt;p&gt;Drush is the best tool for Drupal development and administration. I liked it since the firt time I used it. I consider it an essential tool for Drupal.&lt;/p&gt;
+
+&lt;p&gt;Downloading and enabling a module is as simple as typing “drush en -y module_name”.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;d en -y url
+url was not found.                                                     &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;warning&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+The following projects provide some or all of the extensions not found:     &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ok&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+url
+Would you like to download them? &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;y/n&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: y
+Project url &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;7.x-1.0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; downloaded to sites/all/modules/contrib/url.     &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;success&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+The following extensions will be enabled: url
+Do you really want to &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;? &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;y/n&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: y
+url was enabled successfully.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is a simple example of drush, however it can be extremely useful for task as migrations. Check it!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://drush.ws/&quot;&gt;Drush.ws&lt;/a&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Migrate Geofield 2.0</title>
+   <link href="http://miguelos.me/post/drupal-migrate-geofield-2"/>
+   <updated>2014-02-03T00:00:00+00:00</updated>
+   <id>http://miguelos.me/post/drupal-migrate-geofield-2</id>
+   <content type="html">
+&lt;p&gt;If you follow Geofield’s example in the documentation, you will get this error:
+&amp;gt;The field mapping arguments() method is now deprecated - please use subfield notation instead.&lt;/p&gt;
+
+&lt;p&gt;Here is how I managed to migrate Geofield (latitude/longitude) using subfield notation.&lt;/p&gt;
+
+&lt;p&gt;To migrate Geofield (2.0) using &lt;strong&gt;migrate_extras&lt;/strong&gt; handler, apply latest patch in &lt;a href=&quot;https://drupal.org/node/1997316&quot;&gt;https://drupal.org/node/1997316&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Code for mapping fields:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addFieldMapping&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;field_location&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;point&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addFieldMapping&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;field_location:input_format&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;input_format&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addFieldMapping&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;field_location:geo_type&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;point&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addFieldMapping&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;field_location:lat&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;latitudine&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;xpath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Latitude&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addFieldMapping&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;field_location:lon&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;longitudine&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;xpath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Longitude&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Inside prepareRow():&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;prepareRow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;$row&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;geo_type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;point&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;$row&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;input_format&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;lat/lon&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;useful-links&quot;&gt;Useful links&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://drupal.org/node/1997316&quot;&gt;Geofield patch for migrate extras.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://drupal.stackexchange.com/a/101707/13365&quot;&gt;http://drupal.stackexchange.com/a/101707/13365&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Git aliases</title>
+   <link href="http://miguelos.me/post/git-aliases"/>
+   <updated>2013-11-09T00:00:00+00:00</updated>
+   <id>http://miguelos.me/post/git-aliases</id>
+   <content type="html">&lt;p&gt;Util basic git aliases.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/7368790.js&quot;&gt; &lt;/script&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Linux check hardware temperature</title>
+   <link href="http://miguelos.me/post/linux-check-hardware-temperature"/>
+   <updated>2013-11-07T00:00:00+00:00</updated>
+   <id>http://miguelos.me/post/linux-check-hardware-temperature</id>
+   <content type="html">
+&lt;p&gt;How check hardware temperature on Debian 7.2 (and others).&lt;/p&gt;
+
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
+
+&lt;p&gt;Install &lt;em&gt;lm-sensors&lt;/em&gt; and &lt;em&gt;hddtemp&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# apt-get install lm-sensors hddtemp&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Run &lt;em&gt;sensors-detect&lt;/em&gt; to configure &lt;em&gt;lm-sensors&lt;/em&gt;. Answer yes to all questions.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sensors-detect
+...
+To load everything that is needed, add this to /etc/modules:
+&lt;span class=&quot;c&quot;&gt;#----cut here----&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Chip drivers&lt;/span&gt;
+coretemp
+&lt;span class=&quot;c&quot;&gt;#----cut here----&lt;/span&gt;
+If you have some drivers built into your kernel, the list above will
+contain too many modules. Skip the appropriate ones!
+
+Do you want to add these lines automatically to /etc/modules? &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;yes/NO&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; yes
+Successful!
+
+Monitoring programs won&lt;span class=&quot;s1&quot;&gt;&amp;#39;t work until the needed modules are&lt;/span&gt;
+&lt;span class=&quot;s1&quot;&gt;loaded. You may want to run &amp;#39;&lt;/span&gt;/etc/init.d/kmod start&lt;span class=&quot;err&quot;&gt;&amp;#39;&lt;/span&gt;
+to load them.
+
+Unloading cpuid... OK&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Follow the steps adding the neccessary files to /etc/modules and running ‘/etc/init.d/kmod start’ to finish the configuration.&lt;/p&gt;
+
+&lt;h2 id=&quot;check-temperature&quot;&gt;Check temperature&lt;/h2&gt;
+
+&lt;p&gt;After following sensors-detect steps, you’ll be able to check the temperature. Simply run &lt;em&gt;sensors&lt;/em&gt; on terminal or use programs like &lt;em&gt;xsensors&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# sensors&lt;/span&gt;
+acpitz-virtual-0
+Adapter: Virtual device
+temp1:        +64.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;crit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+temp2:        +64.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;crit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+coretemp-isa-0000
+Adapter: ISA adapter
+Physical id 0:  +64.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +86.0°C, &lt;span class=&quot;nv&quot;&gt;crit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Core 0:         +61.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +86.0°C, &lt;span class=&quot;nv&quot;&gt;crit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Core 1:         +60.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +86.0°C, &lt;span class=&quot;nv&quot;&gt;crit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Core 2:         +62.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +86.0°C, &lt;span class=&quot;nv&quot;&gt;crit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Core 3:         +61.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +86.0°C, &lt;span class=&quot;nv&quot;&gt;crit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+nouveau-pci-0100
+Adapter: PCI adapter
+temp1:        +63.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C, &lt;span class=&quot;nv&quot;&gt;crit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +110.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;hdd-temperature&quot;&gt;HDD temperature&lt;/h2&gt;
+
+&lt;p&gt;For disk temperature run &lt;em&gt;hddtemp&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;hddtemp /dev/sd?&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Debian 7 on laptop Dell XPS L502x</title>
+   <link href="http://miguelos.me/post/debian-7-on-laptop-dell-xps-l502x"/>
+   <updated>2013-11-02T00:00:00+00:00</updated>
+   <id>http://miguelos.me/post/debian-7-on-laptop-dell-xps-l502x</id>
+   <content type="html">
+&lt;p&gt;Here I’m writing down all the steps I followed after installing &lt;em&gt;Debian 7&lt;/em&gt;. I’ve already installed Ubuntu Server 12 and build up from there. Everything works fine &lt;a href=&quot;https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops/Dell/XPS/15&quot;&gt;using ubuntu&lt;/a&gt;. However, lets try &lt;em&gt;Debian 7&lt;/em&gt;!&lt;/p&gt;
+
+&lt;p&gt;Debian version:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; lsb_release -a
+&lt;span class=&quot;go&quot;&gt;Distributor ID:	Debian&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;Description:	Debian GNU/Linux 7.2 (wheezy)&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;Release:	7.2&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;Codename:	wheezy&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;First, after installing Debian, I can feel the heat coming out the CPU. Although it was the same with &lt;em&gt;Windows 7&lt;/em&gt;, you can &lt;a href=&quot;http://en.community.dell.com/support-forums/laptop/f/3518/t/19442104.aspx&quot;&gt;change power settings&lt;/a&gt; to lower the fan speed… and stop the noise.&lt;/p&gt;
+
+&lt;h2 id=&quot;update-kernel&quot;&gt;Update kernel&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; uname -a
+&lt;span class=&quot;go&quot;&gt;Linux dell-xps-l502x 3.2.0-4-amd64 #1 SMP Debian 3.2.51-1 x86_64 GNU/Linux&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;There is a problem with the 9-in1 card reader. To enable insert the card and run:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;&lt;span class=&quot;gp&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &amp;gt; /sys/bus/pci/rescan&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The kernel version 3.12-rc2 resolve the card reader problem. Bug status: &lt;a href=&quot;https://wiki.debian.org/HowToUpgradeKernel&quot;&gt;https://wiki.debian.org/HowToUpgradeKernel&lt;/a&gt;. Currently this is an experimental version. To install it follow the steps here: &lt;a href=&quot;https://wiki.debian.org/HowToUpgradeKernel&quot;&gt;https://wiki.debian.org/HowToUpgradeKernel&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I prefer wait and install the backport version.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;https://bugzilla.kernel.org/show_bug.cgi?id=40802&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Enable backports to update the kernel. Add repository to /etc/apt/sources.list.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;&lt;span class=&quot;gp&quot;&gt;#&lt;/span&gt; backports
+&lt;span class=&quot;go&quot;&gt;deb http://ftp.uk.debian.org/debian/ wheezy-backports main&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Install and restart the laptop.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;&lt;span class=&quot;gp&quot;&gt;#&lt;/span&gt; apt-get -t wheezy-backports install linux-image-3.10-0.bpo.3-amd64&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check kernel version.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; uname -a
+&lt;span class=&quot;go&quot;&gt;Linux UNKNOWN 3.10-0.bpo.3-amd64 #1 SMP Debian 3.10.11-1~bpo70+1 (2013-09-24) x86_64 GNU/Linux&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;It works! Restart the laptop. Performance has been improved. You can notice how boot time improves.&lt;/p&gt;
+
+&lt;h3 id=&quot;useful-links&quot;&gt;Useful links&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Dell XPS 15 L502X &amp;amp; Ubuntu 12.04 Linux: &lt;a href=&quot;http://hanynowsky.wordpress.com/2012/04/07/dell-xps-15-l502x-ubuntu-linux/&quot;&gt;http://hanynowsky.wordpress.com/2012/04/07/dell-xps-15-l502x-ubuntu-linux/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Ubuntu hardware support Dell XPS 15 L502x &lt;a href=&quot;https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops/Dell/XPS/15&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;sources&quot;&gt;Sources&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.debian-administration.org/articles/327&quot;&gt;http://www.debian-administration.org/articles/327&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Responsive designe tools</title>
+   <link href="http://miguelos.me/link/responsive-designe-tools"/>
+   <updated>2013-10-06T00:00:00+01:00</updated>
+   <id>http://miguelos.me/link/responsive-designe-tools</id>
+   <content type="html">
+&lt;p&gt;List of useful tools for responsive design:
+&lt;a href=&quot;http://bradfrostweb.com/blog/post/the-top-25-responsive-design-tools/#page&quot;&gt;http://bradfrostweb.com/blog/post/the-top-25-responsive-design-tools/#page&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mobile first SASS</title>
+   <link href="http://miguelos.me/link/mobile-first-sass"/>
+   <updated>2013-10-06T00:00:00+01:00</updated>
+   <id>http://miguelos.me/link/mobile-first-sass</id>
+   <content type="html">
+&lt;p&gt;I use &lt;a href=&quot;https://drupal.org/project/omega&quot;&gt;Omega theme&lt;/a&gt; for Drupal. I’ve been introduced to the mobile-first CSS development. I like it! I think the right way to build a website it isn’t trying to turn a complex design into a mobile friendly one. That’s crazy!&lt;/p&gt;
+
+&lt;p&gt;Check out this link: &lt;a href=&quot;http://nicolasgallagher.com/mobile-first-css-sass-and-ie/&quot;&gt;http://nicolasgallagher.com/mobile-first-css-sass-and-ie/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Useful terminal commands</title>
+   <link href="http://miguelos.me/link/useful-terminal-commands"/>
+   <updated>2013-09-07T00:00:00+01:00</updated>
+   <id>http://miguelos.me/link/useful-terminal-commands</id>
+   <content type="html">
+&lt;p&gt;&lt;a href=&quot;http://www.commandlinefu.com/commands/browse/sort-by-votes&quot;&gt;http://www.commandlinefu.com/commands/browse/sort-by-votes&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Scalable and Modular Architecture for CSS</title>
+   <link href="http://miguelos.me/link/scalable-and-modular"/>
+   <updated>2013-09-07T00:00:00+01:00</updated>
+   <id>http://miguelos.me/link/scalable-and-modular</id>
+   <content type="html">
+&lt;p&gt;I’m always seeking for the best coding practices for html and css. This is an excelent guide for that.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://smacss.com/book/&quot;&gt;http://smacss.com/book/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a &lt;a href=&quot;http://smacss.com/book/resources&quot;&gt;list&lt;/a&gt; at with other useful resources. Like &lt;a href=&quot;http://24ways.org/2011/front-end-style-guides&quot;&gt;http://24ways.org/2011/front-end-style-guides&lt;/a&gt; for getting started in a propper front-end development.&lt;/p&gt;
+
+&lt;p&gt;The next step it’s to use good practices with css and html. This languajes are different to others. Developing without thinking every line you create can turn your project into a monster website. It would be imposible to debug and makee a simple css change. I’d be better spending time planing the coding standars and files structure.&lt;/p&gt;
+
+&lt;p&gt;Extra!: Even Apple has problems using sass! &lt;a href=&quot;http://blog.kaelig.fr/post/51078221503/apple-is-using-sass-and-theyre-doing-it-wrong&quot;&gt;http://blog.kaelig.fr/post/51078221503/apple-is-using-sass-and-theyre-doing-it-wrong&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Git interactive cheatsheet</title>
+   <link href="http://miguelos.me/link/git-interactive-cheatsheet"/>
+   <updated>2013-09-07T00:00:00+01:00</updated>
+   <id>http://miguelos.me/link/git-interactive-cheatsheet</id>
+   <content type="html">
+&lt;p&gt;The best git cheatsheet I’ve seen until now. Easy and fancy!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://ndpsoftware.com/git-cheatsheet.html&quot;&gt;http://ndpsoftware.com/git-cheatsheet.html&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Dive into HTML5</title>
+   <link href="http://miguelos.me/link/dive-into-html5"/>
+   <updated>2013-09-07T00:00:00+01:00</updated>
+   <id>http://miguelos.me/link/dive-into-html5</id>
+   <content type="html">
+&lt;p&gt;&lt;a href=&quot;http://fortuito.us/diveintohtml5/&quot;&gt;http://fortuito.us/diveintohtml5/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Pass array through POST method</title>
+   <link href="http://miguelos.me/post/pass-array-through-post-method"/>
+   <updated>2013-08-20T00:00:00+01:00</updated>
+   <id>http://miguelos.me/post/pass-array-through-post-method</id>
+   <content type="html">
+&lt;h2 id=&quot;tip-how-to-pass-array-through-post-method&quot;&gt;Tip: How to pass array through POST method&lt;/h2&gt;
+&lt;p&gt;First use the function &lt;code&gt;json_encode()&lt;/code&gt; to encode the array. Then use &lt;code&gt;htmlspecialchars()&lt;/code&gt; to avoid errors caused by the quotes in json. Just like the following code:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;array&amp;quot; value=&amp;quot;&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;htmlspecialchars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;json_encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;To obtain the array do the inverse operation. First decode using &lt;code&gt;htmlspecialchars_decode()&lt;/code&gt; and then use &lt;code&gt;json_decode()&lt;/code&gt; to build the original array.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;$array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;json_decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;htmlspecialchars_decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_POST&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;$array&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]));&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;More info:
+&lt;a href=&quot;http://stackoverflow.com/questions/4237090/how-to-pass-array-through-hidden-field&quot;&gt;http://stackoverflow.com/questions/4237090/how-to-pass-array-through-hidden-field&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Start off</title>
+   <link href="http://miguelos.me/post/start-off"/>
+   <updated>2013-08-16T00:00:00+01:00</updated>
+   <id>http://miguelos.me/post/start-off</id>
+   <content type="html">
+&lt;h2 id=&quot;starting-off&quot;&gt;Starting off&lt;/h2&gt;
+
+&lt;p&gt;I decided to create my personal website using &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;. I usually enjoy Wordpress but I always want to try more!&lt;/p&gt;
+
+&lt;p&gt;It’s really easy and simple. I followed the tutorial at &lt;a href=&quot;http://jekyllbootstrap.com/&quot;&gt;JekyllBootstrap.com&lt;/a&gt;. There are useful information and everything you need to know to get started. Check it out!&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/plusjade/jekyll-bootstrap.git miguelos.github.io
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;miguelos.github.com
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;-url origin git@github.com:miguelos/miguelos.github.io.git
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push origin master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now starts the best part: Geting into the development and customization.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll serve --watch&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;The switch ‘–watch’ auto-generates the website every time a file changes.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;You’ll get your new jekyll static page runing on local. Take a look at http://localhost:4000. Easy and fun!&lt;/p&gt;
+
+&lt;h4 id=&quot;links&quot;&gt;Links:&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://jekyllbootstrap.com/&quot;&gt;JekyllBootstrap&lt;/a&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ 
+</feed>

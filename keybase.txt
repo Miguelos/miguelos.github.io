@@ -1,0 +1,83 @@
+==================================================================
+https://keybase.io/miguelos
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://miguelos.me
+  * I am miguelos (https://keybase.io/miguelos) on keybase.
+  * I have a public key with fingerprint 3A00 41B6 D88B B0AA 4460  DDCD 4812 3A8B 4081 4950
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.6.1"
+        },
+        "key": {
+            "fingerprint": "3a0041b6d88bb0aa4460ddcd48123a8b40814950",
+            "host": "keybase.io",
+            "key_id": "48123A8B40814950",
+            "uid": "c72662aad0c54fcdec5b9b6a661fc000",
+            "username": "miguelos"
+        },
+        "merkle_root": {
+            "ctime": 1411130541,
+            "hash": "f2a06189b92b856e5d35bff9724d6205e6c4676561a97a6a25b68859362684e8a2e691f5098ca82c4b39bdb40ec04ce0b9a90c671d5212fb5b50fae39c88313b",
+            "seqno": 52556
+        },
+        "service": {
+            "hostname": "miguelos.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1411130687,
+    "expire_in": 157680000,
+    "prev": "f467ba98ac2bc443d577ddccf88fb4c2c558b2a72c454d60e49863f3526f4d05",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
+
+owFdkn1QVFUYxhdUCBxEVsWyJZyrmQox9+ucvXf5UlZRND8BpxDFc+49d7kKu3h3
+IVZZSlHTbBpt/GBQJzOzWsIacYZSascm2klKDGmwCJIZU5hMRpScIqR7d2zS/jsf
+v/O87/O8Z1/MGFN02GKzbe+8bTkrw1r7sSnP8mzmVgq7ZC9l20pJJSpxeoyVE5US
+ykZtIl6M3CRFdU13umSSstE9/SGTTFUQza26nDpFp8AUhvIlG7jxWFGdDqKVaaqh
+RXGIpnkGQ1kQMKYR4nlIy7Ik8wLDckjAPC0wvAhoXbLY5fY8VpUKaRapsn4a4ucL
+WY/w5aELycpCyCIk0xLgFUkmEsAihghCRpFoOgS6ifbQUqnqKCclLrfRbynRNpWQ
+Is3lCpmWPKqBMDzDMBwNeEbvCLmL9UcKi2jICCIWWSwASIDMAawoopXlZcjSgECJ
+h1YIIINEK4KIBRgKAhA5yEKBJwJiCRQZBdCiICGBlXjMiVjWrROJ5iVCYxGJtASt
+jAxYhlUwwIBWEOFESRA4hsO6BTfZ7HRRNsACAH3GVqtQJWK0baT2P3Mp+i6ZKtNc
+HpfkKtEvij2eMpth2eMtM8CXCS5yk/qQRhFWnbI+skdnyujo43FAwZpMkcoyVSNF
+qkEAKxT0dGmjDqkwQtIjwEgUkMRiiec5GVit+qAlRRAUzEusBICAWWTV7QM9Nprw
+ogA5hQMsVHiZBv+ZZPU+kUOXdKsOJ/KUa4Ty7Qm3jDWFRZsixoUbn9YUHTXx3598
+ODZ2tLR3blT3Uta+wos23E00v/vqxY6qyJ3ZGX2pR8e1TV31VtCmRT744cu6ny41
+VI3eSru3vWtH86yj2R8kXugZY1l0NZe5+8QlrbG28eaK+PqTUpppX7MvUazbObbd
+3zJj0oasQCSqPJcz0vZhemanI23q4IQJC2YPhHdfrG3xJOXbLbN7Ur/iIp5z9878
+9PKVb4NVOXm5CQF0tS47rnYplVT/W/+JptUlorarvXt13vGmPvvJv/re1sxZ1eTE
+1wW+Jt/NgykHdjiuZwzdD/xurbm1s7o5+ljSgfSmzjZvwZLTxY1xSVkP5r9YG7nx
+vT0n9jQE26K6Kq/k/Qr8sPW0ed3Bv/cX7hUrB/kwvnPhUz8XVnUp1VN2p29ftmVy
+9pyoV16qnyWcm/znG7s+qr3GdMZ8F7wQd9a7YXxv2OjqC4G4I8t71s/zf3zcbI7N
+KGUGHDWJqQmfVxXeWTg00b5YHJgGmxuuL4rfv+zeF3bvO7F/LKkY6FxzaWh8Tq6/
+m2pj7vQemhTIHKEWFTUEpxZMj3v+cmHh7TVdHZ4I/6njr71Zs/vMjKa81OFVy9fF
+vDCtv3jLzG9QjGU4//5mfKrl7I+/tLYG0p68Pr+jqbz4fOfthCMz4jKHP1ngP3PN
+Prjt5Nwp4a9/X+88lLHkmZHxwfjD2sXP6rihY0+vnLN+7drCaTec7Zbz1oT0G++v
+F29WB/L/AQ==
+=UfiP
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/miguelos
+
+==================================================================

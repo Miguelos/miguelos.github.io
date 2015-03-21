@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Migrate Geofield 2.0 - Miguel</title>
+        
+        <meta name="description" content="How to migrate Drupal Geofield with subfield notation">
+        
+        <meta name="author" content="Miguel González Pérez">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="600">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link href="/assets/themes/material-monker/css/pygments.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/assets/themes/material-monker/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/assets/themes/material-monker/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <!-- extra css -->
+        <link href="/assets/themes/material-monker/css/proudify.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- fav and touch icons -->
+        <link rel="shortcut icon" type="image/svg+xml" data-pis="/assets/themes/material-monker/img/icon.svg">
+        <link rel="alt shortcut icon" type="image/png" data-pis="/assets/themes/material-monker/img/icon.png">
+        <link rel="icon" type="image/png" href="/assets/themes/material-monker/img/favicon-16x16.png" sizes="16x16"/>
+        <link rel="icon" type="image/png" href="/assets/themes/material-monker/img/favicon-32x32.png" sizes="32x32"/>
+
+    </head>
+
+    <body>
+        <div id="page-wrap">
+
+            <!-- Sidebar -->
+            <aside id="sidebar" class="sidebar-wrapper">
+                <!--Sidebar navigation-->
+                <nav class="navbar navbar-default sidebar-nav" role="navigation">
+
+                    <!--Sidebar header-->
+                    <a href="/">
+                        <div class="sidebar-header sidebar-icon">
+                            <img src="/assets/themes/material-monker/img/icon.svg">
+                        </div>
+                    </a>
+
+                    <ul class="nav navbar-nav nav-main">
+                        
+                        
+                        
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        
+        <li><a href="/blog/">Blog</a></li>
+        
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        
+        <li><a href="/portfolio/">Portfolio</a></li>
+        
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+
+
+
+                    </ul>
+
+                    <section class="about sidebar-about">
+                        <p>I am Miguel González Pérez, a full stack developer and software engineer. I am enthusiastic about the field, eager to learn the latest programming languages, new technologies and development tools. Also, I am passionate about open source and GNU-Linux systems.</p>
+<p>me at miguelos.me</p>
+
+                    </section>
+
+                    <ul class="nav navbar-nav social-links">
+                        <li class="divider-vertical"></li>
+                        
+                        <li>
+                            <a href="/rss.xml"
+                               class="btn btn-rounded btn-fab btn-rounded btn-fab-mini btn-link btn-sm rss-link"
+                               target="_blank">
+                                <i class="fa fa-lg fa-rss"></i>
+                            </a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="https://github.com/Miguelos"
+                               class="btn btn-rounded btn-fab btn-fab-mini btn-link btn-sm github-link" target="_blank">
+                                <i class="fa fa-lg fa-github"></i>
+                            </a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a rel="author" href="https://plus.google.com/100987837049179499412?rel=author"
+                               class="btn btn-rounded btn-fab btn-fab-mini btn-link btn-sm google-plus-link" target="_blank">
+                                <i class="fa fa-lg fa-google-plus"></i>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="http://www.linkedin.com/in/miguelgpms/en"
+                               class="btn btn-rounded btn-fab btn-fab-mini btn-link btn-sm linkedin-link" target="_blank">
+                                <i class="fa fa-lg fa-linkedin"></i>
+                            </a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="https://careers.stackoverflow.com/miguelos"
+                               class="btn btn-rounded btn-fab btn-fab-mini btn-link btn-sm stackoverflow-link" target="_blank">
+                                <i class="fa fa-lg fa-stack-overflow"></i>
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+
+                </nav>
+
+                <button class="btn btn-fab btn-raised btn-primary sidebar-toggle sidebar-toggle-button">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </aside>
+
+            <section class="container" role="main">
+                
+
+<header class="page-header">
+  <h1>
+    Migrate Geofield 2.0 
+    
+  </h1>
+</header>
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-9">
+    <article>
+    
+<p>If you follow Geofield’s example in the documentation, you will get this error:
+&gt;The field mapping arguments() method is now deprecated - please use subfield notation instead.</p>
+
+<p>Here is how I managed to migrate Geofield (latitude/longitude) using subfield notation.</p>
+
+<p>To migrate Geofield (2.0) using <strong>migrate_extras</strong> handler, apply latest patch in <a href="https://drupal.org/node/1997316">https://drupal.org/node/1997316</a>.</p>
+
+<p>Code for mapping fields:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+  <span class="o">...</span>
+  <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">addFieldMapping</span><span class="p">(</span><span class="s1">&#39;field_location&#39;</span><span class="p">,</span> <span class="s1">&#39;point&#39;</span><span class="p">);</span>
+  <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">addFieldMapping</span><span class="p">(</span><span class="s1">&#39;field_location:input_format&#39;</span><span class="p">,</span> <span class="s1">&#39;input_format&#39;</span><span class="p">);</span>
+  <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">addFieldMapping</span><span class="p">(</span><span class="s1">&#39;field_location:geo_type&#39;</span><span class="p">,</span> <span class="s1">&#39;point&#39;</span><span class="p">);</span>
+  <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">addFieldMapping</span><span class="p">(</span><span class="s1">&#39;field_location:lat&#39;</span><span class="p">,</span> <span class="s1">&#39;latitudine&#39;</span><span class="p">)</span>
+     <span class="o">-&gt;</span><span class="na">xpath</span><span class="p">(</span><span class="s1">&#39;Latitude&#39;</span><span class="p">);</span>
+  <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">addFieldMapping</span><span class="p">(</span><span class="s1">&#39;field_location:lon&#39;</span><span class="p">,</span> <span class="s1">&#39;longitudine&#39;</span><span class="p">)</span>
+     <span class="o">-&gt;</span><span class="na">xpath</span><span class="p">(</span><span class="s1">&#39;Longitude&#39;</span><span class="p">);</span>
+  <span class="o">...</span>
+<span class="cp">?&gt;</span><span class="x"></span></code></pre></div>
+
+<p>Inside prepareRow():</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+  <span class="o">...</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">prepareRow</span><span class="p">(</span><span class="nv">$row</span><span class="p">)</span> <span class="p">{</span>
+      <span class="o">...</span>
+      <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">geo_type</span> <span class="o">=</span> <span class="s1">&#39;point&#39;</span><span class="p">;</span>
+      <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">input_format</span> <span class="o">=</span> <span class="s1">&#39;lat/lon&#39;</span><span class="p">;</span>
+      <span class="o">...</span>
+    <span class="p">}</span>
+  <span class="o">...</span>
+<span class="cp">?&gt;</span><span class="x"></span></code></pre></div>
+
+<h3 id="useful-links">Useful links</h3>
+<ul>
+  <li><a href="https://drupal.org/node/1997316">Geofield patch for migrate extras.</a></li>
+  <li><a href="http://drupal.stackexchange.com/a/101707/13365">http://drupal.stackexchange.com/a/101707/13365</a></li>
+</ul>
+
+
+    </article>
+  </div>
+
+  <div class="col-xs-12 col-md-3 row">
+    <section class="col-xs-12 col-sm-4 col-md-12">
+      <h4>Published</h4>
+      <div class="date"><span>03 February 2014</span></div>
+    </section>
+    
+      <section class="col-xs-12 col-sm-4 col-md-12">
+        <h4>Category</h4>
+        <span class="category">
+          post
+        </span>
+      </section>
+    
+    
+      <section class="col-xs-12 col-sm-4 col-md-12">
+        <h4>Tags</h4>
+        <ul class="tag_box">
+          
+          
+
+
+  
+     
+    	<li><a href="/tags#Drupal-ref">Drupal <span>1</span></a></li>
+     
+    	<li><a href="/tags#Drupal Migrate-ref">Drupal Migrate <span>1</span></a></li>
+     
+    	<li><a href="/tags#Drupal Geofield-ref">Drupal Geofield <span>1</span></a></li>
+     
+    	<li><a href="/tags#PHP-ref">PHP <span>2</span></a></li>
+    
+  
+
+
+
+        </ul>
+      </section>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <div class="pagination btn-group">
+      
+        <a class="btn prev" href="/post/git-aliases" title="Git aliases">&larr; Previous</a>
+      
+        <a class="btn" href="/blog">Archive</a>
+      
+        <a class="btn next" href="/post/drush" title="Drush">Next &rarr;</a>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'miguelos'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+</div>
+
+
+
+            </section>
+        </div>
+        <!--/.page-wrap -->
+
+        <!-- js  -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- Latest bootstrap compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/assets/themes/material-monker/js/jquery.proudify.min.js"></script>
+        <script type="text/javascript" src="/assets/themes/material-monker/js/jquery.color.js"></script>
+        <!-- /js plugins -->
+        <script type="text/javascript">
+            $(".sidebar-toggle").click(function (e) {
+                e.preventDefault();
+                $("body").toggleClass("sidebar-closed");
+            });
+            if ($(window).width() < 600) {
+                $("body").toggleClass("sidebar-closed");
+            }
+            $('#proudify-codeschool').proudify({
+                'username': 'Miguelo',
+                service: 'codeschool',
+                completed: true
+            });
+            $('#proudify-coderwall').proudify({'username': 'miguelos', service: 'coderwall'});
+            $('#proudify-github').proudify({'username': 'Miguelos', pushed_at: 200});
+        </script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-43253159-2']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <!-- /js plugins -->
+    </body>
+</html>
+
+

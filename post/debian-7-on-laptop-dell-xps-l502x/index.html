@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Debian 7 on laptop Dell XPS L502x - Miguel</title>
+        
+        <meta name="author" content="Miguel González Pérez">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="600">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link href="/assets/themes/material-monker/css/pygments.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/assets/themes/material-monker/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/assets/themes/material-monker/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <!-- extra css -->
+        <link href="/assets/themes/material-monker/css/proudify.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- fav and touch icons -->
+        <link rel="shortcut icon" type="image/svg+xml" data-pis="/assets/themes/material-monker/img/icon.svg">
+        <link rel="alt shortcut icon" type="image/png" data-pis="/assets/themes/material-monker/img/icon.png">
+        <link rel="icon" type="image/png" href="/assets/themes/material-monker/img/favicon-16x16.png" sizes="16x16"/>
+        <link rel="icon" type="image/png" href="/assets/themes/material-monker/img/favicon-32x32.png" sizes="32x32"/>
+
+    </head>
+
+    <body>
+        <div id="page-wrap">
+
+            <!-- Sidebar -->
+            <aside id="sidebar" class="sidebar-wrapper">
+                <!--Sidebar navigation-->
+                <nav class="navbar navbar-default sidebar-nav" role="navigation">
+
+                    <!--Sidebar header-->
+                    <a href="/">
+                        <div class="sidebar-header sidebar-icon">
+                            <img src="/assets/themes/material-monker/img/icon.svg">
+                        </div>
+                    </a>
+
+                    <ul class="nav navbar-nav nav-main">
+                        
+                        
+                        
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        
+        <li><a href="/blog/">Blog</a></li>
+        
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        
+        <li><a href="/portfolio/">Portfolio</a></li>
+        
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+
+
+
+                    </ul>
+
+                    <section class="about sidebar-about">
+                        <p>I am Miguel González Pérez, a full stack developer and software engineer. I am enthusiastic about the field, eager to learn the latest programming languages, new technologies and development tools. Also, I am passionate about open source and GNU-Linux systems.</p>
+<p>me at miguelos.me</p>
+
+                    </section>
+
+                    <ul class="nav navbar-nav social-links">
+                        <li class="divider-vertical"></li>
+                        
+                        <li>
+                            <a href="/rss.xml"
+                               class="btn btn-rounded btn-fab btn-rounded btn-fab-mini btn-link btn-sm rss-link"
+                               target="_blank">
+                                <i class="fa fa-lg fa-rss"></i>
+                            </a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="https://github.com/Miguelos"
+                               class="btn btn-rounded btn-fab btn-fab-mini btn-link btn-sm github-link" target="_blank">
+                                <i class="fa fa-lg fa-github"></i>
+                            </a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a rel="author" href="https://plus.google.com/100987837049179499412?rel=author"
+                               class="btn btn-rounded btn-fab btn-fab-mini btn-link btn-sm google-plus-link" target="_blank">
+                                <i class="fa fa-lg fa-google-plus"></i>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="http://www.linkedin.com/in/miguelgpms/en"
+                               class="btn btn-rounded btn-fab btn-fab-mini btn-link btn-sm linkedin-link" target="_blank">
+                                <i class="fa fa-lg fa-linkedin"></i>
+                            </a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="https://careers.stackoverflow.com/miguelos"
+                               class="btn btn-rounded btn-fab btn-fab-mini btn-link btn-sm stackoverflow-link" target="_blank">
+                                <i class="fa fa-lg fa-stack-overflow"></i>
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+
+                </nav>
+
+                <button class="btn btn-fab btn-raised btn-primary sidebar-toggle sidebar-toggle-button">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </aside>
+
+            <section class="container" role="main">
+                
+
+<header class="page-header">
+  <h1>
+    Debian 7 on laptop Dell XPS L502x 
+    
+      <small>Update kernel</small>
+    
+  </h1>
+</header>
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-9">
+    <article>
+    
+<p>Here I’m writing down all the steps I followed after installing <em>Debian 7</em>. I’ve already installed Ubuntu Server 12 and build up from there. Everything works fine <a href="https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops/Dell/XPS/15">using ubuntu</a>. However, lets try <em>Debian 7</em>!</p>
+
+<p>Debian version:</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> lsb_release -a
+<span class="go">Distributor ID:	Debian</span>
+<span class="go">Description:	Debian GNU/Linux 7.2 (wheezy)</span>
+<span class="go">Release:	7.2</span>
+<span class="go">Codename:	wheezy</span></code></pre></div>
+
+<p>First, after installing Debian, I can feel the heat coming out the CPU. Although it was the same with <em>Windows 7</em>, you can <a href="http://en.community.dell.com/support-forums/laptop/f/3518/t/19442104.aspx">change power settings</a> to lower the fan speed… and stop the noise.</p>
+
+<h2 id="update-kernel">Update kernel</h2>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> uname -a
+<span class="go">Linux dell-xps-l502x 3.2.0-4-amd64 #1 SMP Debian 3.2.51-1 x86_64 GNU/Linux</span></code></pre></div>
+
+<p>There is a problem with the 9-in1 card reader. To enable insert the card and run:</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">#</span> <span class="nb">echo </span><span class="m">1</span> &gt; /sys/bus/pci/rescan</code></pre></div>
+
+<p>The kernel version 3.12-rc2 resolve the card reader problem. Bug status: <a href="https://wiki.debian.org/HowToUpgradeKernel">https://wiki.debian.org/HowToUpgradeKernel</a>. Currently this is an experimental version. To install it follow the steps here: <a href="https://wiki.debian.org/HowToUpgradeKernel">https://wiki.debian.org/HowToUpgradeKernel</a>.</p>
+
+<p>I prefer wait and install the backport version.</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">https://bugzilla.kernel.org/show_bug.cgi?id=40802</span></code></pre></div>
+
+<p>Enable backports to update the kernel. Add repository to /etc/apt/sources.list.</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">#</span> backports
+<span class="go">deb http://ftp.uk.debian.org/debian/ wheezy-backports main</span></code></pre></div>
+
+<p>Install and restart the laptop.</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">#</span> apt-get -t wheezy-backports install linux-image-3.10-0.bpo.3-amd64</code></pre></div>
+
+<p>Check kernel version.</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> uname -a
+<span class="go">Linux UNKNOWN 3.10-0.bpo.3-amd64 #1 SMP Debian 3.10.11-1~bpo70+1 (2013-09-24) x86_64 GNU/Linux</span></code></pre></div>
+
+<p>It works! Restart the laptop. Performance has been improved. You can notice how boot time improves.</p>
+
+<h3 id="useful-links">Useful links</h3>
+<ul>
+  <li>Dell XPS 15 L502X &amp; Ubuntu 12.04 Linux: <a href="http://hanynowsky.wordpress.com/2012/04/07/dell-xps-15-l502x-ubuntu-linux/">http://hanynowsky.wordpress.com/2012/04/07/dell-xps-15-l502x-ubuntu-linux/</a></li>
+  <li>Ubuntu hardware support Dell XPS 15 L502x <a href="https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops/Dell/XPS/15">link</a></li>
+</ul>
+
+<h3 id="sources">Sources</h3>
+<ul>
+  <li><a href="http://www.debian-administration.org/articles/327">http://www.debian-administration.org/articles/327</a></li>
+</ul>
+
+
+    </article>
+  </div>
+
+  <div class="col-xs-12 col-md-3 row">
+    <section class="col-xs-12 col-sm-4 col-md-12">
+      <h4>Published</h4>
+      <div class="date"><span>02 November 2013</span></div>
+    </section>
+    
+      <section class="col-xs-12 col-sm-4 col-md-12">
+        <h4>Category</h4>
+        <span class="category">
+          post
+        </span>
+      </section>
+    
+    
+      <section class="col-xs-12 col-sm-4 col-md-12">
+        <h4>Tags</h4>
+        <ul class="tag_box">
+          
+          
+
+
+  
+     
+    	<li><a href="/tags#linux-ref">linux <span>3</span></a></li>
+     
+    	<li><a href="/tags#debian-ref">debian <span>2</span></a></li>
+     
+    	<li><a href="/tags#dell xps l502x-ref">dell xps l502x <span>2</span></a></li>
+    
+  
+
+
+
+        </ul>
+      </section>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <div class="pagination btn-group">
+      
+        <a class="btn prev" href="/link/responsive-designe-tools" title="Responsive designe tools">&larr; Previous</a>
+      
+        <a class="btn" href="/blog">Archive</a>
+      
+        <a class="btn next" href="/post/linux-check-hardware-temperature" title="Linux check hardware temperature">Next &rarr;</a>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'miguelos'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+</div>
+
+
+
+            </section>
+        </div>
+        <!--/.page-wrap -->
+
+        <!-- js  -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- Latest bootstrap compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/assets/themes/material-monker/js/jquery.proudify.min.js"></script>
+        <script type="text/javascript" src="/assets/themes/material-monker/js/jquery.color.js"></script>
+        <!-- /js plugins -->
+        <script type="text/javascript">
+            $(".sidebar-toggle").click(function (e) {
+                e.preventDefault();
+                $("body").toggleClass("sidebar-closed");
+            });
+            if ($(window).width() < 600) {
+                $("body").toggleClass("sidebar-closed");
+            }
+            $('#proudify-codeschool').proudify({
+                'username': 'Miguelo',
+                service: 'codeschool',
+                completed: true
+            });
+            $('#proudify-coderwall').proudify({'username': 'miguelos', service: 'coderwall'});
+            $('#proudify-github').proudify({'username': 'Miguelos', pushed_at: 200});
+        </script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-43253159-2']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <!-- /js plugins -->
+    </body>
+</html>
+
+

@@ -1,0 +1,15 @@
+// humanstxt.org/
+// The humans responsible & technology colophon
+
+// TEAM
+  Owner: Miguel González Pérez
+  Site: http://miguelos.me
+
+// THANKS
+  to the open source community!
+
+// SITE INFO
+  Source code: https://github.com/Miguelos/miguelos.github.io
+  Standards: HTML5, CSS3
+  Use of: Jekyll Bootstrap, Compass, Pygments syntax highlighting, Flatterline Jekyll, Proudify, FlowType.JS, JQuery
+  Software: Vim, GNU/Linux

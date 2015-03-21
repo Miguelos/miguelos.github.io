@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Jekyll Bootstrap sticky footer - Miguel</title>
+        
+        <meta name="author" content="Miguel González Pérez">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="600">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link href="/assets/themes/material-monker/css/pygments.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/assets/themes/material-monker/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/assets/themes/material-monker/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <!-- extra css -->
+        <link href="/assets/themes/material-monker/css/proudify.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- fav and touch icons -->
+        <link rel="shortcut icon" type="image/svg+xml" data-pis="/assets/themes/material-monker/img/icon.svg">
+        <link rel="alt shortcut icon" type="image/png" data-pis="/assets/themes/material-monker/img/icon.png">
+        <link rel="icon" type="image/png" href="/assets/themes/material-monker/img/favicon-16x16.png" sizes="16x16"/>
+        <link rel="icon" type="image/png" href="/assets/themes/material-monker/img/favicon-32x32.png" sizes="32x32"/>
+
+    </head>
+
+    <body>
+        <div id="page-wrap">
+
+            <!-- Sidebar -->
+            <aside id="sidebar" class="sidebar-wrapper">
+                <!--Sidebar navigation-->
+                <nav class="navbar navbar-default sidebar-nav" role="navigation">
+
+                    <!--Sidebar header-->
+                    <a href="/">
+                        <div class="sidebar-header sidebar-icon">
+                            <img src="/assets/themes/material-monker/img/icon.svg">
+                        </div>
+                    </a>
+
+                    <ul class="nav navbar-nav nav-main">
+                        
+                        
+                        
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        
+        <li><a href="/blog/">Blog</a></li>
+        
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        
+        <li><a href="/portfolio/">Portfolio</a></li>
+        
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+
+
+
+                    </ul>
+
+                    <section class="about sidebar-about">
+                        <p>I am Miguel González Pérez, a full stack developer and software engineer. I am enthusiastic about the field, eager to learn the latest programming languages, new technologies and development tools. Also, I am passionate about open source and GNU-Linux systems.</p>
+<p>me at miguelos.me</p>
+
+                    </section>
+
+                    <ul class="nav navbar-nav social-links">
+                        <li class="divider-vertical"></li>
+                        
+                        <li>
+                            <a href="/rss.xml"
+                               class="btn btn-rounded btn-fab btn-rounded btn-fab-mini btn-link btn-sm rss-link"
+                               target="_blank">
+                                <i class="fa fa-lg fa-rss"></i>
+                            </a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="https://github.com/Miguelos"
+                               class="btn btn-rounded btn-fab btn-fab-mini btn-link btn-sm github-link" target="_blank">
+                                <i class="fa fa-lg fa-github"></i>
+                            </a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a rel="author" href="https://plus.google.com/100987837049179499412?rel=author"
+                               class="btn btn-rounded btn-fab btn-fab-mini btn-link btn-sm google-plus-link" target="_blank">
+                                <i class="fa fa-lg fa-google-plus"></i>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="http://www.linkedin.com/in/miguelgpms/en"
+                               class="btn btn-rounded btn-fab btn-fab-mini btn-link btn-sm linkedin-link" target="_blank">
+                                <i class="fa fa-lg fa-linkedin"></i>
+                            </a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="https://careers.stackoverflow.com/miguelos"
+                               class="btn btn-rounded btn-fab btn-fab-mini btn-link btn-sm stackoverflow-link" target="_blank">
+                                <i class="fa fa-lg fa-stack-overflow"></i>
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+
+                </nav>
+
+                <button class="btn btn-fab btn-raised btn-primary sidebar-toggle sidebar-toggle-button">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </aside>
+
+            <section class="container" role="main">
+                
+
+<header class="page-header">
+  <h1>
+    Jekyll Bootstrap sticky footer 
+    
+      <small></small>
+    
+  </h1>
+</header>
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-9">
+    <article>
+    <h2 id="how-to-add-a-sticky-footer">How to add a sticky footer</h2>
+
+<p>To use the sticky footer you’ll need to modify the default theme template and add some css.</p>
+
+<p><em>include/theme/THEMENAME/default.html</em>:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">...
+    <span class="nt">&lt;body&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wrap&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- navbar and content here! --&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;footer-push&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      
+      <span class="nt">&lt;footer&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+          <span class="c">&lt;!-- footer here! --&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+    ...</code></pre></div>
+
+<p>Sass code:</p>
+
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/* Sticky footer */</span>
+    <span class="nv">$footerHeight</span><span class="o">:</span> <span class="mi">75</span><span class="kt">px</span><span class="p">;</span>
+
+    <span class="c1">//Page full height</span>
+    <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span>
+        <span class="na">height</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="nn">#page-wrap</span> <span class="p">{</span>
+        <span class="na">min-height</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+        <span class="na">height</span><span class="o">:</span> <span class="no">auto</span> <span class="nv">!important</span><span class="p">;</span>
+        <span class="na">height</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+        <span class="c1">// Negative indent footer by it&#39;s height</span>
+        <span class="na">margin-bottom</span><span class="o">:</span> <span class="nf">-</span><span class="p">(</span><span class="nv">$footerHeight</span><span class="p">);</span>
+        <span class="na">margin-left</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="na">margin-right</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="na">margin-top</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="c1">//footer fixed height</span>
+    <span class="nc">.footer-push</span><span class="o">,</span>
+    <span class="nt">footer</span> <span class="p">{</span>
+        <span class="na">height</span><span class="o">:</span> <span class="nv">$footerHeight</span><span class="p">;</span>
+        <span class="na">max-height</span><span class="o">:</span> <span class="nv">$footerHeight</span><span class="p">;</span>
+        <span class="na">overflow</span><span class="o">:</span> <span class="no">hidden</span><span class="p">;</span>
+    <span class="p">}</span></code></pre></div>
+
+<hr />
+
+<h2 id="hooligan-theme-with-sticky-footer">Hooligan theme with sticky footer</h2>
+
+<p>I’ve used this theme with a sticky footer.</p>
+
+<p><img src="http://i.stack.imgur.com/tTWbk.png" alt="Hooligan theme screenshot" /></p>
+
+<p>You can install it running in your terminal:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">rake theme:install <span class="nv">git</span><span class="o">=</span><span class="s2">&quot;https://github.com/Miguelos/hooligan.git&quot;</span></code></pre></div>
+
+<hr />
+
+<h2 id="bootstrap-sticky-footer">Bootstrap sticky footer</h2>
+
+<p><a href="http://getbootstrap.com/examples/sticky-footer-navbar/">Here</a> you have the example of a sticky footer for twitter bootstrap.</p>
+
+
+    </article>
+  </div>
+
+  <div class="col-xs-12 col-md-3 row">
+    <section class="col-xs-12 col-sm-4 col-md-12">
+      <h4>Published</h4>
+      <div class="date"><span>15 February 2014</span></div>
+    </section>
+    
+      <section class="col-xs-12 col-sm-4 col-md-12">
+        <h4>Category</h4>
+        <span class="category">
+          post
+        </span>
+      </section>
+    
+    
+      <section class="col-xs-12 col-sm-4 col-md-12">
+        <h4>Tags</h4>
+        <ul class="tag_box">
+          
+          
+
+
+  
+     
+    	<li><a href="/tags#Jekyll-ref">Jekyll <span>1</span></a></li>
+     
+    	<li><a href="/tags#Jekyll-Bootstrap-ref">Jekyll-Bootstrap <span>1</span></a></li>
+     
+    	<li><a href="/tags#Bootstrap-ref">Bootstrap <span>1</span></a></li>
+     
+    	<li><a href="/tags#CSS-ref">CSS <span>2</span></a></li>
+     
+    	<li><a href="/tags#SASS-ref">SASS <span>2</span></a></li>
+     
+    	<li><a href="/tags#HTML-ref">HTML <span>2</span></a></li>
+    
+  
+
+
+
+        </ul>
+      </section>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <div class="pagination btn-group">
+      
+        <a class="btn prev" href="/link/angular-for-jquery-devs" title="AngularJS for JQuery developers">&larr; Previous</a>
+      
+        <a class="btn" href="/blog">Archive</a>
+      
+        <a class="btn next" href="/link/drush-multi-processing" title="Drush Multi Processing ">Next &rarr;</a>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'miguelos'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+</div>
+
+
+
+            </section>
+        </div>
+        <!--/.page-wrap -->
+
+        <!-- js  -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- Latest bootstrap compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/assets/themes/material-monker/js/jquery.proudify.min.js"></script>
+        <script type="text/javascript" src="/assets/themes/material-monker/js/jquery.color.js"></script>
+        <!-- /js plugins -->
+        <script type="text/javascript">
+            $(".sidebar-toggle").click(function (e) {
+                e.preventDefault();
+                $("body").toggleClass("sidebar-closed");
+            });
+            if ($(window).width() < 600) {
+                $("body").toggleClass("sidebar-closed");
+            }
+            $('#proudify-codeschool').proudify({
+                'username': 'Miguelo',
+                service: 'codeschool',
+                completed: true
+            });
+            $('#proudify-coderwall').proudify({'username': 'miguelos', service: 'coderwall'});
+            $('#proudify-github').proudify({'username': 'Miguelos', pushed_at: 200});
+        </script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-43253159-2']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <!-- /js plugins -->
+    </body>
+</html>
+
+
